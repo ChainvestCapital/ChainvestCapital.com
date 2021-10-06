@@ -1,0 +1,5 @@
+type Projekt @model {
+  id: ID!
+  name: String!
+  description: String
+}
