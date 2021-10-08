@@ -6,15 +6,7 @@ export const getProjekt = /* GraphQL */ `
     getProjekt(id: $id) {
       id
       name
-      Kategorie
-      Finanzierungsvolumen
-      ErwRendite
-      Mindestinvestition
-      Typ
-      Behoerde
-      TitleLink
-      LogoLink
-      KategorieBildLink
+      description
       createdAt
       updatedAt
     }
@@ -36,11 +28,11 @@ export const listProjekts = /* GraphQL */ `
         Mindestinvestition
         Typ
         Behoerde
-        TitleLink
-        LogoLink
-        KategorieBildLink
         createdAt
         updatedAt
+        TitleLink
+LogoLink
+KategorieBildLink
       }
       nextToken
     }

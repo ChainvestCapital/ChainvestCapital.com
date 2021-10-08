@@ -6,15 +6,7 @@ export const onCreateProjekt = /* GraphQL */ `
     onCreateProjekt {
       id
       name
-      Kategorie
-      Finanzierungsvolumen
-      ErwRendite
-      Mindestinvestition
-      Typ
-      Behoerde
-      TitleLink
-      LogoLink
-      KategorieBildLink
+      description
       createdAt
       updatedAt
     }
@@ -25,15 +17,7 @@ export const onUpdateProjekt = /* GraphQL */ `
     onUpdateProjekt {
       id
       name
-      Kategorie
-      Finanzierungsvolumen
-      ErwRendite
-      Mindestinvestition
-      Typ
-      Behoerde
-      TitleLink
-      LogoLink
-      KategorieBildLink
+      description
       createdAt
       updatedAt
     }
@@ -44,15 +28,7 @@ export const onDeleteProjekt = /* GraphQL */ `
     onDeleteProjekt {
       id
       name
-      Kategorie
-      Finanzierungsvolumen
-      ErwRendite
-      Mindestinvestition
-      Typ
-      Behoerde
-      TitleLink
-      LogoLink
-      KategorieBildLink
+      description
       createdAt
       updatedAt
     }
