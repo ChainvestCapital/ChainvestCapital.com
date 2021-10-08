@@ -1,0 +1,44 @@
+#mobile_Footer_wrapper {
+  display: flex;
+  background-color: #cdf0ea;
+  width: 88vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  margin-top: 5vh;
+  flex-direction: column;
+}
+
+#mobile_Footer_logo_img {
+  width: 80vw;
+}
+
+#mobile_Footer_Content {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4vh;
+}
+#mobile_Footer_Spalte {
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+}
+#mobile_Footer_h2 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+}
+#mobile_Footer_Eintrag {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 4vh;
+}
+#mobile_Footer_h3 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+}

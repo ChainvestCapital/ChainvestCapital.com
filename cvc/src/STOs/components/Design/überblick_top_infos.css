@@ -1,0 +1,20 @@
+#überblick_top_infos_wrapper {
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+#überblick_top_infos_h2 {
+    font-family: Montserrat;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: rgba(10, 44, 83, 1);
+    margin: 0;
+}
+#überblick_top_infos_description {
+    font-family: Montserrat;
+    font-size: 0.7vw;
+    font-weight: 600;
+    color:rgba(0,0,0,0.7);
+    margin: 0;
+}

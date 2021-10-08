@@ -1,0 +1,15 @@
+#Kategorie_Wrapper {
+    width:4vw;
+    height:4vw;
+    border-radius: 8px;
+    background: #CDF0EA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Kategorie_Wrapper_img {
+    width:55%;
+
+}

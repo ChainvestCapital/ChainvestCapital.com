@@ -1,0 +1,32 @@
+#Project_left_menue_auswahl_icon {
+
+    width:4vw;
+    height: 4vw;
+    border-radius: 12px;
+    background-color: #cdf0ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#Project_left_menue_auswahl_icon_img {
+    width: 2vw;
+
+}
+
+#Project_left_menue_auswahl_h4 {
+    font-family: Montserrat;
+    font-size: 0.7vw;
+    font-weight: 500;
+    color:rgba(0,0,0,1);
+    margin: 0;
+    margin-top: 1vh;
+}
+
+#Project_left_menue_auswahl_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3vh;
+}

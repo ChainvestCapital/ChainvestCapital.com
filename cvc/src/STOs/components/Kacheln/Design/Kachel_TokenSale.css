@@ -1,0 +1,62 @@
+#Kachel_TokenSale {
+    width:25vw;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+border-radius: 8px;
+display: flex;
+flex-direction: column;
+height: 25vh;
+}
+#Kachel_TokenSale_top {
+    padding-left: 1vw;
+    display: flex;
+    flex-direction: row;
+    
+    height: 4vw;
+    margin-bottom: 2vh;
+    justify-content: space-between;
+}
+
+#Kachel_TokenSale_topleft {
+display: flex;
+flex-direction: row;
+    align-items: center;
+    height: 4vw
+}
+#Kachel_TokenSale_h3 {
+    font-family: Montserrat;
+    font-size: 1vw;
+    font-weight: 600;
+    color:rgba(0,0,0,1);
+    margin: 0;
+    margin-bottom: 0.2vh;
+    text-transform: uppercase;
+    color: #0A2C53;
+}
+#Kachel_TokenSale_topright {
+    width: 3.5vw;
+    height: 3.5vw;
+    background-color: #CDF0EA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    top:0;
+}
+#Kachel_TokenSale_topright_img{
+    width: 1.6vw;
+}
+
+#Kachel_TokenSale_bottom {
+
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+#Kachel_TokenSale_h4{
+    font-family: Montserrat;
+    font-size: 0.8vw;
+    font-weight: 400;
+    color:rgba(0,0,0,1);
+    margin: 0;
+    margin-bottom: 0.2vh;
+}

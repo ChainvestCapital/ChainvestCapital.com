@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#menueComponent_placeholder {
+  height: 15vh;
+}
+
+#home_fullHero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80vh;
+  padding-top: 5vh;
+}
+
+#home_hero_left {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  padding-left: 6vw;
+  padding-right: 5vw;
+}
+#home_hero_left_CIAC {
+  font-family: Montserrat;
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#home_hero_left_Heading {
+  font-family: Montserrat;
+  font-size: 3.2vw;
+  font-weight: 700;
+  margin: 0;
+  color: rgba(10, 44, 83, 1);
+}
+
+#home_hero_left_description {
+  font-family: Montserrat;
+  font-size: 1vw;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#home_hero_left_button_wrapper {
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: row;
+}
+
+#home_hero_right {
+  width: 45vw;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#Home_Form {
+  width: 35vw;
+  right: 0;
+}
+#Home_Big {
+  position: absolute;
+  right: 0;
+  width: 40vw;
+  margin-top: 10vh;
+}
+#home_projekte {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 0vh;
+  padding-bottom: 5vh;
+  padding-left: 6vw;
+  background: #f6faff;
+}
+
+#Home_Farbübergang {
+  background: linear-gradient(180deg, #ffffff 0%, #f6faff 100%);
+  width: 100vw;
+  height: 5vh;
+}
+
+#Home_Farbübergang180 {
+  background: linear-gradient(0deg, #ffffff 0%, #f6faff 100%);
+  width: 100vw;
+  height: 10vh;
+}
+
+#home_projekte_h2 {
+  font-family: Montserrat;
+  font-size: 2.5vw;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  padding-left: 2vw;
+}
+
+#home_chainvest {
+  width: 88vw;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  display: flex;
+  height: 80vh;
+}
+#home_chainvest_left {
+  width: 43vw;
+  padding-right: 5vw;
+  display: flex;
+  align-items: center;
+}
+#home_chainvest_h4 {
+  font-family: Montserrat;
+  font-size: 1vw;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#home_chainvest_right {
+  width: 35vw;
+  margin-left: 13vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#home_chainvest_img {
+  width: 25vw;
+  margin-bottom: 4vh;
+}
+
+#home_projekte_li {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+@media (max-width: 700px) {
+  #Mobile_Wrapper {
+    display: flex;
+  }
+
+  #Desktop_Wrapper {
+    display: none;
+  }
+}
+
+@media (min-width: 701px) {
+  #Mobile_Wrapper {
+    display: none;
+  }
+}
+
+#Mobile_Wrapper {
+  flex-direction: column;
+}
+
+#mobile_home_top_section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  width: 88vw;
+}
+#mobile_home_top_text {
+  display: flex;
+  flex-direction: column;
+}
+#mobile_home_top_text_h3 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+}
+#mobile_home_top_text_h2 {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: 700;
+  color: rgba(10, 44, 83, 1);
+  margin: 0;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+#mobile_home_top_text_h5 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+#mobile_home_top_menue {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0vw;
+  padding-right: 0vw;
+  margin-top: 6vh;
+}
+#mobile_home_top_menue_eintrag_wrappper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mobile_home_top_menue_eccplise {
+  display: flex;
+  border-radius: 100%;
+  background: #cdf0ea;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vh;
+  width: 12vw;
+  height: 12vw;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#mobile_home_top_menue_eccplise_img {
+  width: 4vw;
+}
+
+#mobile_home_top_menue_h4 {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+}
+
+#home_mobile_projekte_section {
+  margin-top: 15vh;
+  padding-left: 4vw;
+}
+
+#home_mobile_projekte_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+}
+
+#home_mobile_projekte_alle_wrapper {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#home_mobile_projekte_alle_ecclipse {
+  width: 22vw;
+  height: 22vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cdf0ea;
+  border-radius: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#home_mobile_projekte_alle_img {
+  width: 12vw;
+}
+#home_mobile_projekte_alle_h3 {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+}

@@ -1,0 +1,72 @@
+#Footer {
+    width:88vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+
+    display: flex;
+    flex-direction: row;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    border-radius: 8px;
+    height: 20vh;
+
+    background: #CDF0EA;
+}
+
+#Footer_left {
+
+    width:60vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer_logo_img  {
+    width:15vw;
+}
+#footer_Copyright_h4 {
+    font-family: Montserrat;
+    font-size: 1vw;
+    font-weight: 400;
+    color:rgba(0,0,0,0.7);
+}
+
+
+
+
+
+
+
+
+
+#Footer_right {
+    display: flex;
+    flex-direction: row;
+}
+#Footer_Spalte {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vw;
+}
+#Footer_h2 {
+    font-family: Montserrat;
+    font-size: 1.1vw;
+    font-weight: 700;
+    color:rgba(0,0,0,1);}
+
+
+#Footer_Eintrag {
+
+    height: 4vh;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+#Footer_h4 {
+    font-family: Montserrat;
+    font-size: 1vw;
+    font-weight: 500;
+    color:rgba(0,0,0,0.8);
+}

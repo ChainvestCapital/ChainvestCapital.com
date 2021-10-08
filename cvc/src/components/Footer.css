@@ -1,0 +1,68 @@
+#Footer_wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: #CDF0EA;
+    padding-right: 6vw;
+    padding-left: 6vw;
+    width: 88vw;
+    height: 30vh;
+    padding-top: 5vh;
+    position: relative;
+    left:0vw;
+}
+
+#Footer_left {
+    display: flex;
+    flex-direction: column;
+    width: 56vw;
+}
+
+#Footer_logo {
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+    width: 15vw;
+}
+
+#Footer_h4 {
+    font-family: Montserrat;
+    font-size: 1vw;
+    font-weight: 500;
+    color:rgba(0,0,0,1);
+    margin: 0;
+}
+
+#Footer_right {
+    display: flex;
+    flex-direction: row;
+}
+
+#Footer_Spalter {
+    display: flex;
+    flex-direction: column;
+    width: 14vw;
+    align-items: flex-start;
+}
+
+#Footer_Spalte_Überschrift {
+    font-family: Montserrat;
+    font-size: 1.4vw;
+    font-weight: 700;
+    color:rgba(0,0,0,1);
+    margin: 0;
+    margin-bottom: 2vh;
+}
+
+#Footer_spalte_button {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#Footer_spalte_h3 {
+    font-family: Montserrat;
+    font-size: 1vw;
+    font-weight: 500;
+    color:rgba(0,0,0,1);
+    margin: 0;
+}

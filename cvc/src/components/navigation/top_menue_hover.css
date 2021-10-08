@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
+
+#top_menue_hover_wrapper {
+
+    width: 100vw;
+    background: linear-gradient(180deg, #FFFFFF 0.01%, #FFFFFF 54.12%, rgba(255, 255, 255, 0) 100%);    position: absolute;
+    top: 14vh;
+    height: 20vh;
+    padding-left: 7vw;
+    display: flex;
+    flex-direction: row;
+    z-index: 500;
+    position: fixed;
+    
+}
+
+#top_hover_header {
+
+
+    width: 47vw;
+
+
+}
+#top_hover_h2 {
+
+    font-family: Montserrat;
+    font-style: italic;
+    font-size: 2vw;
+    font-weight: 200;
+    margin: 0;
+    margin-top: 3vh;
+    color:rgba(0, 0, 0, 0.2)
+}
+
+
+#top_hover_STO_spalte {
+
+    width: 22.2vw;
+}
+
+#top_menue_Chainvest_spalte {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+}
+
+#top_menue_chainvest {
+    height: 4vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#top_menue_Eintrag {
+
+    font-family: Montserrat;
+    font-size: 1vw;
+    font-weight: 500;
+    margin: 0;
+}
+
+#top_menue_account_spalte {
+
+}

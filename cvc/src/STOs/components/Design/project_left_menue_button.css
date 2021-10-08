@@ -1,0 +1,19 @@
+#Project_left_menue_button_h4 {
+    font-family: Montserrat;
+    font-size: 0.9vw;
+    font-weight: 600;
+    color:rgba(0,0,0,1);
+    margin: 0;
+}
+
+#Project_left_menue_button {
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    border-radius: 12px;
+    background-color: #cdf0ea;
+    margin-top: 2vh;
+    width: auto;
+}

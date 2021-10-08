@@ -1,0 +1,80 @@
+#top_menue_full {
+    width:91vw;
+    padding-right: 3vw;
+    padding-left: 6vw;
+    padding-top: 5vh;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    top:0px;
+    position: fixed;
+    background-color: white;
+
+    z-index:100;
+    
+}
+#top_menue_logoWrapper {}
+
+#top_menue_logoimg {
+    width: 14vw;
+}
+
+#menue_projekt_title {
+
+
+}
+
+#top_menue_projekt_title {
+
+    width:25vw;
+    margin-left: 8vw;
+}
+
+
+
+
+
+#top_menue_menue {
+    display: flex;
+    flex-direction: row;
+  
+    
+}
+
+#top_menue_menue_eintrag1 {
+    width: 16vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3vw;
+    
+  
+    
+}
+#top_menue_menue_eintrag {
+    width: 15vw;
+    display: flex;
+    justify-content: center; margin-right: 3vw;
+}
+
+#top_menue_menue_eintrag2 {
+    width: 4vw;
+    display: flex;
+    justify-content: center;
+  
+    
+}
+
+
+#menue_eintrag_h3 {
+    font-family: Montserrat;
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin: 0;
+}
+
+#AccountImgImg {
+    width: 2vw;
+}

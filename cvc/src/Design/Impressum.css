@@ -1,0 +1,25 @@
+#ImpressumWrapper {
+  background: #f3f6fa;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  width: 88vw;
+  padding-top: 18vh;
+  padding-bottom: 5vh;
+  height: 50vh;
+}
+#Impressum_h2 {
+  font-family: Montserrat;
+  font-size: 1.8vw;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+}
+#Impressum_Content_Wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#Impressum_h4 {
+  font-family: Montserrat;
+  font-size: 0.9vw;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 1);
+}

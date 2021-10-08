@@ -1,0 +1,122 @@
+#Mobile_Überblick_Wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#Mobile_Überblick_Übersicht {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  justify-content: space-between;
+  background-color: #f3f6fa;
+  padding: 4vw;
+  border-radius: 12px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+#Mobile_Überblick_Info_Wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1vh;
+}
+#Mobile_Überblick_Info_h2 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+}
+#Mobile_Überblick_Info_h4 {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  margin-top: 0.5vh;
+}
+
+#Mobile_Überblick_content {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f6fa;
+  padding: 4vw;
+  margin-top: 2vh;
+  border-radius: 12px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+#Mobile_Überblick_content_Unternehmen {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: white;
+  margin-bottom: 2vh;
+  padding-bottom: 2vh;
+}
+#Mobile_Überblick_conten_Unternehmen_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+#Mobile_Überblick_conten_Unternehmen_top_h3 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  padding-left: 3vw;
+  text-transform: uppercase;
+}
+#Mobile_Überblick_conten_Unternehmen_top_OR {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cdf0ea;
+}
+#Mobile_Überblick_conten_Unternehmen_top_img {
+  width: 5vw;
+}
+
+#Mobile_Überblick_conten_Unternehmen_h4 {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding-left: 3vw;
+  padding-right: 2vw;
+}
+
+#Mobile_Überblick_Content_Smalls {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  justify-content: space-between;
+}
+
+#Mobile_Überblick_Content_Small {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 8vh;
+  border-radius: 12px;
+  padding-left: 3vw;
+  justify-content: center;
+  width: 88%;
+  margin-bottom: 2vh;
+}
+#Mobile_Überblick_Content_Smalls_h3 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  margin-bottom: 0.7vh;
+}
+
+#Mobile_Überblick_Content_Smalls_h5 {
+  font-family: Montserrat;
+  font-size: 8px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  text-transform: uppercase;
+}

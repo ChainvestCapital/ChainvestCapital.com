@@ -1,0 +1,22 @@
+#mobile_menue_wrapper {
+  width: 88vw;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5vh;
+}
+
+#mobile_menue_wrapper_hamburger {
+  width: 10vw;
+}
+
+#mobile_menue_wrapper_logo {
+  width: 30vw;
+}
+#mobile_menue_wrapper_hamburger_img {
+  width: 10vw;
+}
