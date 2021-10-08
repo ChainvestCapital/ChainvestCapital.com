@@ -15,7 +15,6 @@ export const onCreateProjekt = /* GraphQL */ `
       TitleLink
       LogoLink
       KategorieBildLink
-      Gruendung
       createdAt
       updatedAt
     }
@@ -35,7 +34,6 @@ export const onUpdateProjekt = /* GraphQL */ `
       TitleLink
       LogoLink
       KategorieBildLink
-      Gruendung
       createdAt
       updatedAt
     }
@@ -55,7 +53,6 @@ export const onDeleteProjekt = /* GraphQL */ `
       TitleLink
       LogoLink
       KategorieBildLink
-      Gruendung
       createdAt
       updatedAt
     }
