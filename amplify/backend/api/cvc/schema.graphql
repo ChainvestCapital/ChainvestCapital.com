@@ -10,4 +10,5 @@ type Projekt @model {
   TitleLink: String
   LogoLink: String
   KategorieBildLink: String
+  Gruendung: String
 }
