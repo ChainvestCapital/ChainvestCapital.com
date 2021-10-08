@@ -53,7 +53,21 @@ Amplify.configure(awsExports);
 
 function Home() {
   const [ProjekteArray, setProjekteArray] = useState([]);
+  const fetchProjekte = async () => {
+    try {
+      const ProjekteData = await API.graphql(graphqlOperation(listProjekts));
 
+      const ProjekteList = ProjekteData.data.listProjekts.items;
+      setProjekteArray(ProjekteList);
+      console.log(ProjekteList);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchProjekte();
+  }, []);
   return (
     <div>
       <div id="Desktop_Wrapper">
