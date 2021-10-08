@@ -9,7 +9,15 @@ export const createProjekt = /* GraphQL */ `
     createProjekt(input: $input, condition: $condition) {
       id
       name
-      description
+      Kategorie
+      Finanzierungsvolumen
+      ErwRendite
+      Mindestinvestition
+      Typ
+      Behoerde
+      TitleLink
+      LogoLink
+      KategorieBildLink
       createdAt
       updatedAt
     }
@@ -23,7 +31,15 @@ export const updateProjekt = /* GraphQL */ `
     updateProjekt(input: $input, condition: $condition) {
       id
       name
-      description
+      Kategorie
+      Finanzierungsvolumen
+      ErwRendite
+      Mindestinvestition
+      Typ
+      Behoerde
+      TitleLink
+      LogoLink
+      KategorieBildLink
       createdAt
       updatedAt
     }
@@ -37,7 +53,15 @@ export const deleteProjekt = /* GraphQL */ `
     deleteProjekt(input: $input, condition: $condition) {
       id
       name
-      description
+      Kategorie
+      Finanzierungsvolumen
+      ErwRendite
+      Mindestinvestition
+      Typ
+      Behoerde
+      TitleLink
+      LogoLink
+      KategorieBildLink
       createdAt
       updatedAt
     }

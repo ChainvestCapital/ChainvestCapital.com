@@ -1,5 +1,13 @@
 type Projekt @model {
   id: ID!
   name: String!
-  description: String
+  Kategorie: String
+  Finanzierungsvolumen: String
+  ErwRendite: String
+  Mindestinvestition: String
+  Typ: String
+  Behoerde: String
+  TitleLink: String
+  LogoLink: String
+  KategorieBildLink: String
 }
