@@ -1,0 +1,86 @@
+#Unternehmen_content_Wrapper_top {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#Unternehmen_content_Wrapper {
+  width: 100%;
+}
+
+#Unternehmen_content_Gründung {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  height: 6vh;
+  padding-top: 2vh;
+  padding-left: 1vw;
+  padding-bottom: 1vh;
+
+  width: 10vw;
+}
+
+#Unternehmen_content_Rechtsform {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  height: 6vh;
+  padding-top: 2vh;
+  padding-left: 1vw;
+  padding-bottom: 1vh;
+
+  width: 10vw;
+}
+
+#Unternehmen_content_Adresse {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  height: 6vh;
+  padding-top: 2vh;
+  padding-left: 1vw;
+  padding-bottom: 1vh;
+
+  width: 10vw;
+}
+#Unternehmen_content_Name {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  height: 6vh;
+  padding-top: 2vh;
+  padding-left: 1vw;
+  padding-bottom: 1vh;
+
+  width: 10vw;
+}
+#Unternehmen_content_Wrapper_bottom {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 2vh;
+}
+#Unternehmen_content_Firmenkonstrukt {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  height: 18vh;
+  padding-top: 2vh;
+  padding-left: 1vw;
+  padding-bottom: 1vh;
+  margin-left: 1vw;
+  width: 28vw;
+}
+#Unternehmen_content_Wrapper_bottom_Smalls {
+  display: grid;
+  width: 45%;
+  padding-left: 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vw;
+}
+#Unternehmen_content_Firmenkonstruk_img {
+  width: 26vw;
+  margin-bottom: 2vh;
+}

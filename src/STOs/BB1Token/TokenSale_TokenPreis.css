@@ -1,0 +1,12 @@
+#TokenSale_TokenPreis_Warpper {
+  width: 25vw;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  padding-left: 1vw;
+  justify-content: center;
+  margin-top: 2vh;
+}

@@ -91,8 +91,8 @@
 }
 
 #alle_projekte_projekte_wrapper_Kategorien {
-  width: 95%;
-  padding-left: 5%;
+  width: 55vw;
+  padding-left: 1vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -102,13 +102,13 @@
 }
 #alle_projekte_projekte_wrapper_projekte_kategorien {
   font-family: Montserrat;
-  font-size: 0.9vw;
+  font-size: 1vw;
   font-weight: 600;
   color: rgba(0, 0, 0, 1);
 }
 
 #alle_projekte_kategorien_menue {
-  margin-left: 10vw;
+  margin-left: 3vw;
   display: flex;
   flex-direction: row;
   height: 80%;
@@ -135,8 +135,20 @@
 #alle_projekte_projekte_wrapper_projekte {
   margin-top: 4vh;
   height: 60vh;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
 }
-
+#alle_projekte_ul {
+  display: grid;
+  width: 55vw;
+  padding-left: 0;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 4vw;
+  list-style: none;
+}
+#alle_projekte_li {
+}
 #Mobile_alle_Projekte_Wrapper {
   padding-left: 6vw;
   padding-right: 6vw;

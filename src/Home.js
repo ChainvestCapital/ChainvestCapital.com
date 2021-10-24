@@ -92,8 +92,12 @@ function Home() {
                 <Blue_round_fixpadding text="Projekte ansehen" />
               </Link>
 
-              <Blue_round_fixpadding text="Projekte vergleichen" />
-              <Blue_round_fixpadding text="Über STOs" />
+              <Link to="ProjekteVergleichen">
+                <Blue_round_fixpadding text="Projekte vergleichen" />
+              </Link>
+              <Link to="Was-sind-STOs">
+                <Blue_round_fixpadding text="Über STOs" />
+              </Link>
             </div>
           </div>
 
@@ -113,7 +117,7 @@ function Home() {
               <li id="home_projekte_li">
                 <Home_Projekt_Banner
                   title={Projekt.name}
-                  Kategorie={Projekt.KategorieLink}
+                  KategorieBildLink={Projekt.KategorieBildLink}
                   Finanzierungsvolumen={Projekt.Finanzierungsvolumen}
                   ErwarteteRendite={Projekt.ErwRendite}
                   Typ={Projekt.Typ}
@@ -123,7 +127,15 @@ function Home() {
               </li>
             ))}
           </ul>
+          <div id="Home_more_project">
+            <Link to="alleProjekte">
+              <div id="Home_more_project_BUTTON">
+                <h2 id="Home_more_project_BUTTON_h2">Alle Projekte ansehen</h2>
+              </div>
+            </Link>
+          </div>
         </div>
+
         <div id="Home_Farbübergang180"></div>
 
         <div id="home_chainvest">

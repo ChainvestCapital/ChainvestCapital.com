@@ -8,6 +8,7 @@
   margin-bottom: 3vh;
   background-color: white;
   overflow: hidden;
+  position: relative;
 }
 
 #home_projekte_banner_left {
@@ -30,25 +31,30 @@
   width: 30vw;
   height: 28vh;
   position: relative;
+  z-index: 4;
 }
 
 #home_projekte_banner_logo_img {
   width: 20vw;
   position: absolute;
-  z-index: 5;
+  z-index: 10;
+  justify-self: center;
+  top: 35%;
+  left: 15%;
 }
 
 #home_projekte_banner_farbübergang {
-  width: 30vw;
+  width: 20vw;
   position: absolute;
-  z-index: 1;
-  right: 5vw;
+  z-index: 5;
+  left: 10vw;
   height: 100%;
   background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) -3.44%,
-    #ffffff 100%
+    270.02deg,
+    rgba(255, 255, 255, 0) 22.41%,
+    #ffffff 99.98%
   );
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 #home_projekte_banenr_right {
@@ -95,4 +101,18 @@
   font-weight: 500;
   color: rgba(0, 0, 0, 0.5);
   margin: 0;
+}
+
+#Kategorie_Wrapper {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 8px;
+  background: #cdf0ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Kategorie_Wrapper_img {
+  width: 55%;
 }

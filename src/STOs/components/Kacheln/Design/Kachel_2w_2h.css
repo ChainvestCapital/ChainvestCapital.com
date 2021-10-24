@@ -1,0 +1,23 @@
+#Kachel_2w_2h {
+  width: 25vw;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 22vh;
+  padding-left: 1vw;
+  justify-content: center;
+  padding-right: 1vw;
+  margin-bottom: 2vh;
+}
+#kleine_kachel_h3_smaller {
+  font-family: Montserrat;
+  font-size: 0.8vw;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  margin-bottom: 0.2vh;
+
+  color: #0a2c53;
+}

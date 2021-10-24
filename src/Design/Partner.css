@@ -1,0 +1,51 @@
+#Partner_Top_Wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 6vw;
+  padding-left: 6vw;
+}
+#Partner_Top_Wrapper_left {
+  width: 25vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 60vh;
+}
+#Partner_Top_Wrapper_h4 {
+  font-family: Montserrat;
+  font-size: 2vw;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+}
+#Partner_Top_Wrapper_right {
+  display: flex;
+  flex-direction: column;
+}
+#Partner_Top_Wrapper_righ_Button_Wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  padding-left: 2vw;
+  margin-right: 4vw;
+}
+#Partner_Top_Wrapper_righ_Button {
+  width: 8vw;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 1vw;
+  align-items: center;
+}
+#Partner_Top_Wrapper_righ_Button_h3 {
+  font-family: Montserrat;
+  font-size: 1vw;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+}
+#Partner_Top_Wrapper_righ_Button_right {
+}
+#Partner_Top_Wrapper_righ_Button_right_img {
+}

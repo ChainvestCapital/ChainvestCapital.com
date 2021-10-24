@@ -1,16 +1,9 @@
-
-
-
-function bitbond() {
+function Bitbond() {
   return (
-    
-    <div >
-
-          <h5>bitbond</h5>
-          
+    <div>
+      <h5>bitbond</h5>
     </div>
-
   );
 }
 
-export default bitbond;
+export default Bitbond;

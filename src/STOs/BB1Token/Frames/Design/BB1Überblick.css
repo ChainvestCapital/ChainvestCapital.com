@@ -1,0 +1,119 @@
+#project_changing_heading_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+}
+#project_changing_heading {
+  font-family: Montserrat;
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  margin-bottom: 0.2vh;
+}
+
+#project_changing_heading_unterstrich {
+  width: 6vw;
+  height: 2px;
+  background-color: #58c7b2;
+}
+
+#überblick_top_infos {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  justify-content: space-between;
+}
+
+#überblick_content_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#überblick_content_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+#überblick_content_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#kleine_kachel_h3 {
+  font-family: Montserrat;
+  font-size: 1vw;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  margin-bottom: 0.4vh;
+}
+#kleine_kachel_h4 {
+  font-family: Montserrat;
+  font-size: 0.7vw;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+#Behörde {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  height: 6vh;
+  padding-top: 2vh;
+  padding-left: 1vw;
+  padding-bottom: 1vh;
+
+  width: 12vw;
+}
+#Gründung {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  height: 6vh;
+  padding-top: 2vh;
+  padding-left: 1vw;
+  padding-bottom: 1vh;
+
+  width: 8vw;
+}
+#Emissionszeitraum {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  height: 6vh;
+  padding-top: 2vh;
+  padding-left: 1vw;
+  padding-bottom: 1vh;
+
+  width: 10vw;
+}
+#Kategorie {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  height: 6vh;
+  padding-top: 2vh;
+  padding-left: 1vw;
+  padding-bottom: 1vh;
+
+  width: 8vw;
+}
+#Dokumente {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  height: 6vh;
+  padding-top: 2vh;
+  padding-left: 1vw;
+  padding-bottom: 1vh;
+
+  width: 6vw;
+}

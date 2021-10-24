@@ -1,0 +1,35 @@
+#Kachel_Risiko {
+  width: 54vw;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
+#kleine_kachel_h3_Risiko {
+  font-family: Montserrat;
+  font-size: 1vw;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  margin-bottom: 1vh;
+  text-transform: uppercase;
+  color: #0a2c53;
+}
+
+#kleine_kachel_h4_Risiko {
+  font-family: Montserrat;
+  font-size: 0.8vw;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  margin-bottom: 0.2vh;
+}

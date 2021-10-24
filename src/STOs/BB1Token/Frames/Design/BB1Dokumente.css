@@ -1,0 +1,11 @@
+#Dokumente_Wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#Dokumente_Bottom_Wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-top: 3vh;
+  align-items: center;
+  width: 100%;
+}

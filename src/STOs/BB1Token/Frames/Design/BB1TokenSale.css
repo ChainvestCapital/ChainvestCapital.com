@@ -1,0 +1,19 @@
+#TokenSale_Content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;
+}
+
+#TokenSale_Left {
+  display: grid;
+  width: 50%;
+  padding-left: 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vw;
+}
+#TokenSale_Right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1vw;
+}

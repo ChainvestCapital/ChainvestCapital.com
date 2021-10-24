@@ -1,0 +1,30 @@
+#AlleHover_Wrapper {
+  position: relative;
+  width: 5.5vw;
+}
+#AlleHover_LayerFront {
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#AlleHover_LayerFront:hover {
+  opacity: 0;
+}
+#AlleHover_LayerBack {
+  height: 100%;
+  width: 100%;
+}
+#AlleHover_h4 {
+  font-family: Montserrat;
+  font-size: 0.9vw;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+}
+#Kategorie_Wrapper_imgx {
+  width: 1.5vw;
+}

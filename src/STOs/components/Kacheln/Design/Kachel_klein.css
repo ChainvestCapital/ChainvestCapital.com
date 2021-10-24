@@ -1,0 +1,29 @@
+#Kachel_Klein_Wrapper {
+  width: 12vw;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  padding-left: 1vw;
+  justify-content: center;
+}
+#Kachel_Klein_h3 {
+  font-family: Montserrat;
+  font-size: 1vw;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  margin-bottom: 0.2vh;
+  text-transform: uppercase;
+  color: #0a2c53;
+}
+#Kachel_Klein_h5 {
+  font-family: Montserrat;
+  font-size: 0.8vw;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  margin-bottom: 0.2vh;
+}

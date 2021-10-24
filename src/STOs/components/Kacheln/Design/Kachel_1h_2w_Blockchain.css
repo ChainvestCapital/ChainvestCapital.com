@@ -1,0 +1,28 @@
+#Kachel_1h_2w_Blockchain_Img {
+  width: 3vw;
+}
+
+#Kachel_1h_2w_Blockchain {
+  display: flex;
+  flex-direction: row;
+}
+#Kachel_1h_2w_Blockchain_left {
+}
+#Kachel_1h_2w_Blockchain_right {
+  margin-left: 2vw;
+}
+#Kachel_1h_2w_Blockchain {
+  width: 25vw;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  padding-left: 1vw;
+  justify-content: space-between;
+  padding-right: 1vw;
+  margin-bottom: 2vh;
+  margin-left: 2vw;
+  align-items: center;
+}

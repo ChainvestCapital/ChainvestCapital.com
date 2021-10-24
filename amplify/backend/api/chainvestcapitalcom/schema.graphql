@@ -9,5 +9,8 @@ type Projekt @model {
   Behoerde: String
   TitleLink: String
   LogoLink: String
+  KurzBeschreibung: String
   KategorieBildLink: String
+  InternerLink: String
+  ExternerLink: String
 }

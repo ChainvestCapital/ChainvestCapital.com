@@ -1,0 +1,32 @@
+#Token_Content_Wrapper {
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+#Token_Content_Left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2vw;
+}
+#Token_Content_Left_top {
+  display: grid;
+  width: 50%;
+  padding-left: 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vw;
+}
+#Token_Content_Left_bottom {
+  margin-top: 2vh;
+}
+
+#Token_Content_Right {
+}
+#Token_Content_Top {
+  display: flex;
+  flex-direction: row;
+}
+
+#Token_Content_Bottom {
+  display: flex;
+  flex-direction: row;
+}

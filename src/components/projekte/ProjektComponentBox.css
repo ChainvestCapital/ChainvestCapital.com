@@ -1,103 +1,104 @@
 #ProjektCompBox_wrapper {
-
-    display: flex;
-    border-radius: 12px;
-    background-color: white;
-    height: 38vh;
-    width:16vw;
-    overflow: hidden;
-    flex-direction: column;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  border-radius: 12px;
+  background-color: white;
+  height: 38vh;
+  width: 16vw;
+  overflow: hidden;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #ProjektComponentBox_top {
-    overflow: hidden;
-    height: 19vh;
-    width:16vw;
-    position: relative;
-    background-image: url(../../assets/images/VogemannImg.png);
-    background-position: center;
-    border-radius: 12px;
-
+  overflow: hidden;
+  height: 19vh;
+  width: 16vw;
+  position: relative;
+  background-position: center;
+  border-radius: 12px;
+}
+#ProjektComponentBox_top_img {
+  height: 19vh;
+  width: 16vw;
+  position: absolute;
+  z-index: 1;
 }
 #ProjektComponentBox_top_heading {
-    border-radius: 12px;
-    background-color: rgba(186, 232, 232, 1);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    justify-content: space-between;
-    position: absolute;
-    top:  0;
-    height:6vh;
+  border-radius: 12px;
+  background-color: rgba(186, 232, 232, 1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  height: 6vh;
+  z-index: 5;
 }
 
 #ProjektComponentBox_top_heading_img {
-    width:1vw
+  width: 1.4vw;
 }
 
 #ProjektComponentBox_top_heading_h3 {
-
-    font-family: Montserrat;
-    font-size: 0.8vw;
-    font-weight: 700;
-    color:rgba(0,0,0,1);
-    margin: 0;
+  font-family: Montserrat;
+  font-size: 0.8vw;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
 }
 
-#ProjektComponentBox_top_Farbverlauf{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 43.63%, #FFFFFF 100%);
+#ProjektComponentBox_top_Farbverlauf {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 43.63%,
+    #ffffff 100%
+  );
 }
-
-
-
 
 #ProjektComponentBox_Logo_wrapper {
-    position: absolute;
-    z-index: 5;
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    left: 10%;
-    top:50%;
-    
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  left: 10%;
+  top: 50%;
+  position: relative;
 }
 #ProjektComponentBox_logo_img {
-    width:80%;
+  width: 80%;
+  position: relative;
+  z-index: 10;
 }
 #ProjektComponentBox_bottom {
-
-    padding-left: 2vw;
-    padding-top: 1vh;
+  padding-left: 2vw;
+  padding-top: 1vh;
 }
 
-
 #ProjektComponentBox_Eintrag {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1.8vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.8vh;
 }
 
 #ProjektComponentBox_h3 {
-
-    font-family: Montserrat;
-    font-size: 0.8vw;
-    font-weight: 600;
-    color:rgba(0,0,0,1);
-    margin: 0;
+  font-family: Montserrat;
+  font-size: 0.8vw;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
 }
 
 #ProjektComponentBox_h4 {
-
-    font-family: Montserrat;
-    font-size: 0.6vw;
-    font-weight: 500;
-    color:rgba(0,0,0,0.7);
-    margin: 0;
-
+  font-family: Montserrat;
+  font-size: 0.6vw;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0;
 }
