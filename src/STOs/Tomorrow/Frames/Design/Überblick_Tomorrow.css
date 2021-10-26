@@ -1,0 +1,11 @@
+#Überblick_Tomorrow_Wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#Überblick_Tomorrow_Smalls_Wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 57vw;
+  justify-content: space-between;
+}

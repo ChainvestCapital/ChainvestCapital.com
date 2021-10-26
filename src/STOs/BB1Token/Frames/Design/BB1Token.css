@@ -29,4 +29,6 @@
 #Token_Content_Bottom {
   display: flex;
   flex-direction: row;
+  width: 56vw;
+  justify-content: space-between;
 }

@@ -16,6 +16,8 @@ import Partner from "./Partner.js";
 import Presse from "./Presse";
 
 import Bitbond from "./STOs/BB1Token/Bitbond.js";
+import Vogemann from "./STOs/Vogemann/Vogemann.js";
+import Tomorrow from "./STOs/Tomorrow/Tomorrow.js";
 
 function App() {
   return (
@@ -45,6 +47,16 @@ function App() {
         exact
         path="/security-token-offering/Bitbond"
         component={Bitbond}
+      />
+      <Route
+        exact
+        path="/security-token-offering/Vogemann"
+        component={Vogemann}
+      />
+      <Route
+        exact
+        path="/security-token-offering/Tomorrow"
+        component={Tomorrow}
       />
 
       <Route

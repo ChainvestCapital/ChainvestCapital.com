@@ -1,0 +1,20 @@
+#Vogemann_Überblick_Content_Wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#Vogemann_Überblick_Bottom {
+  display: flex;
+  margin-top: 2vh;
+}
+#Vogemann_Überblick_Top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+#überblick_content_bottom_Vogemann {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}

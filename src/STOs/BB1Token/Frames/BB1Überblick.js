@@ -24,7 +24,10 @@ function BB1Überblick(props) {
 
       <div id="überblick_content_wrapper">
         <div id="überblick_content_top">
-          <Kachel_Unternehmen />
+          <Kachel_Unternehmen
+            text="Die Bitbond GmbH ist eine Darlehensplattform, dessen Haupttätigkeit in der Vergabe von Darlehen über Kryptowährungen wie Bitcoin oder Stellar Lumens an verschiedene Unternehmen unterschiedlicher Größe und Selbstständige besteht."
+            title="UNTERNEHMEN"
+          />
           <Kachel_TokenSale />
         </div>
 
@@ -46,7 +49,7 @@ function BB1Überblick(props) {
             <h4 id="kleine_kachel_h4">Kategorie</h4>
           </div>
           <div id="Dokumente">
-            <h3 id="kleine_kachel_h3">2018</h3>
+            <h3 id="kleine_kachel_h3">Vorhanden</h3>
             <h4 id="kleine_kachel_h4">WpPG</h4>
           </div>
         </div>

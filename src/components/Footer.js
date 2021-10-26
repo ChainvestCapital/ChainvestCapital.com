@@ -76,12 +76,12 @@ function Footer(props) {
 
           <div id="Footer_Buttom_menue">
             <div id="Footer_Buttom_menue_Button">
-              <Link to="Impressum">
+              <Link to="../Impressum">
                 <h4 id="Footer_h4">Impressum </h4>
               </Link>
             </div>
             <div id="Footer_Buttom_menue_Button">
-              <Link to="Datenschutzerklärung">
+              <Link to="../Datenschutzerklärung">
                 <h4 id="Footer_h4">Datenschutzerklärung </h4>
               </Link>
             </div>

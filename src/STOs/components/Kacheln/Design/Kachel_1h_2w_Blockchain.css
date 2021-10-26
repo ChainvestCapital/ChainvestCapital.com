@@ -9,7 +9,7 @@
 #Kachel_1h_2w_Blockchain_left {
 }
 #Kachel_1h_2w_Blockchain_right {
-  margin-left: 2vw;
+  margin-left: 1.8vw;
 }
 #Kachel_1h_2w_Blockchain {
   width: 25vw;
@@ -23,6 +23,6 @@
   justify-content: space-between;
   padding-right: 1vw;
   margin-bottom: 2vh;
-  margin-left: 2vw;
+
   align-items: center;
 }

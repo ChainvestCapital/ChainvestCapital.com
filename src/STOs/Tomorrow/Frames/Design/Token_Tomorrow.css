@@ -1,0 +1,22 @@
+#Token_Tomorrow_Wrapper {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: row;
+}
+#Tomorrow_Token_Right {
+  display: flex;
+  flex-direction: column;
+}
+
+#Tomorrow_Token_Left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2vw;
+}
+#Tomorrow_Token_Left_top {
+  display: grid;
+  padding-left: 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vw;
+  margin-bottom: 2vh;
+}

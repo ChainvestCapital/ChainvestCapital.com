@@ -184,7 +184,7 @@ function AlleProjekte() {
               <ul id="alle_projekte_ul">
                 {ProjekteArray.map((Projekt) => (
                   <li id="alle_projekte_li">
-                    <Link to={Projekt.KategorieBildLink}>
+                    <Link to={Projekt.InternerLink}>
                       <ProjektComponentBox
                         title={Projekt.name}
                         KategorieBildLink={Projekt.KategorieBildLink}

@@ -13,4 +13,5 @@ type Projekt @model {
   KategorieBildLink: String
   InternerLink: String
   ExternerLink: String
+  Help: String
 }

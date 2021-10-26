@@ -12,7 +12,7 @@ function Top_menue(props) {
     <div>
       <div id="Menue_Wrapper">
         <div id="Menue_Left_Side">
-          <Link to="./">
+          <Link to="../">
             <div id="top_menue_logoWrapper">
               <img src={logo} id="top_menue_logoimg" />
             </div>

@@ -1,0 +1,28 @@
+#Token_Sale_Vogemann_Wrapper {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#TokenSale_Vogemann_left {
+  display: grid;
+  width: 50%;
+  padding-left: 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vw;
+}
+
+#TokenSale_Vogemann_Right_top {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vw;
+  justify-content: space-between;
+  height: 36vh;
+}
+#TokenSale_Vogemann_Right_unten {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2vw;
+  width: 98;
+  justify-content: space-between;
+}

@@ -1,0 +1,38 @@
+#Vogemann_Token_Wrapper {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#Vogemann_Token_left {
+  display: grid;
+  width: 50%;
+  padding-left: 0;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1vw;
+  justify-content: space-between;
+}
+#Vogemann_Token_right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vw;
+}
+#Vogemann_Token_Under {
+  display: flex;
+  flex-direction: row;
+  width: 56vw;
+}
+#Vogemann_Token_Top {
+  display: flex;
+  flex-direction: row;
+}
+#Vogemann_Token_Under_Right {
+  margin-left: 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 28vw;
+}
+#Vogemann_Token_Under_LEFT {
+  width: 27vw;
+}

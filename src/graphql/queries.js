@@ -14,7 +14,11 @@ export const getProjekt = /* GraphQL */ `
       Behoerde
       TitleLink
       LogoLink
+      KurzBeschreibung
       KategorieBildLink
+      InternerLink
+      ExternerLink
+      Help
       createdAt
       updatedAt
     }
@@ -38,7 +42,11 @@ export const listProjekts = /* GraphQL */ `
         Behoerde
         TitleLink
         LogoLink
+        KurzBeschreibung
         KategorieBildLink
+        InternerLink
+        ExternerLink
+        Help
         createdAt
         updatedAt
       }

@@ -115,15 +115,17 @@ function Home() {
           <ul>
             {ProjekteArray.map((Projekt) => (
               <li id="home_projekte_li">
-                <Home_Projekt_Banner
-                  title={Projekt.name}
-                  KategorieBildLink={Projekt.KategorieBildLink}
-                  Finanzierungsvolumen={Projekt.Finanzierungsvolumen}
-                  ErwarteteRendite={Projekt.ErwRendite}
-                  Typ={Projekt.Typ}
-                  Logo={Projekt.LogoLink}
-                  titleImg={Projekt.TitleLink}
-                />
+                <Link to={Projekt.InternerLink}>
+                  <Home_Projekt_Banner
+                    title={Projekt.name}
+                    KategorieBildLink={Projekt.KategorieBildLink}
+                    Finanzierungsvolumen={Projekt.Finanzierungsvolumen}
+                    ErwarteteRendite={Projekt.ErwRendite}
+                    Typ={Projekt.Typ}
+                    Logo={Projekt.LogoLink}
+                    titleImg={Projekt.TitleLink}
+                  />
+                </Link>
               </li>
             ))}
           </ul>

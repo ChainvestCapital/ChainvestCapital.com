@@ -1,7 +1,5 @@
 import "./Design/Kachel_Team.css";
 
-import Unternehmen from "../../../assets/images/Unternehmen.png";
-
 function Kachel_Team(props) {
   return (
     <div>

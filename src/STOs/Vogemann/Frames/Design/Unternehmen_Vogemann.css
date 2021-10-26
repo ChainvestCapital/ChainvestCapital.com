@@ -1,0 +1,71 @@
+#Unternehmen_Vogemann_Wrapper {
+  margin-top: 2vh;
+}
+#Unternehmen_Vogemann_Top {
+  display: flex;
+  flex-direction: row;
+}
+#Unternehmen_Vogemann_Top_left {
+  display: flex;
+  flex-direction: column;
+  height: 22vh;
+  justify-content: space-between;
+}
+#margintop {
+  margin-top: 1vh;
+}
+#Vogemann_Flotte_Wrapper {
+  width: 18vw;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  padding-left: 1vw;
+  justify-content: center;
+}
+#Vogemann_Flotte_Spalte {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1vh;
+}
+#Unternehmen_Vogemann_GeschäftplusFlotte {
+  width: 55vw;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  height: 22vh;
+  padding-left: 1vw;
+  justify-content: space-between;
+  padding-right: 1vw;
+  margin-bottom: 2vh;
+  align-items: center;
+}
+#Unternehmen_Vogemann_GeschäftplusFlotte_left {
+  width: 70%;
+}
+#Unternehmen_Vogemann_GeschäftplusFlotte_right {
+  width: 30%;
+}
+#Vogemann_Firmenkonstrukt_Wrapper {
+  width: 55vw;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  height: 28vh;
+  padding-left: 1vw;
+  justify-content: space-between;
+  padding-right: 1vw;
+  margin-bottom: 2vh;
+  align-items: center;
+}
+#Firmenkostrukt_Vogemann_img {
+  margin-bottom: 2wh;
+  width: 35vw;
+}

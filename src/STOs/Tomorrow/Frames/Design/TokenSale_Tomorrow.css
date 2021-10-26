@@ -1,0 +1,12 @@
+#TokenSale_Tomorrow_Wrapper {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+#TokenSale_Tomorrow_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 57vw;
+  margin-bottom: 2vh;
+}

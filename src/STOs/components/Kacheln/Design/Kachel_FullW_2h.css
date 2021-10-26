@@ -1,0 +1,13 @@
+#Kachel_2w_2h_Wrapper {
+  width: 55vw;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 22vh;
+  padding-left: 1vw;
+  justify-content: center;
+  padding-right: 1vw;
+  margin-bottom: 2vh;
+}
