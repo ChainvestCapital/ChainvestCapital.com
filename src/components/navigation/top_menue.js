@@ -23,7 +23,7 @@ function Top_menue(props) {
             <div id="Right_Item_Item_top">
               <h2 id="Top_Menue_h2">Security Token Offering</h2>
             </div>
-            <Link to="/alleProjekte">
+            <Link to="../alleProjekte">
               <div id="Right_Item_Item">
                 <h4 id="Top_Menue_h4">Alle Projekte</h4>
               </div>
@@ -52,13 +52,13 @@ function Top_menue(props) {
               <h4 id="Top_Menue_h4">Über Uns</h4>
             </div>
           </Link>
-          <Link to="./Partner">
+          <Link to="../Partner">
             <div id="Right_Item_Item">
               <h4 id="Top_Menue_h4">Partner</h4>
             </div>
           </Link>
 
-          <Link to="/Für-Unternehmen">
+          <Link to="../Für-Unternehmen">
             <div id="Right_Item_Item">
               <h4 id="Top_Menue_h4">Bei uns listen</h4>
             </div>

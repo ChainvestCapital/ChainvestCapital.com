@@ -30,7 +30,7 @@ function Footer(props) {
               <div id="Footer_spalte_button">
                 <h3 id="Footer_spalte_h3">LinkedIn</h3>
               </div>
-              <Link to="./alleProjekte">
+              <Link to="../alleProjekte">
                 <div id="Footer_spalte_button">
                   <h3 id="Footer_spalte_h3">Instagram</h3>
                 </div>
@@ -39,19 +39,19 @@ function Footer(props) {
 
             <div id="Footer_Spalter">
               <h2 id="Footer_Spalte_Überschrift">Unternehmen</h2>
-              <Link to="./about">
+              <Link to="../about">
                 <div id="Footer_spalte_button">
                   <h3 id="Footer_spalte_h3">Über uns</h3>
                 </div>
               </Link>
 
-              <Link to="./Impressum">
+              <Link to="../Impressum">
                 <div id="Footer_spalte_button">
                   <h3 id="Footer_spalte_h3">Presse </h3>
                 </div>
               </Link>
 
-              <Link to="./Datenschutzerklärung">
+              <Link to="../Datenschutzerklärung">
                 <div id="Footer_spalte_button">
                   <h3 id="Footer_spalte_h3">Partner</h3>
                 </div>
@@ -60,7 +60,7 @@ function Footer(props) {
 
             <div id="Footer_Spalter">
               <h2 id="Footer_Spalte_Überschrift">Kontakt</h2>
-              <Link to="./about">
+              <Link to="../about">
                 <div id="Footer_spalte_button">
                   <h3 id="Footer_spalte_h3">E-Mail</h3>
                 </div>
