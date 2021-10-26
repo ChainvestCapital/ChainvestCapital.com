@@ -216,7 +216,9 @@ function Tomorrow() {
     setshowRisiko(true);
     setCurrentPage("Risko");
   }
-
+  useEffect(() => {
+    document.title = "Tomorrow";
+  }, []);
   return (
     <div>
       <div id="Desktop_Wrapper">

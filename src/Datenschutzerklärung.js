@@ -5,8 +5,12 @@ import Top_menue from "./components/navigation/top_menue";
 import Footer from "./components/Footer";
 
 import Mobile_menue from "./mobile_components/moble_menue";
+import { useState, useEffect } from "react";
 
 function Datenschutzerklärung() {
+  useEffect(() => {
+    document.title = "Impressum";
+  }, []);
   return (
     <div>
       <Top_menue />

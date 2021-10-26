@@ -39,6 +39,9 @@ import AlleHover from "./components/Kategorien/AlleHover";
 Amplify.configure(awsExports);
 
 function AlleProjekte() {
+  useEffect(() => {
+    document.title = "Alle Projekte";
+  }, []);
   function filterausklappen() {
     setFilterMenueshow(true);
     setFiltereinklappenshow(false);

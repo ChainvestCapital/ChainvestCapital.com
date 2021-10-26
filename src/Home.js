@@ -68,6 +68,9 @@ function Home() {
   useEffect(() => {
     fetchProjekte();
   }, []);
+  useEffect(() => {
+    document.title = "Home";
+  }, []);
   return (
     <div>
       <div id="Desktop_Wrapper">
@@ -163,7 +166,9 @@ function Home() {
 
           <div id="home_chainvest_right">
             <img src={logo} id="home_chainvest_img" />
-            <Blue_round_fixpadding text="Mehr über uns" />
+            <Link to="./about">
+              <Blue_round_fixpadding text="Mehr über uns" />
+            </Link>
           </div>
         </div>
 

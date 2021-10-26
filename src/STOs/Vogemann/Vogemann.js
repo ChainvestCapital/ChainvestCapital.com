@@ -215,7 +215,9 @@ function Vogemann() {
     setshowRisiko(true);
     setCurrentPage("Risko");
   }
-
+  useEffect(() => {
+    document.title = "Vogemann";
+  }, []);
   return (
     <div>
       <div id="Desktop_Wrapper">

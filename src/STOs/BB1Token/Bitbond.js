@@ -215,7 +215,9 @@ function Bitbond() {
     setshowRisiko(true);
     setCurrentPage("Risko");
   }
-
+  useEffect(() => {
+    document.title = "Bitbond";
+  }, []);
   return (
     <div>
       <div id="Desktop_Wrapper">
