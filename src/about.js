@@ -17,7 +17,7 @@ import Footer from "./components/Footer";
 import Mobile_menue from "./mobile_components/moble_menue";
 import Mobile_Footer from "./mobile_components/Mobile_Footer";
 
-import mobile_about from "./assets/images/mobile_about.png";
+import mobile_about from "./assets/images/Mobile_About_Top.png";
 import { useState, useEffect } from "react";
 import { Route, Link } from "react-router-dom";
 
@@ -100,7 +100,7 @@ function About() {
                 Finanzwelt. Neben den ökonomischen Aspekten treibt ihn die
                 technische Umsetzung von tokenisierten Lösungen an. <br /> Neben
                 seiner Tätigkeit bei Chainvest engagiert er sich als Gründungs-
-                und Vorstandsmitglied ind er Blockchain Association
+                und Vorstandsmitglied in der Blockchain Association
                 Schleswig-Holstein e.V. ehrenamtlich, um das Thema Blockchain
                 weiter voranzutreiben.
               </h5>
@@ -138,10 +138,10 @@ function About() {
               Token stellt eine neue Art der Unternehmensfinanzierung dar.
               Security Token ermöglichen eine kostengünstige und schnelle
               Ausgabe von tradierten Finanzinstrumenten und KMU am Kapitalmarkt
-              teilzunehmen. Bei BLOCKCAP sind wir von der Innovationskraft
+              teilzunehmen. Bei Chainvest sind wir von der Innovationskraft
               blockchain-basierter Finanzinstrumente überzeugt und glauben, dass
               Security Token in Zukunft ein wesentliches Segment der
-              Kapitalmärkte wird. Mit BLOCKCAP wollen wir den
+              Kapitalmärkte wird. Mit Chainvest wollen wir den
               Informationsaustausch zwischen den Emittenten und den
               InvestorInnen fördern, um so mehr Akzeptanz zu schaffen.
             </h5>
@@ -154,10 +154,6 @@ function About() {
         <Mobile_menue />
 
         <div id="mobile_about_top">
-          <div id="mobile_about_top_bg">
-            <img src={mobile_about} id="mobile_about_top_bg_IMG" />
-          </div>
-
           <div id="mobile_about_top_Content">
             <h3 id="mobile_about_top_h3">Connecting ideas and capital</h3>
             <div id="mobile_about_top_h_row">
@@ -178,46 +174,109 @@ function About() {
 
         <div id="mobile_about_we">
           <div id="mobile_about_we_row1">
-            <div id="mobile_about_we_img_wrapper">
-              <img src={Lu_Img} id="mobile_about_we_img" />
+            <div id="mobile_about_we_row2_TOP">
+              <div id="mobile_about_we_img_wrapper">
+                <img src={Lu_Img} id="mobile_about_we_img" />
+              </div>
+
+              <div id="mobile_about_we_content_spalte">
+                <h2 id="mobile_about_we_h2">Lu-Mieke Ellen</h2>
+
+                <h3 id="mobile_about_we_3">Co-Founder</h3>
+
+                <h4 id="mobile_about_we_h4">
+                  Mit unserer Plattform schaffen wir einen Rahmen, in dem
+                  Unternehmen und InvestorInnen sich zum Zweck des
+                  Kapitalaustauschs treffen und mehr Transparenz und
+                  Investitionssicherheit gewährleistet wird
+                </h4>
+              </div>
             </div>
-
-            <div id="mobile_about_we_content_spalte">
-              <h2 id="mobile_about_we_h2">Lu-Mieke Ellen</h2>
-
-              <h3 id="mobile_about_we_3">Co-Founder</h3>
-
-              <h4 id="mobile_about_we_h4">
-                Mit unserer Plattform schaffen wir einen Rahmen, in dem
-                Unternehmen und InvestorInnen sich zum Zweck des
-                Kapitalaustauschs treffen und mehr Transparenz und
-                Investitionssicherheit gewährleistet wird
-              </h4>
+            <div id="mobile_about_we_kontakt">
+              {" "}
+              <a href="https://www.linkedin.com/in/lu-mieke-ellen-490b03212/">
+                <div id="mobile_LinkedIn">
+                  <img src={LI} id="mobile_LinkedIn_IMG" />
+                  <h4 id="mobile_about_we_kontakt_h4">Lu-Mieke Ellen</h4>
+                </div>
+              </a>
+              <div id="mobile_mail">
+                <img src={Mail} id="mobile_LinkedIn_IMG" />
+                <h4 id="mobile_about_we_kontakt_h4">
+                  ellen@chainvestcapital.de
+                </h4>
+              </div>
             </div>
-
-            <div id="mobile_about_we_kontakt"></div>
           </div>
 
           <div id="mobile_about_we_row2">
-            <div id="mobile_about_we_content_spalte">
-              <h2 id="mobile_about_we_h2">Tim Zölitz</h2>
+            <div id="mobile_about_we_row2_TOP">
+              <div id="mobile_about_we_content_spalte">
+                <h2 id="mobile_about_we_h2">Tim Zölitz</h2>
 
-              <h3 id="mobile_about_we_3">Co-Founder</h3>
+                <h3 id="mobile_about_we_3">Co-Founder</h3>
 
-              <h4 id="mobile_about_we_h4">
-                Mit unserer Plattform schaffen wir einen Rahmen, in dem
-                Unternehmen und InvestorInnen sich zum Zweck des
-                Kapitalaustauschs treffen und mehr Transparenz und
-                Investitionssicherheit gewährleistet wird
-              </h4>
+                <h4 id="mobile_about_we_h4">
+                  Tim beschäftigt sich mehreren Jahren intensiv mit der
+                  Blockchain Technologie und deren großem Potential unter
+                  anderem in der Finanzwelt. Neben den ökonomischen Aspekten
+                  treibt ihn die technische Umsetzung von tokenisierten Lösungen
+                  an. Neben seiner Tätigkeit bei Chainvest engagiert er sich als
+                  Gründungs- und Vorstandsmitglied in der Blockchain Association
+                  Schleswig-Holstein e.V. ehrenamtlich, um das Thema Blockchain
+                  weiter voranzutreiben.
+                </h4>
+              </div>
+              <div id="mobile_about_we_img_wrapper">
+                <img src={Zoel_Img} id="mobile_about_we_img" />
+              </div>{" "}
             </div>
-            <div id="mobile_about_we_img_wrapper">
-              <img src={Zoel_Img} id="mobile_about_we_img" />
+
+            <div id="mobile_about_we_kontakt">
+              <a href="https://www.linkedin.com/in/tim-z%C3%B6litz-60622119a/">
+                <div id="mobile_LinkedIn">
+                  <img src={LI} id="mobile_LinkedIn_IMG" />
+                  <h4 id="mobile_about_we_kontakt_h4">Tim zölitz</h4>
+                </div>
+              </a>
+              <div id="mobile_mail">
+                <img src={Mail} id="mobile_LinkedIn_IMG" />
+                <h4 id="mobile_about_we_kontakt_h4">
+                  zoelitz@chainvestcapital.de
+                </h4>
+              </div>
             </div>
-            <div id="mobile_about_we_kontakt"></div>
           </div>
         </div>
+        <div id="mobile_about_Kapitalaufnahme">
+          <div id="mobile_home_Chainvest_section">
+            <h2 id="mobile_about_Kapitalaufnahme_H2">
+              Kapitalaufnahme neu gedacht.
+            </h2>
+            <div id="mobile_home_Chainvest_logo_wrapper">
+              <img src={logo} id="mobile_about_Chainvest_imgx" />
+            </div>
 
+            <div id="mobile_home_Chainvest_Content">
+              <h4 id="mobile_home_Chainvest_h4">
+                Digitale Investitionsprojekte verändern die Kapitalmärkte und
+                ermöglichen AnlegerInnen unmittelbar am wirtschaftlichen Erfolg
+                von dynamischen Startups bis hin zu etablierten Unternehmen
+                beteiligt zu werden. Die Ausgabe von eigen- bzw.
+                fremdkapitalähnlichen Finanzinstrumenten in Form von Security
+                Token stellt eine neue Art der Unternehmensfinanzierung dar.
+                Security Token ermöglichen eine kostengünstige und schnelle
+                Ausgabe von tradierten Finanzinstrumenten und KMU am
+                Kapitalmarkt teilzunehmen. Bei Chainvest sind wir von der
+                Innovationskraft blockchain-basierter Finanzinstrumente
+                überzeugt und glauben, dass Security Token in Zukunft ein
+                wesentliches Segment der Kapitalmärkte wird. Mit Chainvest
+                wollen wir den Informationsaustausch zwischen den Emittenten und
+                den InvestorInnen fördern, um so mehr Akzeptanz zu schaffen.{" "}
+              </h4>
+            </div>
+          </div>
+        </div>
         <Mobile_Footer />
       </div>
     </div>

@@ -34,11 +34,11 @@ import HomeBig from "./assets/images/Home_Big.png";
 
 import STOImg from "./assets/images/STOImg.png";
 import VergleichenImg from "./assets/images/VergleichenImg.png";
-import ProjekteImg from "./assets/images/ProjekteImg.png";
+import ProjekteImg from "./assets/images/ProjektImg.png";
 
 import Mobile_home_projekt from "./mobile_components/mobile_home_projekt";
 import moble_menue from "./mobile_components/moble_menue";
-import mobile_footer from "./mobile_components/Mobile_Footer";
+import Mobile_footer from "./mobile_components/Mobile_Footer";
 
 import Mobile_menue from "./mobile_components/moble_menue";
 
@@ -150,14 +150,14 @@ function Home() {
               eröffnet, losgelöst von zentralen Instanzen. <br /> <br />
               Veränderungsprozesse sind aber auch gleichzeitig mit
               Unsicherheiten und das Lösen von zentralen Instanzen mit
-              Ungewissheiten verbunden. Mit BLOCKCAP schaffen wir transparentere
-              Rahmenbedingungen auf dem Security Token Markt und so mehr
-              Vertrauen in die Tokenisierung von Finanzinstrumenten. <br />{" "}
-              <br />
+              Ungewissheiten verbunden. Mit Chainvest schaffen wir
+              transparentere Rahmenbedingungen auf dem Security Token Markt und
+              so mehr Vertrauen in die Tokenisierung von Finanzinstrumenten.{" "}
+              <br /> <br />
               Als Informationsplattform für Security Token informiert
-              BLOCKCAP rund um die Fragestellungen der Blockchain-Technologie im
-              Finanzdienstleistungssektor. Mit BLOCKCAP erhalten AnlegerInnen
-              Zugang zu vielfältigen Investitionsprojekten aus unterschiedlichen
+              Chainvest rund um die Fragestellungen der Blockchain-Technologie
+              im Finanzdienstleistungssektor. Mit Chainvest AnlegerInnen Zugang
+              zu vielfältigen Investitionsprojekten aus unterschiedlichen
               Branchen.
             </h4>
           </div>
@@ -183,48 +183,48 @@ function Home() {
               Alle Security Token Offerings an einem Ort
             </h2>
 
-            <h5 id="mobile_home_top_text_h5">
-              BLOCKCAP stellt die Schnittstelle zwischen spannenden
-              Investitionsprojekten und einer breiten Investorencommunity dar.
-              Über diese Plattform erhalten AnlegerInnen Zugang zu vielfältigen
-              Security Token Offerings aus unterschiedlichen Branchen.
-            </h5>
+            <h5 id="mobile_home_top_text_h5">{Top_Section_Sub_Heading}</h5>
           </div>
 
           <div id="mobile_home_top_menue">
-            <div id="mobile_home_top_menue_eintrag_wrappper">
-              <div id="mobile_home_top_menue_eccplise">
-                <img
-                  src={ProjekteImg}
-                  id="mobile_home_top_menue_eccplise_img"
-                />
+            <Link to="./alleProjekte">
+              <div id="mobile_home_top_menue_eintrag_wrappper">
+                <div id="mobile_home_top_menue_eccplise">
+                  <img
+                    src={ProjekteImg}
+                    id="mobile_home_top_menue_eccplise_img"
+                  />
+                </div>
+
+                <div id="mobile_home_top_menue_h4">Projekte ansehen</div>
               </div>
+            </Link>{" "}
+            <Link to="./Was-sind-STOs">
+              <div id="mobile_home_top_menue_eintrag_wrappper">
+                <div id="mobile_home_top_menue_eccplise">
+                  <img src={STOImg} id="mobile_home_top_menue_eccplise_img" />
+                </div>
 
-              <div id="mobile_home_top_menue_h4">Projekte ansehen</div>
-            </div>
-
-            <div id="mobile_home_top_menue_eintrag_wrappper">
-              <div id="mobile_home_top_menue_eccplise">
-                <img src={STOImg} id="mobile_home_top_menue_eccplise_img" />
+                <div id="mobile_home_top_menue_h4">Über STOs</div>
               </div>
+            </Link>
+            <Link to="/ProjekteVergleichen">
+              <div id="mobile_home_top_menue_eintrag_wrappper">
+                <div id="mobile_home_top_menue_eccplise">
+                  <img
+                    src={VergleichenImg}
+                    id="mobile_home_top_menue_eccplise_img"
+                  />
+                </div>
 
-              <div id="mobile_home_top_menue_h4">Über STOs</div>
-            </div>
-
-            <div id="mobile_home_top_menue_eintrag_wrappper">
-              <div id="mobile_home_top_menue_eccplise">
-                <img
-                  src={VergleichenImg}
-                  id="mobile_home_top_menue_eccplise_img"
-                />
+                <div id="mobile_home_top_menue_h4">Projekte vergleichen</div>
               </div>
-
-              <div id="mobile_home_top_menue_h4">Projekte vergleichen</div>
-            </div>
+            </Link>
           </div>
         </div>
 
         <div id="home_mobile_projekte_section">
+          <h2 id="mobil_Projekte_h2">Security Token Offerings auf Chainvest</h2>
           <div id="home_mobile_projekte_wrapper">
             <ul id="home_mobile_projekte_wrapper_ul">
               {ProjekteArray.map((Projekt) => (
@@ -245,16 +245,50 @@ function Home() {
             </ul>
           </div>
         </div>
-        <Link to="./alleProjekte">
-          <div id="home_mobile_projekte_alle_wrapper">
-            <div id="home_mobile_projekte_alle_ecclipse">
-              <img src={ProjekteImg} id="home_mobile_projekte_alle_img" />
-            </div>
 
-            <h3 id="home_mobile_projekte_alle_h3">Alle Projekte ansehen</h3>
+        <div id="home_mobile_projekte_alle_wrapper">
+          {" "}
+          <Link to="./alleProjekte">
+            <div id="home_mobile_projekte_alle_button">
+              <img src={ProjekteImg} id="home_mobile_projekte_alle_img" />
+              <h3 id="home_mobile_projekte_alle_h3">Alle Projekte ansehen</h3>
+            </div>{" "}
+          </Link>
+        </div>
+
+        <div id="mobile_home_Chainvest_section">
+          <div id="mobile_home_Chainvest_logo_wrapper">
+            <img src={logo} id="mobile_home_Chainvest_imgx" />
           </div>
-        </Link>
-        <div id="mobile_home_Chainvest_section"></div>
+
+          <div id="mobile_home_Chainvest_Content">
+            <h4 id="mobile_home_Chainvest_h4">
+              {" "}
+              Das disruptive Potenzial der Blockchain-Technologie verändert die
+              bestehende Infrastruktur der Kapitalmärkte. GründerInnen und
+              AnlegerInnen werden neue Möglichkeiten der Kapitalaufnahme
+              eröffnet, losgelöst von zentralen Instanzen. <br /> <br />
+              Veränderungsprozesse sind aber auch gleichzeitig mit
+              Unsicherheiten und das Lösen von zentralen Instanzen mit
+              Ungewissheiten verbunden. Mit Chainvest schaffen wir
+              transparentere Rahmenbedingungen auf dem Security Token Markt und
+              so mehr Vertrauen in die Tokenisierung von Finanzinstrumenten.{" "}
+              <br /> <br />
+              Als Informationsplattform für Security Token informiert
+              Chainvest rund um die Fragestellungen der Blockchain-Technologie
+              im Finanzdienstleistungssektor. Mit Chainvest AnlegerInnen Zugang
+              zu vielfältigen Investitionsprojekten aus unterschiedlichen
+              Branchen.
+            </h4>
+          </div>
+          <Link to="./about">
+            <div id="mobile_home_Chainvest_Button">
+              <h3 id="mobile_home_Chainvest_button_h3">Mehr über uns</h3>
+            </div>
+          </Link>
+        </div>
+
+        <Mobile_footer />
       </div>
     </div>
   );

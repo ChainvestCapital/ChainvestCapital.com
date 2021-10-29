@@ -263,7 +263,7 @@ a {
 }
 
 #mobile_home_top_menue_eccplise_img {
-  width: 4vw;
+  width: 6vw;
 }
 
 #mobile_home_top_menue_h4 {
@@ -273,57 +273,114 @@ a {
   color: rgba(0, 0, 0, 1);
 }
 #home_mobile_projekte_wrapper_ul {
-  background-color: coral;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display: grid;
   padding-left: 0;
+  grid-template-columns: repeat(2, 0fr);
+  gap: 6vw;
+  width: 92vw;
+  justify-content: space-between;
 }
 #home_mobile_projekte_section {
   margin-top: 15vh;
   padding-left: 4vw;
-  background-color: blue;
 }
+
 #home_mobile_projekte_wrapper {
   width: 92vw;
-  background-color: cadetblue;
   display: flex;
   padding-left: 0;
   justify-content: flex-start;
   align-items: flex-start;
 }
 #home_projekte_li_Mobil {
-  display: grid;
-  padding-left: 0;
-  grid-template-columns: repeat(2, 40vw);
-  grid-template-rows: repeat(2, auto);
-  background-color: aquamarine;
   margin-left: 0;
   left: 0;
+}
+#mobil_Projekte_h2 {
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
   width: 92vw;
 }
-
 #home_mobile_projekte_alle_wrapper {
-  width: 40vw;
-
+  width: 96vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  margin-top: 5vh;
 }
-#home_mobile_projekte_alle_ecclipse {
-  width: 22vw;
-  height: 22vw;
+#home_mobile_projekte_alle_button {
+  width: 50vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  height: 10vh;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   background-color: #cdf0ea;
-  border-radius: 100%;
+  border-radius: 12px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #home_mobile_projekte_alle_img {
-  width: 12vw;
+  width: 4vw;
 }
 #home_mobile_projekte_alle_h3 {
   font-family: Montserrat;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+}
+
+#mobile_home_Chainvest_section {
+  width: 92vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15vh;
+}
+#mobile_home_Chainvest_logo_wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+#mobile_home_Chainvest_imgx {
+  width: 70vw;
+}
+#mobile_home_Chainvest_Button {
+  width: 50vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #cdf0ea;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 21vw;
+}
+#mobile_home_Chainvest_button_h3 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+}
+#mobile_home_Chainvest_Content {
+  width: 92vw;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  padding-right: 4vw;
+  display: flex;
+  justify-content: center;
+  padding-left: 4vw;
+}
+#mobile_home_Chainvest_h4 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
   color: rgba(0, 0, 0, 1);
 }
