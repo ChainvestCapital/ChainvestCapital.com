@@ -63,6 +63,7 @@
 #Lu_Section {
   display: flex;
   flex-direction: row;
+  margin-bottom: 15vh;
 }
 #Tim_Section {
   display: flex;
@@ -135,7 +136,27 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  color: rgba(0, 0, 0, 0.9);
   margin-top: 1.5vh;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#about_kontakt_row:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+  color: #ffb000;
 }
 #about_Li_img {
   width: 2vw;
@@ -145,7 +166,7 @@
   font-family: Montserrat;
   font-size: 1vw;
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.9);
+
   margin: 0;
 }
 
@@ -164,30 +185,32 @@
 #about_info_section {
   display: flex;
   flex-direction: row;
-  margin-top: 10vh;
-  margin-bottom: 5vh;
+  margin-top: 40vh;
+  margin-bottom: 8vh;
 }
 #about_info_left {
-  width: 40vw;
+  width: 45vw;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 10vw;
 }
 #about_info_left_logo {
   width: 20vw;
 }
 #about_info_right {
-  width: 55vw;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   padding-right: 5vw;
 }
 #about_right_h2 {
   font-family: Montserrat;
-  font-size: 1.5vw;
+  font-size: 2.2vw;
   font-weight: 600;
   color: rgba(0, 0, 0, 1);
   margin: 0;
+  margin-bottom: 3vh;
 }
 #about_right_h5 {
   font-family: Montserrat;
@@ -195,7 +218,7 @@
   font-weight: 300;
   color: rgba(0, 0, 0, 1);
   margin: 0;
-  width: 30vw;
+  width: 40vw;
 }
 
 #mobile_about_top {

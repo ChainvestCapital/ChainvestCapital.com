@@ -19,6 +19,7 @@ import Mobile_Footer from "./mobile_components/Mobile_Footer";
 
 import mobile_about from "./assets/images/mobile_about.png";
 import { useState, useEffect } from "react";
+import { Route, Link } from "react-router-dom";
 
 function About() {
   useEffect(() => {
@@ -75,11 +76,12 @@ function About() {
             </div>
 
             <div id="About_Kontakt_wrapper">
-              <div id="about_kontakt_row">
-                <img src={LI} id="about_Li_img" />
-                <h4 id="about_kontakt_text">Lu-Mieke Ellen</h4>
-              </div>
-
+              <a href="https://www.linkedin.com/in/lu-mieke-ellen-490b03212/">
+                <div id="about_kontakt_row">
+                  <img src={LI} id="about_Li_img" />
+                  <h4 id="about_kontakt_text">Lu-Mieke Ellen</h4>
+                </div>
+              </a>
               <div id="about_kontakt_row">
                 <img src={Mail} id="about_Mail_img" />
                 <h4 id="about_kontakt_text">ellen@chainvestcapital-de</h4>
@@ -93,24 +95,27 @@ function About() {
               <h4 id="About_Titel_h5">Co-Founder</h4>
 
               <h5 id="About_Erläuterung">
-                Mit unserer Plattform schaffen wir einen Rahmen, in dem
-                Unternehmen und InvestorInnen sich zum Zweck des
-                Kapitalaustauschs treffen und mehr Transparenz und
-                Investitionssicherheit gewährleistet wird. So stärken wir das
-                Vertrauen in eine dezentrale Kapitalaufnahme und fördern das
-                Wachstum von blockchain-basierten Finanzinstrumenten.
+                Tim beschäftigt sich mehreren Jahren intensiv mit der Blockchain
+                Technologie und deren großem Potential unter anderem in der
+                Finanzwelt. Neben den ökonomischen Aspekten treibt ihn die
+                technische Umsetzung von tokenisierten Lösungen an. <br /> Neben
+                seiner Tätigkeit bei Chainvest engagiert er sich als Gründungs-
+                und Vorstandsmitglied ind er Blockchain Association
+                Schleswig-Holstein e.V. ehrenamtlich, um das Thema Blockchain
+                weiter voranzutreiben.
               </h5>
             </div>
             <img src={Zoel_Img} id="about_Person_Img_T" />
             <div id="About_Kontakt_wrapper">
-              <div id="about_kontakt_row">
-                <img src={LI} id="about_Li_img" />
-                <h4 id="about_kontakt_text">Tim Zölitz</h4>
-              </div>
-
+              <a href="https://www.linkedin.com/in/tim-z%C3%B6litz-60622119a/">
+                <div id="about_kontakt_row">
+                  <img src={LI} id="about_Li_img" />
+                  <h4 id="about_kontakt_text">Tim Zölitz</h4>
+                </div>
+              </a>
               <div id="about_kontakt_row">
                 <img src={Mail} id="about_Mail_img" />
-                <h4 id="about_kontakt_text">zoelitz@chainvestcapital-de</h4>
+                <h4 id="about_kontakt_text">zoelitz@chainvestcapital.de</h4>
               </div>
             </div>
           </div>

@@ -71,6 +71,9 @@ function Home() {
   useEffect(() => {
     document.title = "Home";
   }, []);
+
+  const Top_Section_Sub_Heading =
+    "Chainvest stellt die Schnittstelle zwischen spannenden Investitionsprojekten und einer breiten Investorencommunity dar. Über diese Plattform erhalten AnlegerInnen Zugang zu vielfältigen Security Token Offerings aus unterschiedlichen Branchen.";
   return (
     <div>
       <div id="Desktop_Wrapper">
@@ -83,12 +86,7 @@ function Home() {
             <h1 id="home_hero_left_Heading">
               Alle Security Token Offerings an einem Ort
             </h1>
-            <h4 id="home_hero_left_description">
-              BLOCKCAP stellt die Schnittstelle zwischen spannenden
-              Investitionsprojekten und einer breiten Investorencommunity dar.
-              Über diese Plattform erhalten AnlegerInnen Zugang zu vielfältigen
-              Security Token Offerings aus unterschiedlichen Branchen.
-            </h4>
+            <h4 id="home_hero_left_description">{Top_Section_Sub_Heading}</h4>
 
             <div id="home_hero_left_button_wrapper">
               <Link to="alleProjekte">
@@ -228,42 +226,34 @@ function Home() {
 
         <div id="home_mobile_projekte_section">
           <div id="home_mobile_projekte_wrapper">
-            <Mobile_home_projekt
-              Rendite="12%"
-              Volumen="100.000.000$"
-              Typ="Fremdkapital"
-              Kategorie={Schiffahrtimg}
-              Logo={VogemannLogo}
-              titleImg={VogemannTitle}
-            />
-            <Mobile_home_projekt
-              Rendite="12%"
-              Volumen="100.000.000$"
-              Typ="Fremdkapital"
-              Kategorie={Schiffahrtimg}
-              Logo={VogemannLogo}
-              titleImg={VogemannTitle}
-            />
-            <Mobile_home_projekt
-              Rendite="12%"
-              Volumen="100.000.000$"
-              Typ="Fremdkapital"
-              Kategorie={Schiffahrtimg}
-              Logo={VogemannLogo}
-              titleImg={VogemannTitle}
-            />
-            <Link to="./alleProjekte">
-              <div id="home_mobile_projekte_alle_wrapper">
-                <div id="home_mobile_projekte_alle_ecclipse">
-                  <img src={ProjekteImg} id="home_mobile_projekte_alle_img" />
-                </div>
-
-                <h3 id="home_mobile_projekte_alle_h3">Alle Projekte ansehen</h3>
-              </div>
-            </Link>
+            <ul id="home_mobile_projekte_wrapper_ul">
+              {ProjekteArray.map((Projekt) => (
+                <li id="home_projekte_li_Mobil">
+                  <Link to={Projekt.InternerLink}>
+                    <Mobile_home_projekt
+                      title={Projekt.name}
+                      Kategorie={Projekt.KategorieBildLink}
+                      Volumen={Projekt.Finanzierungsvolumen}
+                      Rendite={Projekt.ErwRendite}
+                      Typ={Projekt.Typ}
+                      Logo={Projekt.LogoLink}
+                      titleImg={Projekt.TitleLink}
+                    />
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
+        <Link to="./alleProjekte">
+          <div id="home_mobile_projekte_alle_wrapper">
+            <div id="home_mobile_projekte_alle_ecclipse">
+              <img src={ProjekteImg} id="home_mobile_projekte_alle_img" />
+            </div>
 
+            <h3 id="home_mobile_projekte_alle_h3">Alle Projekte ansehen</h3>
+          </div>
+        </Link>
         <div id="mobile_home_Chainvest_section"></div>
       </div>
     </div>

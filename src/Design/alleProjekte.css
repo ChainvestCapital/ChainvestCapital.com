@@ -76,6 +76,9 @@
   width: 1vw;
   height: 1vw;
 }
+#alle_projekte_filter_eintrag_kreuz_kreuz {
+  background-color: rgba(186, 232, 232, 1);
+}
 
 #alle_projekte_projekte_wrapper {
   width: 66vw;

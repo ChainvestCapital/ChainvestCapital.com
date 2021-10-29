@@ -52,6 +52,7 @@ function AlleProjekte() {
     setFiltereinklappenshow(true);
   }
 
+  const [FilterArray, setFilterArray] = useState([]);
   const [ProjekteArray, setProjekteArray] = useState([]);
   const fetchProjekte = async () => {
     try {
@@ -60,6 +61,7 @@ function AlleProjekte() {
       const ProjekteList = ProjekteData.data.listProjekts.items;
       setProjekteArray(ProjekteList);
       console.log(ProjekteList);
+      setFilterArray(ProjekteList);
     } catch (error) {
       console.log(error);
     }
@@ -67,10 +69,22 @@ function AlleProjekte() {
 
   useEffect(() => {
     fetchProjekte();
+    BuildFilterArray();
   }, []);
   const [FilterMenueshow, setFilterMenueshow] = useState(false);
 
   const [Filtereinklappenshow, setFiltereinklappenshow] = useState(true);
+  const HelpFilterArray = [];
+
+  function BuildFilterArray() {
+    FilterArray.map((FilterProjekt) => {
+      if (FilterProjekt.Finanzierungsvolumen.includes("X") == true) {
+        HelpFilterArray.push(FilterProjekt);
+        setFilterArray(HelpFilterArray);
+        console.log(FilterArray);
+      }
+    });
+  }
 
   return (
     <div>
@@ -185,7 +199,7 @@ function AlleProjekte() {
 
             <div id="alle_projekte_projekte_wrapper_projekte">
               <ul id="alle_projekte_ul">
-                {ProjekteArray.map((Projekt) => (
+                {FilterArray.map((Projekt) => (
                   <li id="alle_projekte_li">
                     <Link to={Projekt.InternerLink}>
                       <ProjektComponentBox

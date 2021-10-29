@@ -2,26 +2,45 @@
   display: flex;
   border-radius: 12px;
   background-color: white;
-  height: 38vh;
+  height: 44vh;
   width: 16vw;
   overflow: hidden;
   flex-direction: column;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+#ProjektCompBox_wrapper:hover {
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  transform: scale(1.03);
+  background-color: rgba(255, 176, 0, 0.4);
 }
 #ProjektComponentBox_top {
   overflow: hidden;
-  height: 19vh;
+  height: 22vh;
   width: 16vw;
   position: relative;
   background-position: center;
   border-radius: 12px;
 }
 #ProjektComponentBox_top_img {
-  height: 19vh;
+  height: 22vh;
   width: 16vw;
   position: absolute;
   z-index: 1;
 }
+
 #ProjektComponentBox_top_heading {
   border-radius: 12px;
   background-color: rgba(186, 232, 232, 1);
@@ -44,8 +63,8 @@
 
 #ProjektComponentBox_top_heading_h3 {
   font-family: Montserrat;
-  font-size: 0.8vw;
-  font-weight: 700;
+  font-size: 0.9vw;
+  font-weight: 600;
   color: rgba(0, 0, 0, 1);
   margin: 0;
 }
@@ -84,12 +103,12 @@
 #ProjektComponentBox_Eintrag {
   display: flex;
   flex-direction: column;
-  margin-top: 1.8vh;
+  margin-top: 2vh;
 }
 
 #ProjektComponentBox_h3 {
   font-family: Montserrat;
-  font-size: 0.8vw;
+  font-size: 0.85vw;
   font-weight: 600;
   color: rgba(0, 0, 0, 1);
   margin: 0;
@@ -97,7 +116,7 @@
 
 #ProjektComponentBox_h4 {
   font-family: Montserrat;
-  font-size: 0.6vw;
+  font-size: 0.75vw;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.7);
   margin: 0;
