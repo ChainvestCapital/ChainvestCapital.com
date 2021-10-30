@@ -42,17 +42,7 @@ function AlleProjekte() {
   useEffect(() => {
     document.title = "Alle Projekte";
   }, []);
-  function filterausklappen() {
-    setFilterMenueshow(true);
-    setFiltereinklappenshow(false);
-  }
 
-  function filtereinklappen() {
-    setFilterMenueshow(false);
-    setFiltereinklappenshow(true);
-  }
-
-  const [FilterArray, setFilterArray] = useState([]);
   const [ProjekteArray, setProjekteArray] = useState([]);
   const fetchProjekte = async () => {
     try {
@@ -61,7 +51,6 @@ function AlleProjekte() {
       const ProjekteList = ProjekteData.data.listProjekts.items;
       setProjekteArray(ProjekteList);
       console.log(ProjekteList);
-      setFilterArray(ProjekteList);
     } catch (error) {
       console.log(error);
     }
@@ -69,22 +58,18 @@ function AlleProjekte() {
 
   useEffect(() => {
     fetchProjekte();
-    BuildFilterArray();
   }, []);
-  const [FilterMenueshow, setFilterMenueshow] = useState(false);
+  function filterausklappen() {}
+  function filtereinklappen() {}
+  const [Filtereinklappenshow, setFiltereinklappenshow] = useState();
+  const [FilterMenueshow, setFilterMenueshow] = useState();
 
-  const [Filtereinklappenshow, setFiltereinklappenshow] = useState(true);
-  const HelpFilterArray = [];
-
-  function BuildFilterArray() {
-    FilterArray.map((FilterProjekt) => {
-      if (FilterProjekt.Finanzierungsvolumen.includes("X") == true) {
-        HelpFilterArray.push(FilterProjekt);
-        setFilterArray(HelpFilterArray);
-        console.log(FilterArray);
-      }
-    });
+  const [AktuellerKatFilter, setAktuellerKatFilter] = useState("Technologie");
+  function switchAktuellerKatFilter(newAktuellerKatFilter) {
+    setAktuellerKatFilter(newAktuellerKatFilter);
   }
+
+  const [FilterArray, setFilterArray] = useState(ProjekteArray);
 
   return (
     <div>
@@ -184,22 +169,36 @@ function AlleProjekte() {
               </h2>
 
               <div id="alle_projekte_kategorien_menue">
-                <AlleHover Img={Schiffahrtimg} HoverText="Logistik" />
-                <AlleHover Img={TechnologieImg} HoverText="Technologie" />
-                <AlleHover Img={FinanceImg} HoverText="Finance" />
-                <AlleHover Img={EnergieImg} HoverText="Energie" />
-
-                <AlleHover Img={ImmobilienImg} HoverText="Immobilien" />
-                <AlleHover Img={BlockchainImg} HoverText="Blockchain" />
-
-                <AlleHover Img={UmweltImg} HoverText="Umwelt" />
-                <AlleHover Img={GamingImg} HoverText="Gaming" />
+                <div>
+                  <AlleHover Img={Schiffahrtimg} HoverText="Logistik" />
+                </div>
+                <div>
+                  <AlleHover Img={TechnologieImg} HoverText="Technologie" />
+                </div>
+                <div>
+                  <AlleHover Img={FinanceImg} HoverText="Finanzen" />
+                </div>
+                <div>
+                  <AlleHover Img={EnergieImg} HoverText="Energie" />
+                </div>
+                <div>
+                  <AlleHover Img={ImmobilienImg} HoverText="Immobilien" />
+                </div>
+                <div>
+                  <AlleHover Img={BlockchainImg} HoverText="Blockchain" />
+                </div>
+                <div>
+                  <AlleHover Img={UmweltImg} HoverText="Umwelt" />
+                </div>
+                <div>
+                  <AlleHover Img={GamingImg} HoverText="Gaming" />
+                </div>
               </div>
             </div>
 
             <div id="alle_projekte_projekte_wrapper_projekte">
               <ul id="alle_projekte_ul">
-                {FilterArray.map((Projekt) => (
+                {ProjekteArray.map((Projekt) => (
                   <li id="alle_projekte_li">
                     <Link to={Projekt.InternerLink}>
                       <ProjektComponentBox

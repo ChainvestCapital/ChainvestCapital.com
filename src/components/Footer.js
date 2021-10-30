@@ -51,7 +51,7 @@ function Footer(props) {
                 </div>
               </Link>
 
-              <Link to="../Datenschutzerklärung">
+              <Link to="../Partner">
                 <div id="Footer_spalte_button">
                   <h3 id="Footer_spalte_h3">Partner</h3>
                 </div>

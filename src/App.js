@@ -19,6 +19,7 @@ import Bitbond from "./STOs/BB1Token/Bitbond.js";
 import Vogemann from "./STOs/Vogemann/Vogemann.js";
 import Tomorrow from "./STOs/Tomorrow/Tomorrow.js";
 
+import allData from "./allData.js";
 function App() {
   return (
     <div>
@@ -64,6 +65,7 @@ function App() {
         path="/security-token-offering/musterproject"
         component={MusterProject}
       />
+      <Route exact path="/allData" component={allData} />
     </div>
   );
 }
