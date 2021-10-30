@@ -22,3 +22,13 @@
   font-weight: 300;
   color: rgba(0, 0, 0, 1);
 }
+#Mobile_Datenschutz_Wrapper {
+  width: 92vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  background: #f3f6fa;
+  padding-bottom: 5vh;
+}
