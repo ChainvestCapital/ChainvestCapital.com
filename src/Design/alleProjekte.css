@@ -4,7 +4,7 @@
   padding-right: 6vw;
   display: flex;
   flex-direction: row;
-  height: 80vh;
+
   padding-top: 20vh;
   padding-bottom: 4vh;
 }
@@ -16,6 +16,31 @@
   flex-direction: column;
   align-items: center;
   padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+#KeinegefundenWrapper {
+  position: absolute;
+  left: 0;
+}
+
+#Keinegefunden_h2 {
+  font-family: Montserrat;
+  font-size: 1.4vw;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+}
+
+#FilterButtonAlle {
+  width: 2.6vw;
+}
+
+#FilterButtonAlle_h2 {
+  font-family: Montserrat;
+  font-size: 1vw;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
 }
 
 #alle_projekte_filter_wrapper_inner {
@@ -23,26 +48,76 @@
   display: flex;
   flex-direction: column;
   border-radius: 12px;
-  width: 85%;
-  align-items: center;
+  width: 12vw;
+  align-items: flex-start;
+  padding-top: 1vh;
   justify-content: center;
   padding-bottom: 2vh;
   margin-top: 2vh;
+  padding-left: 2vw;
+  padding-right: 1vw;
+  padding-top: 2vh;
 }
 #alle_projekte_wrapper_heading {
   display: flex;
-  padding-left: 10%;
-  padding-right: 5%;
-  width: 85%;
+
+  width: 12vw;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 2vh;
+  align-items: center;
+}
+#alle_projekte_Filter1_wrapper_heading {
+  display: flex;
+  width: 12vw;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+  align-items: center;
+  height: 4vh;
+  cursor: pointer;
+}
+
+#Finanzierungsvolumen_Filter_Wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 12vw;
+}
+#filter1active {
+  height: 32vh;
+}
+#filter1inactive {
+  height: 4vh;
+  overflow-y: hidden;
+}
+#filter3active {
+  height: 15vh;
+}
+#filter3inactive {
+  height: 4vh;
+  overflow-y: hidden;
+}
+#alle_projekte_wrapper_icon_inactive {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+#alle_projekte_wrapper_icon_active {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 #alle_projekte_wrapper_h3 {
   font-family: Montserrat;
-  font-size: 0.8vw;
+  font-size: 0.9vw;
+  margin: 0;
   font-weight: 600;
-  color: rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 #alle_projekte_wrapper_close {
@@ -51,38 +126,46 @@
   justify-content: center;
   align-items: center;
 }
-
-#alle_projekte_filter_eintrag_kreuz {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 3vh;
-  width: 85%;
-  padding-left: 10%;
-  padding-right: 5%;
+#alle_projekte_wrapper_close_img {
+  width: 1vw;
 }
-#alle_projekte_filter_eintrag_kreuz_h3 {
+
+#AlleProjekte_e_H3 {
   font-family: Montserrat;
-  font-size: 0.7vw;
+  font-size: 0.9vw;
   font-weight: 600;
   color: rgba(0, 0, 0, 1);
 }
-
-#alle_projekte_filter_eintrag_kreuz_kreuz {
-  border-radius: 2px;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  width: 1vw;
-  height: 1vw;
+#Filter_row_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 12vw;
+  align-items: center;
 }
-#alle_projekte_filter_eintrag_kreuz_kreuz {
-  background-color: rgba(186, 232, 232, 1);
+#clicked {
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: #cdf0ea;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.25);
+  border-style: solid;
+}
+
+#unclicked {
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.25);
+  border-style: solid;
 }
 
 #alle_projekte_projekte_wrapper {
-  width: 66vw;
-  margin-left: 5vw;
+  width: 62vw;
+  margin-left: 2vw;
   background: #f3f6fa;
   border-radius: 12px;
   padding-bottom: 4vh;
@@ -94,7 +177,7 @@
 }
 
 #alle_projekte_projekte_wrapper_Kategorien {
-  width: 55vw;
+  width: 60vw;
   padding-left: 1vw;
   display: flex;
   flex-direction: row;
@@ -102,10 +185,11 @@
   height: 6vh;
   border-radius: 12px;
   background-color: white;
+  justify-content: space-between;
 }
 #alle_projekte_projekte_wrapper_projekte_kategorien {
   font-family: Montserrat;
-  font-size: 1vw;
+  font-size: 1.2vw;
   font-weight: 600;
   color: rgba(0, 0, 0, 1);
 }
@@ -141,6 +225,7 @@
   padding-left: 0;
   display: flex;
   justify-content: flex-start;
+  position: relative;
 }
 #alle_projekte_ul {
   display: grid;

@@ -153,8 +153,75 @@ function Partner() {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
+      <div id="Mobile_Wrapper">
+        <div id="Mobile_Partner_top">
+          <h2 id="Mobile_Partner_top_h2">
+            So erhalten wir unsere Informationen
+          </h2>
+          <div id="Mobile_Partner_top_Switcher">
+            <div id="Mobile_Partner_top_Switcher_Menue">
+              <div id="Mobile_Partner_top_Switcher_Menue_Item">
+                <h3 id="Mobile_Partner_top_Switcher_Item_h3">Neutralität</h3>
+                <div id="Mobile_Partner_top_Switcher_Inner">
+                  <img src={NeutralImg} id="Mobile_Partner_top_Switcher_img" />
+                </div>
+              </div>
+              <div id="Mobile_Partner_top_Switcher_Menue_Item">
+                <h3 id="Mobile_Partner_top_Switcher_Item_h3">Regulatorik</h3>
+                <div id="Mobile_Partner_top_Switcher_Inner">
+                  <img
+                    src={RegulatorikImg}
+                    id="Mobile_Partner_top_Switcher_img"
+                  />
+                </div>
+              </div>
+              <div id="Mobile_Partner_top_Switcher_Menue_Item">
+                <h3 id="Mobile_Partner_top_Switcher_Item_h3">Transparenz</h3>
+                <div id="Mobile_Partner_top_Switcher_Inner">
+                  <img
+                    src={TransparenzImg}
+                    id="Mobile_Partner_top_Switcher_img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div id="Mobile_Partner_top_Switcher_Inhalt">
+              <div id="Mobile_Partner_top_Switcher_Inhalt_Top">
+                <h3 id="Mobile_Partner_top_Switcher_h3">Neutralität</h3>
+                <div id="Mobile_Partner_top_Switcher_TOP_Inner">
+                  <img
+                    src={NeutralImg}
+                    id="Mobile_Partner_top_Switcher_Top_img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="Mobile_Partner_Unsere_Section">
+            <h2 id="Mobile_Partner_Unsere__h2">Unsere Partner</h2>
+            <div id="Mobile_Partner_Unsere_Balken">Unsere Partner</div>
+          </div>
+
+          <div id="Mobile_Partner_IhrP_Section">
+            <h2 id="Mobile_Partner_IhrP_h2">
+              ihr Projekt auf Chainvestcpaital.de
+            </h2>
+            <div id="Mobile_Partner_IhrP_Content_Wrapper">
+              <h4 id="Mobile_Partner_IhrP_H4">
+                Gewinnen Sie mit einer Platzierung auf BLOCKCAP frühzeitig das
+                Interesse potenzieller Investoren und profitieren Sie von
+                unserem starken Netzwerk.
+              </h4>
+              <div id="Mobile_Partner_IhrP_Button">
+                <h3 id="Mobile_Partner_IhrP_Button_h3">Ihr Projekt listen</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

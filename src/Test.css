@@ -1,0 +1,39 @@
+#FilterTest {
+  background-color: palegreen;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  padding-left: 8vw;
+
+  padding-top: 10vh;
+}
+
+#butwrap {
+  display: flex;
+  flex-direction: row;
+}
+#butt {
+  margin-right: 4vw;
+}
+
+#ProjektShow {
+  margin-top: 5vh;
+}
+#SDA {
+  width: 15vw;
+  height: 15vh;
+  background-color: beige;
+}
+#SDFA {
+  background-color: aquamarine;
+  width: 100vw;
+  height: 100vh;
+}
+
+#home_projekte_li_test {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+#home_projekte_li_test {
+}

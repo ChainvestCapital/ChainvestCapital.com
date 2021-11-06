@@ -115,7 +115,7 @@ function Home() {
 
           <ul>
             {ProjekteArray.map((Projekt) => (
-              <li id="home_projekte_li">
+              <li id="home_projekte_li_11">
                 <Link to={Projekt.InternerLink}>
                   <Home_Projekt_Banner
                     title={Projekt.name}

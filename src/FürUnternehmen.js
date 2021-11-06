@@ -43,7 +43,7 @@ function FürUnternehmen() {
   }
   return (
     <div>
-      <div id="Dekstop_Wrapper">
+      <div id="Desktop_Wrapper">
         <Top_menue />
         <div id="FürUNternehmen_Wrapper">
           <div id="FürUnt_TopSection">
@@ -66,19 +66,23 @@ function FürUnternehmen() {
                     </div>
                   </div>
                 </a>
-                <div id="FürUnt_TopSection_left_ButtonWrapper_Button">
-                  <h4 id="FürUnt_TopSection_left_Button_H4">Ablauf</h4>
-                  <div id="FürUnt_TopSection_left_Button_Inner">
-                    <img src={arrow} id="FürUnt_TopSection_left_Button_img" />
-                  </div>
-                </div>
+                <a href="#FürUnt_AblaufSection">
+                  <div id="FürUnt_TopSection_left_ButtonWrapper_Button">
+                    <h4 id="FürUnt_TopSection_left_Button_H4">Ablauf</h4>
+                    <div id="FürUnt_TopSection_left_Button_Inner">
+                      <img src={arrow} id="FürUnt_TopSection_left_Button_img" />
+                    </div>
+                  </div>{" "}
+                </a>
 
-                <div id="FürUnt_TopSection_left_ButtonWrapper_Button">
-                  <h4 id="FürUnt_TopSection_left_Button_H4">Kontakt</h4>
-                  <div id="FürUnt_TopSection_left_Button_Inner">
-                    <img src={arrow} id="FürUnt_TopSection_left_Button_img" />
-                  </div>
-                </div>
+                <a href="#FürUnt_KontaktSection">
+                  <div id="FürUnt_TopSection_left_ButtonWrapper_Button">
+                    <h4 id="FürUnt_TopSection_left_Button_H4">Kontakt</h4>
+                    <div id="FürUnt_TopSection_left_Button_Inner">
+                      <img src={arrow} id="FürUnt_TopSection_left_Button_img" />
+                    </div>
+                  </div>{" "}
+                </a>
               </div>
             </div>
           </div>
@@ -239,6 +243,125 @@ function FürUnternehmen() {
       </div>
       <div id="Mobile_Wrapper">
         <Mobile_menue />
+
+        <div id="Mobile_FürUnt_Top_Section">
+          <h2 id="Mobile_FürUnt_Top_h2">Ihr Projekt auf Chainvestcapital.de</h2>
+
+          <h4 id="Mobile_FürUnt_Top_h4">
+            Gewinnen Sie mit einer Platzierung auf Chainvest frühzeitig das
+            Interesse potenzieller Investoren und profitieren Sie von unserem
+            starken Netzwerk.
+          </h4>
+
+          <div id="Mobile_FürUnt_Top_Button_Wrapper">
+            {" "}
+            <a href="">
+              <div id="Mobile_FürUnt_Top_Button">
+                <h3 id="Mobile_FürUnt_Top_Button_h3">Vorteile</h3>
+
+                <div id="Mobile_FürUnt_Top_Button_Innner">
+                  <img src={arrow} id="Mobile_FürUnt_Top__Button_img" />
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div id="Mobile_FürUnt_Vorteile_Section">
+          <h2 id="Mobile_FürUnt_Vorteile_h2">
+            Ihre Vorteile auf Chainvestcapital.de
+          </h2>
+          <div id="Mobile_FürUnt_Vorteile_Switcher_Wrapper">
+            <div id="Mobile_FürUnt_Vorteile_Menue">
+              <div id="Mobile_FürUnt_Vorteile_Mneue_Item">
+                <h3 id="Mobile_FürUnt_Vorteile_Mneue_Item_h3">Wachstum</h3>
+                <div id="Mobile_FürUnt_Vorteile_Mneue_Item_Inner">
+                  <img
+                    src={Wachstum}
+                    id="Mobile_FürUnt_Vorteile_Mneue_Item_img"
+                  />
+                </div>
+              </div>
+
+              <div id="Mobile_FürUnt_Vorteile_Mneue_Item">
+                <h3 id="Mobile_FürUnt_Vorteile_Mneue_Item_h3">Marketing</h3>
+                <div id="Mobile_FürUnt_Vorteile_Mneue_Item_Inner">
+                  <img
+                    src={Marketing}
+                    id="Mobile_FürUnt_Vorteile_Mneue_Item_img"
+                  />
+                </div>
+              </div>
+
+              <div id="Mobile_FürUnt_Vorteile_Mneue_Item">
+                <h3 id="Mobile_FürUnt_Vorteile_Mneue_Item_h3">Effizienz</h3>
+                <div id="Mobile_FürUnt_Vorteile_Mneue_Item_Inner">
+                  <img
+                    src={Performane}
+                    id="Mobile_FürUnt_Vorteile_Mneue_Item_img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div id="Mobile_FürUnt_Vorteile_Inhalt">
+              <div id="Mobile_FürUnt_Vorteile_top">
+                <h3 id="Mobile_FürUnt_Vorteile_TOP-h3">Listingprozess</h3>
+              </div>
+              <h5 id="Mobile_FürUnt_Vorteile_Content_h5">
+                BLOCKCAP stellt die Schnittstelle zwischen spannenden
+                Investitionsprojekten und einer breiten Investorencommunity dar.
+                Über diese Plattform erhalten AnlegerInnen Zugang zu
+                vielfältigen Security Token Offerings aus unterschiedlichen
+                Branchen.
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div id="mobile_FürUnt_Ablauf_Section">
+          <h2 id="mobile_FürUnt_Ablauf_h2">Ablauf ihres Listings</h2>
+          <div id="mobile_FürUnt_Ablauf_Kachel_Wrapper">
+            <div id="mobile_FürUnt_Ablauf_Kachel">
+              <div id="mobile_FürUnt_Ablauf_Kachel_Top">
+                <h3 id="mobile_FürUnt_Ablauf_Kachel_h3">Kontaktaufnahme</h3>
+                <div id="mobile_FürUnt_Ablauf_Kachel_INNER">
+                  <h3 id="mobile_FürUnt_Ablauf_Kachel_h3">1</h3>
+                </div>
+              </div>
+              <h5 id="mobile_FürUnt_Ablauf_Kachel_h5">
+                Für einen erfolgreichen Start am Kapitalmarkt nehmen Sie über
+                das Kontaktformular Kontakt zu unserem Listing Team auf.
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div id="mobile_FürUnt_Kontakt_Section">
+          <h3 id=" mobile_FürUnt_Kontakt_h3"> </h3>
+          <div id="mobile_FürUnt_Kontakt_Form">Form</div>
+          <div id="mobile_FürUnt_Kontakt_Direkt">
+            <h3 id="mobile_FürUnt_Kontakt_h3">Direkt kontaktieren</h3>
+            <h5 id="mobile_FürUnt_Kontakt_h5">
+              Bei Fragen oder weiteren Anliegen stehen wir Ihnen gerne per
+              E-Mail zur Verfügung. Häufig gestellte Fragen zum Listingprozess
+              haben wir für Sie hier zusammengefasst.
+            </h5>
+            <div id="mobile_FürUnt_Kontakt_Download">
+              <h3 id="mobile_FürUnt_Kontakt_h3">Download</h3>
+              <div id="mobile_FürUnt_KontaktDL_Inner">
+                <img src={Download} id="mobile_FürUnt_Kontakt_dl_img" />
+              </div>
+            </div>
+            <div id="mobile_FürUnt_Kontakt_Row">
+              <div id="mobile_FürUnt_Kontakt_row_inner">
+                <img src={Mail} id="mobile_FürUnt_Kontakt_Row_img" />
+              </div>
+
+              <h3 id="mobile_FürUnt_Kontakt_row_h3">
+                Kontakt@chainvestcapital.de
+              </h3>
+            </div>
+          </div>
+        </div>
         <Mobile_Footer />
       </div>
     </div>

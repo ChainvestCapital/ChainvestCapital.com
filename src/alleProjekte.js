@@ -11,7 +11,7 @@ import Schiffahrtimg from "./assets/images/Schiffahrt.png";
 import TechnologieImg from "./assets/images/Technologie.png";
 import FinanceImg from "./assets/images/Finance.png";
 import ImmobilienImg from "./assets/images/Immobilien.png";
-import EnergieImg from "./assets/images/Energie.png";
+import EnergieImg from "./assets/images/EnergieIconi.png";
 import BlockchainImg from "./assets/images/Blockchain.png";
 import UmweltImg from "./assets/images/Umwelt.png";
 import GamingImg from "./assets/images/Gaming.png";
@@ -43,6 +43,8 @@ function AlleProjekte() {
     document.title = "Alle Projekte";
   }, []);
 
+  const [shownProjects, setshownProjects] = useState([]);
+
   const [ProjekteArray, setProjekteArray] = useState([]);
   const fetchProjekte = async () => {
     try {
@@ -51,6 +53,7 @@ function AlleProjekte() {
       const ProjekteList = ProjekteData.data.listProjekts.items;
       setProjekteArray(ProjekteList);
       console.log(ProjekteList);
+      setshownProjects(ProjekteList);
     } catch (error) {
       console.log(error);
     }
@@ -64,12 +67,361 @@ function AlleProjekte() {
   const [Filtereinklappenshow, setFiltereinklappenshow] = useState();
   const [FilterMenueshow, setFilterMenueshow] = useState();
 
-  const [AktuellerKatFilter, setAktuellerKatFilter] = useState("Technologie");
-  function switchAktuellerKatFilter(newAktuellerKatFilter) {
-    setAktuellerKatFilter(newAktuellerKatFilter);
+  /////////////////////////////////////////////////////
+
+  //Filter
+  const [AllArray, setAllArray] = useState([]);
+
+  const [LogistikArray, setLogistikArray] = useState([]);
+  const [FinanzenArray, setFinanzenArray] = useState([]);
+  const [BlockchainArray, setBlockchainArray] = useState([]);
+  const [TechnologieArray, setTechnologieArray] = useState([]);
+  const [EnergieArray, setEnergieArray] = useState([]);
+  const [GamingArray, setGamingArray] = useState([]);
+  const [ImmobilienArray, setImmobilienArray] = useState([]);
+  const [UmwelttArray, setUmwelttArray] = useState([]);
+
+  //Build up Arrays
+
+  function BuildLogistikArray(AlleProjekte) {
+    setLogistikArray([]);
+    setshownProjects([]);
+
+    AlleProjekte.map((projektmap) => {
+      if (projektmap.Kategorie === "Logistik") {
+        LogistikArray.push(projektmap);
+        console.log(LogistikArray);
+        setshownProjects(LogistikArray);
+        console.log(shownProjects);
+      } else {
+        setLogistikArray([]);
+        console.log("S");
+      }
+    });
+  }
+  function BuildGamingArray(AlleProjekte) {
+    setGamingArray([]);
+    setshownProjects([]);
+
+    AlleProjekte.map((projektmap) => {
+      if (projektmap.Kategorie === "Gaming") {
+        GamingArray.push(projektmap);
+        setshownProjects(GamingArray);
+      } else {
+        setGamingArray([]);
+      }
+    });
+    function BuildEnergieArray(AlleProjekte) {
+      setEnergieArray([]);
+      setshownProjects([]);
+
+      AlleProjekte.map((projektmap) => {
+        if (projektmap.Kategorie === "Energie") {
+          EnergieArray.push(projektmap);
+          setshownProjects(EnergieArray);
+        } else {
+          setEnergieArray([]);
+        }
+      });
+    }
   }
 
-  const [FilterArray, setFilterArray] = useState(ProjekteArray);
+  function BuildUmweltArray(AlleProjekte) {
+    setUmwelttArray([]);
+    setshownProjects([]);
+
+    AlleProjekte.map((projektmap) => {
+      if (projektmap.Kategorie === "Umwelt") {
+        UmwelttArray.push(projektmap);
+        setshownProjects(UmwelttArray);
+      } else {
+        setUmwelttArray([]);
+      }
+    });
+  }
+  function BuildImmobilienArray(AlleProjekte) {
+    setImmobilienArray([]);
+    setshownProjects([]);
+
+    AlleProjekte.map((projektmap) => {
+      if (projektmap.Kategorie === "Immobilien") {
+        ImmobilienArray.push(projektmap);
+
+        setshownProjects(ImmobilienArray);
+        console.log(shownProjects);
+      } else {
+        setImmobilienArray([]);
+      }
+    });
+  }
+
+  function BuildEnergieArray(AlleProjekte) {
+    setEnergieArray([]);
+    setshownProjects([]);
+
+    AlleProjekte.map((projektmap) => {
+      if (projektmap.Kategorie === "Energie") {
+        EnergieArray.push(projektmap);
+
+        setshownProjects(EnergieArray);
+        console.log(EnergieArray);
+      } else {
+        setEnergieArray([]);
+      }
+    });
+  }
+
+  function BuildBlockchainArray(AlleProjekte) {
+    setBlockchainArray([]);
+    setshownProjects([]);
+
+    AlleProjekte.map((projektmap) => {
+      if (projektmap.Kategorie === "Blockchain") {
+        BlockchainArray.push(projektmap);
+        setshownProjects(BlockchainArray);
+        console.log(shownProjects);
+      } else {
+        setBlockchainArray([]);
+        console.log("F");
+      }
+    });
+  }
+
+  function BuildFinanzenArray(AlleProjekte) {
+    setFinanzenArray([]);
+    setshownProjects([]);
+
+    AlleProjekte.map((projektmap) => {
+      if (projektmap.Kategorie === "Finanzen") {
+        FinanzenArray.push(projektmap);
+        console.log(FinanzenArray);
+        setshownProjects(FinanzenArray);
+        console.log(shownProjects);
+      } else {
+        setFinanzenArray([]);
+        console.log("F");
+      }
+    });
+  }
+  function BuildTechnologieArray(AlleProjekte) {
+    setTechnologieArray([]);
+    setshownProjects([]);
+
+    AlleProjekte.map((projektmap) => {
+      if (projektmap.Kategorie === "Technologie") {
+        TechnologieArray.push(projektmap);
+        console.log(TechnologieArray);
+        setshownProjects(TechnologieArray);
+        console.log(shownProjects);
+      } else {
+        setTechnologieArray([]);
+        console.log("F");
+      }
+    });
+  }
+
+  function BuildAllArray(AlleProjekte) {
+    setshownProjects(AlleProjekte);
+  }
+
+  function Keinegefunden() {
+    if (shownProjects.length == 0) {
+      return (
+        <div id="KeinegefundenWrapper">
+          <h2 id="Keinegefunden_h2">
+            Aktuelle leider keine Projekte in dieser Kategorie gefunden
+          </h2>
+        </div>
+      );
+    }
+  }
+
+  //Filtermenue Links ausklappen
+
+  useEffect(() => {}, LogistikArray);
+
+  //Filter used
+  const [AP_FV_E1_K, setAP_FV_E1_K] = useState("unclicked");
+  const [AP_FV_E2_K, setAP_FV_E2_K] = useState("unclicked");
+  const [AP_FV_E3_K, setAP_FV_E3_K] = useState("unclicked");
+  const [AP_FV_E4_K, setAP_FV_E4_K] = useState("unclicked");
+  const [AP_FV_E5_K, setAP_FV_E5_K] = useState("unclicked");
+
+  const [AP_ER_E1_K, setAP_ER_E1_K] = useState("unclicked");
+  const [AP_ER_E2_K, setAP_ER_E2_K] = useState("unclicked");
+  const [AP_ER_E3_K, setAP_ER_E3_K] = useState("unclicked");
+  const [AP_ER_E4_K, setAP_ER_E4_K] = useState("unclicked");
+  const [AP_ER_E5_K, setAP_ER_E5_K] = useState("unclicked");
+
+  const [AP_TY_E1_K, setAP_TY_E1_K] = useState("unclicked");
+  const [AP_TY_E2_K, setAP_TY_E2_K] = useState("unclicked");
+
+  const [f1h1, setf1h1] = useState(1);
+  const [f1h2, setf1h2] = useState(1);
+  const [f1h3, setf1h3] = useState(1);
+  const [f1h4, setf1h4] = useState(1);
+  const [f1h5, setf1h5] = useState(1);
+
+  const [f2h1, setf2h1] = useState(1);
+  const [f2h2, setf2h2] = useState(1);
+  const [f2h3, setf2h3] = useState(1);
+  const [f2h4, setf2h4] = useState(1);
+  const [f2h5, setf2h5] = useState(1);
+
+  const [f3h1, setf3h1] = useState(1);
+  const [f3h2, setf3h2] = useState(1);
+
+  function AP_FV_E1_K_c() {
+    setf1h1(f1h1 + 1);
+    if (f1h1 % 2 == 0) {
+      setAP_FV_E1_K("unclicked");
+    } else {
+      setAP_FV_E1_K("clicked");
+    }
+  }
+  function AP_FV_E2_K_c() {
+    setf1h2(f1h2 + 1);
+    if (f1h2 % 2 == 0) {
+      setAP_FV_E2_K("unclicked");
+    } else {
+      setAP_FV_E2_K("clicked");
+    }
+  }
+  function AP_FV_E3_K_c() {
+    setf1h3(f1h3 + 1);
+    if (f1h3 % 2 == 0) {
+      setAP_FV_E3_K("unclicked");
+    } else {
+      setAP_FV_E3_K("clicked");
+    }
+  }
+  function AP_FV_E4_K_c() {
+    setf1h4(f1h4 + 1);
+    if (f1h4 % 2 == 0) {
+      setAP_FV_E4_K("unclicked");
+    } else {
+      setAP_FV_E4_K("clicked");
+    }
+  }
+  function AP_FV_E5_K_c() {
+    setf1h5(f1h5 + 1);
+    if (f1h5 % 2 == 0) {
+      setAP_FV_E5_K("unclicked");
+    } else {
+      setAP_FV_E5_K("clicked");
+    }
+  }
+
+  function AP_ER_E1_K_c() {
+    setf2h1(f2h1 + 1);
+    if (f2h1 % 2 == 0) {
+      setAP_ER_E1_K("unclicked");
+    } else {
+      setAP_ER_E1_K("clicked");
+    }
+  }
+
+  function AP_ER_E2_K_c() {
+    setf2h2(f2h2 + 1);
+    if (f2h2 % 2 == 0) {
+      setAP_ER_E2_K("unclicked");
+    } else {
+      setAP_ER_E2_K("clicked");
+    }
+  }
+
+  function AP_ER_E3_K_c() {
+    setf2h3(f2h3 + 1);
+    if (f2h3 % 2 == 0) {
+      setAP_ER_E3_K("unclicked");
+    } else {
+      setAP_ER_E3_K("clicked");
+    }
+  }
+
+  function AP_ER_E4_K_c() {
+    setf2h4(f2h4 + 1);
+    if (f2h4 % 2 == 0) {
+      setAP_ER_E4_K("unclicked");
+    } else {
+      setAP_ER_E4_K("clicked");
+    }
+  }
+  function AP_ER_E5_K_c() {
+    setf2h1(f2h5 + 1);
+    if (f2h5 % 2 == 0) {
+      setAP_ER_E5_K("unclicked");
+    } else {
+      setAP_ER_E5_K("clicked");
+    }
+  }
+
+  function AP_TY_E1_K_c() {
+    setf3h1(f3h1 + 1);
+    if (f3h1 % 2 == 0) {
+      setAP_TY_E1_K("unclicked");
+    } else {
+      setAP_TY_E1_K("clicked");
+    }
+  }
+
+  function AP_TY_E2_K_c() {
+    setf3h2(f3h2 + 1);
+    if (f3h2 % 2 == 0) {
+      setAP_TY_E2_K("unclicked");
+    } else {
+      setAP_TY_E2_K("clicked");
+    }
+  }
+
+  const [isfilter1active, setisfilter1active] = useState("filter1inactive");
+  const [hfilter1active, sethfilter1active] = useState(0);
+  const [alle_projekte_wrapper_icon, setalle_projekte_wrapper_icon] = useState(
+    "alle_projekte_wrapper_icon_inactive"
+  );
+
+  const [isfilter2active, setisfilter2active] = useState("filter1inactive");
+  const [hfilter2active, sethfilter2active] = useState(0);
+  const [alle_projekte_wrapper_icon2, setalle_projekte_wrapper_icon2] =
+    useState("alle_projekte_wrapper_icon_inactive");
+
+  const [isfilter3active, setisfilter3active] = useState("filter1inactive");
+  const [hfilter3active, sethfilter3active] = useState(0);
+  const [alle_projekte_wrapper_icon3, setalle_projekte_wrapper_icon3] =
+    useState("alle_projekte_wrapper_icon_inactive");
+
+  function FIlter1ausklappem() {
+    sethfilter1active(hfilter1active + 1);
+    if (hfilter1active % 2 == 0) {
+      console.log("FF");
+      setisfilter1active("filter1active");
+      setalle_projekte_wrapper_icon("alle_projekte_wrapper_icon_active");
+    } else {
+      setisfilter1active("filter1inactive");
+      setalle_projekte_wrapper_icon("alle_projekte_wrapper_icon_inactive");
+    }
+  }
+
+  function FIlter2ausklappem() {
+    sethfilter2active(hfilter2active + 1);
+    if (hfilter2active % 2 == 0) {
+      setisfilter2active("filter1active");
+      setalle_projekte_wrapper_icon2("alle_projekte_wrapper_icon_active");
+    } else {
+      setisfilter2active("filter1inactive");
+      setalle_projekte_wrapper_icon2("alle_projekte_wrapper_icon_inactive");
+    }
+  }
+  function FIlter3ausklappem() {
+    sethfilter3active(hfilter3active + 1);
+    if (hfilter3active % 2 == 0) {
+      setisfilter3active("filter3active");
+      setalle_projekte_wrapper_icon3("alle_projekte_wrapper_icon_active");
+    } else {
+      setisfilter3active("filter3inactive");
+      setalle_projekte_wrapper_icon3("alle_projekte_wrapper_icon_inactive");
+    }
+  }
 
   return (
     <div>
@@ -78,86 +430,104 @@ function AlleProjekte() {
         <div id="alle_projekte_wrapper">
           <div id="alle_projekte_filter_wrapper">
             <div id="alle_projekte_filter_wrapper_inner">
-              <div id="alle_projekte_wrapper_heading">
-                <h3 id="alle_projekte_wrapper_h3">Finanzierungsvolumen</h3>
-                <div id="alle_projekte_wrapper_close">x</div>
-              </div>
-
-              <div id="alle_projekte_filter_eintrag_kreuz">
-                <h3 id="alle_projekte_filter_eintrag_kreuz_h3">10.000 €</h3>
-
-                <div id="alle_projekte_filter_eintrag_kreuz_kreuz"></div>
-              </div>
-              <div id="alle_projekte_filter_eintrag_kreuz">
-                <h3 id="alle_projekte_filter_eintrag_kreuz_h3">50.000 €</h3>
-
-                <div id="alle_projekte_filter_eintrag_kreuz_kreuz"></div>
-              </div>
-              <div id="alle_projekte_filter_eintrag_kreuz">
-                <h3 id="alle_projekte_filter_eintrag_kreuz_h3">100.000 €</h3>
-
-                <div id="alle_projekte_filter_eintrag_kreuz_kreuz"></div>
-              </div>
-              <div id="alle_projekte_filter_eintrag_kreuz">
-                <h3 id="alle_projekte_filter_eintrag_kreuz_h3">200.000 €</h3>
-
-                <div id="alle_projekte_filter_eintrag_kreuz_kreuz"></div>
-              </div>
-              <div id="alle_projekte_filter_eintrag_kreuz">
-                <h3 id="alle_projekte_filter_eintrag_kreuz_h3">1.000.000 €</h3>
-
-                <div id="alle_projekte_filter_eintrag_kreuz_kreuz"></div>
-              </div>
-            </div>
-
-            <div id="alle_projekte_filter_wrapper_inner">
-              <div id="alle_projekte_wrapper_heading">
-                <h3 id="alle_projekte_wrapper_h3">Erwartete Rendite</h3>
-                <div id="alle_projekte_wrapper_close">x</div>
-              </div>
-
-              <div id="alle_projekte_filter_eintrag_kreuz">
-                <h3 id="alle_projekte_filter_eintrag_kreuz_h3">10.000 €</h3>
-
-                <div id="alle_projekte_filter_eintrag_kreuz_kreuz"></div>
-              </div>
-              <div id="alle_projekte_filter_eintrag_kreuz">
-                <h3 id="alle_projekte_filter_eintrag_kreuz_h3">50.000 €</h3>
-
-                <div id="alle_projekte_filter_eintrag_kreuz_kreuz"></div>
-              </div>
-              <div id="alle_projekte_filter_eintrag_kreuz">
-                <h3 id="alle_projekte_filter_eintrag_kreuz_h3">100.000 €</h3>
-
-                <div id="alle_projekte_filter_eintrag_kreuz_kreuz"></div>
-              </div>
-              <div id="alle_projekte_filter_eintrag_kreuz">
-                <h3 id="alle_projekte_filter_eintrag_kreuz_h3">200.000 €</h3>
-
-                <div id="alle_projekte_filter_eintrag_kreuz_kreuz"></div>
-              </div>
-              <div id="alle_projekte_filter_eintrag_kreuz">
-                <h3 id="alle_projekte_filter_eintrag_kreuz_h3">1.000.000 €</h3>
-
-                <div id="alle_projekte_filter_eintrag_kreuz_kreuz"></div>
+              <div id={isfilter1active}>
+                {" "}
+                <div
+                  id="alle_projekte_Filter1_wrapper_heading"
+                  onClick={() => FIlter1ausklappem()}
+                >
+                  <h3 id="alle_projekte_wrapper_h3">Finanzierungsvolumen</h3>
+                  <div id={alle_projekte_wrapper_icon}>
+                    <img
+                      src={Filtertrigger}
+                      id="alle_projekte_wrapper_close_img"
+                    />
+                  </div>
+                </div>
+                <div id="Filter_row_wrapper">
+                  <h3 id="AlleProjekte_e_H3">50.000</h3>
+                  <div id={AP_FV_E1_K} onClick={() => AP_FV_E1_K_c()}></div>
+                </div>
+                <div id="Filter_row_wrapper">
+                  <h3 id="AlleProjekte_e_H3">250.000</h3>
+                  <div id={AP_FV_E2_K} onClick={() => AP_FV_E2_K_c()}></div>
+                </div>
+                <div id="Filter_row_wrapper">
+                  <h3 id="AlleProjekte_e_H3">1.000.000</h3>
+                  <div id={AP_FV_E3_K} onClick={() => AP_FV_E3_K_c()}></div>
+                </div>
+                <div id="Filter_row_wrapper">
+                  <h3 id="AlleProjekte_e_H3">10.000.000</h3>
+                  <div id={AP_FV_E4_K} onClick={() => AP_FV_E4_K_c()}></div>
+                </div>
+                <div id="Filter_row_wrapper">
+                  <h3 id="AlleProjekte_e_H3">100.000.000</h3>
+                  <div id={AP_FV_E5_K} onClick={() => AP_FV_E5_K_c()}></div>
+                </div>
               </div>
             </div>
 
             <div id="alle_projekte_filter_wrapper_inner">
-              <div id="alle_projekte_wrapper_heading">
-                <h3 id="alle_projekte_wrapper_h3">Typ</h3>
-                <div id="alle_projekte_wrapper_close">x</div>
+              <div id={isfilter2active}>
+                {" "}
+                <div
+                  id="alle_projekte_Filter1_wrapper_heading"
+                  onClick={() => FIlter2ausklappem()}
+                >
+                  <h3 id="alle_projekte_wrapper_h3">Erw. Rendite</h3>
+                  <div id={alle_projekte_wrapper_icon2}>
+                    <img
+                      src={Filtertrigger}
+                      id="alle_projekte_wrapper_close_img"
+                    />
+                  </div>
+                </div>
+                <div id="Filter_row_wrapper">
+                  <h3 id="AlleProjekte_e_H3">50.000</h3>
+                  <div id={AP_ER_E1_K} onClick={() => AP_ER_E1_K_c()}></div>
+                </div>
+                <div id="Filter_row_wrapper">
+                  <h3 id="AlleProjekte_e_H3">250.000</h3>
+                  <div id={AP_ER_E2_K} onClick={() => AP_ER_E2_K_c()}></div>
+                </div>
+                <div id="Filter_row_wrapper">
+                  <h3 id="AlleProjekte_e_H3">1.000.000</h3>
+                  <div id={AP_ER_E3_K} onClick={() => AP_ER_E3_K_c()}></div>
+                </div>
+                <div id="Filter_row_wrapper">
+                  <h3 id="AlleProjekte_e_H3">10.000.000</h3>
+                  <div id={AP_ER_E4_K} onClick={() => AP_ER_E4_K_c()}></div>
+                </div>
+                <div id="Filter_row_wrapper">
+                  <h3 id="AlleProjekte_e_H3">100.000.000</h3>
+                  <div id={AP_ER_E5_K} onClick={() => AP_ER_E5_K_c()}></div>
+                </div>
               </div>
+            </div>
 
-              <div id="alle_projekte_filter_eintrag_kreuz">
-                <h3 id="alle_projekte_filter_eintrag_kreuz_h3">Eigenkapital</h3>
-
-                <div id="alle_projekte_filter_eintrag_kreuz_kreuz"></div>
-              </div>
-              <div id="alle_projekte_filter_eintrag_kreuz">
-                <h3 id="alle_projekte_filter_eintrag_kreuz_h3">Fremdkapital</h3>
-
-                <div id="alle_projekte_filter_eintrag_kreuz_kreuz"></div>
+            <div id="alle_projekte_filter_wrapper_inner">
+              <div id={isfilter3active}>
+                {" "}
+                <div
+                  id="alle_projekte_Filter1_wrapper_heading"
+                  onClick={() => FIlter3ausklappem()}
+                >
+                  <h3 id="alle_projekte_wrapper_h3">Typ</h3>
+                  <div id={alle_projekte_wrapper_icon3}>
+                    <img
+                      src={Filtertrigger}
+                      id="alle_projekte_wrapper_close_img"
+                    />
+                  </div>
+                </div>
+                <div id="Filter_row_wrapper">
+                  <h3 id="AlleProjekte_e_H3">Eigenkapital</h3>
+                  <div id={AP_TY_E1_K} onClick={() => AP_TY_E1_K_c()}></div>
+                </div>
+                <div id="Filter_row_wrapper">
+                  <h3 id="AlleProjekte_e_H3">Fremdkapital</h3>
+                  <div id={AP_TY_E2_K} onClick={() => AP_TY_E2_K_c()}></div>
+                </div>
               </div>
             </div>
           </div>
@@ -169,28 +539,34 @@ function AlleProjekte() {
               </h2>
 
               <div id="alle_projekte_kategorien_menue">
-                <div>
+                <div
+                  id="FilterButtonAlle"
+                  onClick={() => BuildAllArray(ProjekteArray)}
+                >
+                  <h2 id="FilterButtonAlle_h2">Alle</h2>
+                </div>
+                <div onClick={() => BuildLogistikArray(ProjekteArray)}>
                   <AlleHover Img={Schiffahrtimg} HoverText="Logistik" />
                 </div>
-                <div>
+                <div onClick={() => BuildTechnologieArray(ProjekteArray)}>
                   <AlleHover Img={TechnologieImg} HoverText="Technologie" />
                 </div>
-                <div>
+                <div onClick={() => BuildFinanzenArray(ProjekteArray)}>
                   <AlleHover Img={FinanceImg} HoverText="Finanzen" />
                 </div>
-                <div>
+                <div onClick={() => BuildEnergieArray(ProjekteArray)}>
                   <AlleHover Img={EnergieImg} HoverText="Energie" />
                 </div>
-                <div>
+                <div onClick={() => BuildImmobilienArray(ProjekteArray)}>
                   <AlleHover Img={ImmobilienImg} HoverText="Immobilien" />
                 </div>
-                <div>
+                <div onClick={() => BuildBlockchainArray(ProjekteArray)}>
                   <AlleHover Img={BlockchainImg} HoverText="Blockchain" />
                 </div>
-                <div>
+                <div onClick={() => BuildUmweltArray(ProjekteArray)} v>
                   <AlleHover Img={UmweltImg} HoverText="Umwelt" />
                 </div>
-                <div>
+                <div onClick={() => BuildGamingArray(ProjekteArray)}>
                   <AlleHover Img={GamingImg} HoverText="Gaming" />
                 </div>
               </div>
@@ -198,7 +574,7 @@ function AlleProjekte() {
 
             <div id="alle_projekte_projekte_wrapper_projekte">
               <ul id="alle_projekte_ul">
-                {ProjekteArray.map((Projekt) => (
+                {shownProjects.map((Projekt) => (
                   <li id="alle_projekte_li">
                     <Link to={Projekt.InternerLink}>
                       <ProjektComponentBox
@@ -214,6 +590,7 @@ function AlleProjekte() {
                   </li>
                 ))}
               </ul>
+              {Keinegefunden()}
             </div>
           </div>
         </div>

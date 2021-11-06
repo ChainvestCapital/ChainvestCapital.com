@@ -1,0 +1,174 @@
+#Sekundärmärkte_Wrapper {
+  padding-top: 30vh;
+}
+
+#Sekundärmärkte_Wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#Sekundärmärkte_top {
+  padding-left: 6vw;
+  width: 94vw;
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+}
+#Sekundärmärkte_top_left {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+#Sekundärmärkte_top_h2 {
+  font-family: Montserrat;
+  font-size: 3.5vw;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+}
+#Sekundärmärkte_top_h4 {
+  font-family: Montserrat;
+  font-size: 1vw;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  margin-top: 5vh;
+}
+#Sekundärmärkte_Coming_Soon {
+  display: flex;
+  position: relative;
+}
+#Sekundärmärkte_Coming_Soon_IMG_Wrapper {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+#Sekundärmärkte_Coming_Soon_IMG {
+  width: 80vw;
+}
+#Sekundärmärkte_Coming_Soon_Overlay {
+  display: flex;
+  position: absolute;
+  width: 80vw;
+  left: 10vw;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  height: 100%;
+}
+#Sekundärmärkte_Coming_Soon_Overlay_h2 {
+  font-family: Montserrat;
+  font-size: 5vw;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+}
+#Sekundärmärkte_Coming_Soon_Overlay_h2_yellow {
+  font-family: Montserrat;
+  font-size: 5vw;
+  font-weight: 700;
+  color: #ffb000;
+  margin: 0;
+}
+
+#Sekundärmärkte_top_RIGHT {
+  padding-left: 10vw;
+  align-items: center;
+}
+
+#Sekundärmärkte_top_RIGHT_Grid_temp {
+  display: grid;
+  width: 38vw;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vw;
+}
+
+#Sekundärmärkte_top_RIGHT_Grid {
+  width: 25vw;
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vw;
+}
+#Sekundärmärkte_top_RIGHT_Grid_item_1 {
+  width: 12vw;
+
+  border-radius: 12px;
+  height: 15vh;
+  background-color: #cdf0ea;
+  position: relative;
+}
+#Sekundärmärkte_top_RIGHT_Grid_item_2 {
+  width: 12vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-radius: 12px;
+  height: 15vh;
+  background-color: red;
+}
+#Sekundärmärkte_top_RIGHT_Grid_item_4 {
+  width: 12vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-radius: 12px;
+  height: 15vh;
+  background-color: turquoise;
+}
+#Sekundärmärkte_top_RIGHT_Grid_item_4 {
+  width: 12vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-radius: 12px;
+  height: 15vh;
+  background-color: violet;
+}
+#Sekundärmärkte_top_RIGHT_Grid_item_1_underlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#Sekundärmärkte_top_RIGHT_Grid_item_1_overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.6);
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+#Sekundärmärkte_top_RIGHT_Grid_item_1_ContentLay {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+#Sekundärmärkte_top_RIGHT_Grid_item_1_h3 {
+  position: relative;
+  z-index: 15;
+}
+#Sekundärmärkte_top_RIGHT_Grid_item_1_underlay_IMG {
+  width: 10vw;
+}
+#mobile_Sekundärmärkte_Wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#mobile_Sekundärmärkte_top {
+  padding-top: 15vh;
+}
+#mobile_Sekundärmärkte_coming_soon {
+  display: flex;
+  margin-top: 15vh;
+  justify-content: center;
+}
+#mobile_Sekundärmärkte_coming_soon_IMG {
+  width: 80vw;
+}

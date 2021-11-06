@@ -1,0 +1,116 @@
+#Footer_11_Wrapper {
+  display: flex;
+  flex-direction: column;
+}
+#Footer_11_Top {
+  padding-left: 6vw;
+  padding-right: 6vw;
+  width: 88vw;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(205, 240, 234, 0.44);
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  justify-content: space-between;
+}
+#Footer_11_Top_Left {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
+#Footer_11_Top_h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+
+  margin: 0;
+  color: #434343;
+  margin-bottom: 2vh;
+}
+#Footer_11_Top_h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  color: #434343;
+}
+
+#Footer_11_Top_Right {
+  display: flex;
+  flex-direction: row;
+  padding-right: 10vw;
+}
+#Footer_11_Top_Right_Spalte {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4vw;
+}
+#Footer_11_Top_Right_Spalte_h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+  color: #434343;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  margin-bottom: 2vh;
+}
+
+#Footer_11_Top_Right_Spalte_Div {
+  display: flex;
+  align-items: center;
+  height: 3vh;
+}
+#Footer_11_Top_Right_Spalte_h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+  color: #434343;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#Footer_11_Top_Right_Spalte_h4:hover {
+  color: rgba(255, 176, 0, 1);
+}
+
+#Footer_11_Bottom {
+  padding-left: 6vw;
+  padding-right: 6vw;
+  width: 88vw;
+  display: flex;
+  flex-direction: row;
+  background-color: #cdf0ea;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+#Footer_11_Bottom_h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+  color: #434343;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  margin-right: 5vw;
+}
+#Footer_11_Bottom_Right {
+  display: flex;
+  flex-direction: row;
+  margin-left: 36vw;
+}

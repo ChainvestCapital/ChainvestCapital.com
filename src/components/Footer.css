@@ -4,8 +4,8 @@
   background-color: rgba(205, 240, 234, 0.41);
 
   width: 99vw;
-  height: 34vh;
-  padding-top: 5vh;
+  height: 30vh;
+  padding-top: 4vh;
   position: relative;
   overflow-x: hidden;
   margin-top: 10vh;
@@ -28,7 +28,7 @@
 
 #Footer_left_h2 {
   font-family: Montserrat;
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 600;
   color: rgba(0, 0, 0, 1);
   margin: 0;
@@ -42,7 +42,7 @@
 
 #Footer_h4 {
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 400;
   color: rgba(0, 0, 0, 1);
   margin: 0;
@@ -63,7 +63,7 @@
 
 #Footer_Spalte_Überschrift {
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   color: rgba(0, 0, 0, 1);
   margin: 0;
@@ -78,10 +78,13 @@
 }
 #Footer_spalte_h3 {
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
   color: rgba(0, 0, 0, 1);
   margin: 0;
+}
+#Footer_spalte_h3:hover {
+  color: #ffb000;
 }
 #Footer_Buttom_LEFT {
   width: 27vw;
@@ -98,7 +101,7 @@
   display: flex;
   flex-direction: row;
   background-color: #cdf0ea;
-  height: 10vh;
+  height: 8vh;
 
   align-items: center;
   padding-right: 6vw;

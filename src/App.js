@@ -20,10 +20,13 @@ import Vogemann from "./STOs/Vogemann/Vogemann.js";
 import Tomorrow from "./STOs/Tomorrow/Tomorrow.js";
 
 import allData from "./allData.js";
+import Home11 from "./Home11.js";
+import Sekundärmärkte from "./Sekundärmärkte.js";
 function App() {
   return (
     <div>
       <Route exact path="/" component={Home} />
+      <Route exact path="/Home" component={Home11} />
       <Route exact path="/alleProjekte" component={alleProjekte} />
       <Route exact path="/about" component={about} />
       <Route exact path="/Was-sind-STOs" component={Was_sind_STOs} />
@@ -43,6 +46,8 @@ function App() {
         path="/ProjekteVergleichen"
         component={ProjekteVergleichen}
       />
+
+      <Route exact path="/Sekundärmärkte" component={Sekundärmärkte} />
 
       <Route
         exact

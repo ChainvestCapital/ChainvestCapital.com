@@ -24,15 +24,11 @@ function Footer(props) {
               <h2 id="Footer_Spalte_Überschrift">Social Media</h2>
 
               <div id="Footer_spalte_button">
-                <h3 id="Footer_spalte_h3">Facebook</h3>
-              </div>
-
-              <div id="Footer_spalte_button">
                 <h3 id="Footer_spalte_h3">LinkedIn</h3>
               </div>
               <Link to="../alleProjekte">
                 <div id="Footer_spalte_button">
-                  <h3 id="Footer_spalte_h3">Instagram</h3>
+                  <h3 id="Footer_spalte_h3">Medium</h3>
                 </div>
               </Link>
             </div>
@@ -45,9 +41,9 @@ function Footer(props) {
                 </div>
               </Link>
 
-              <Link to="../Impressum">
+              <Link to="../Für-Unternehmen">
                 <div id="Footer_spalte_button">
-                  <h3 id="Footer_spalte_h3">Presse </h3>
+                  <h3 id="Footer_spalte_h3">Bei uns listen </h3>
                 </div>
               </Link>
 
