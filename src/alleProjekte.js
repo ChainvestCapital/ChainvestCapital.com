@@ -36,6 +36,10 @@ import Amplify from "aws-amplify";
 import { useState, useEffect } from "react";
 
 import AlleHover from "./components/Kategorien/AlleHover";
+import AlleProjekte_Projekt from "./components/AlleProjekte_Projekt";
+import Top_nav_Bar from "./components/navigation/Top_Nav_Bar";
+import Footer_11 from "./components/Footer_11";
+import Kategorien_Filter from "./components/Kategorien_Filter";
 Amplify.configure(awsExports);
 
 function AlleProjekte() {
@@ -426,7 +430,8 @@ function AlleProjekte() {
   return (
     <div>
       <div id="Desktop_Wrapper">
-        <Top_menue />
+        <Top_nav_Bar />
+
         <div id="alle_projekte_wrapper">
           <div id="alle_projekte_filter_wrapper">
             <div id="alle_projekte_filter_wrapper_inner">
@@ -535,7 +540,7 @@ function AlleProjekte() {
           <div id="alle_projekte_projekte_wrapper">
             <div id="alle_projekte_projekte_wrapper_Kategorien">
               <h2 id="alle_projekte_projekte_wrapper_projekte_kategorien">
-                Kategorien:
+                Kategorie wählen:
               </h2>
 
               <div id="alle_projekte_kategorien_menue">
@@ -546,28 +551,32 @@ function AlleProjekte() {
                   <h2 id="FilterButtonAlle_h2">Alle</h2>
                 </div>
                 <div onClick={() => BuildLogistikArray(ProjekteArray)}>
-                  <AlleHover Img={Schiffahrtimg} HoverText="Logistik" />
+                  <Kategorien_Filter Img={Schiffahrtimg} HoverText="Logistik" />
                 </div>
                 <div onClick={() => BuildTechnologieArray(ProjekteArray)}>
-                  <AlleHover Img={TechnologieImg} HoverText="Technologie" />
+                  <Kategorien_Filter
+                    Img={TechnologieImg}
+                    HoverText="Technologie"
+                  />
                 </div>
                 <div onClick={() => BuildFinanzenArray(ProjekteArray)}>
-                  <AlleHover Img={FinanceImg} HoverText="Finanzen" />
+                  <Kategorien_Filter Img={FinanceImg} HoverText="Finanzen" />
                 </div>
                 <div onClick={() => BuildEnergieArray(ProjekteArray)}>
-                  <AlleHover Img={EnergieImg} HoverText="Energie" />
+                  <Kategorien_Filter Img={EnergieImg} HoverText="Energie" />
                 </div>
                 <div onClick={() => BuildImmobilienArray(ProjekteArray)}>
-                  <AlleHover Img={ImmobilienImg} HoverText="Immobilien" />
+                  <Kategorien_Filter
+                    Img={ImmobilienImg}
+                    HoverText="Immobilien"
+                  />
                 </div>
-                <div onClick={() => BuildBlockchainArray(ProjekteArray)}>
-                  <AlleHover Img={BlockchainImg} HoverText="Blockchain" />
-                </div>
+
                 <div onClick={() => BuildUmweltArray(ProjekteArray)} v>
-                  <AlleHover Img={UmweltImg} HoverText="Umwelt" />
+                  <Kategorien_Filter Img={UmweltImg} HoverText="Umwelt" />
                 </div>
                 <div onClick={() => BuildGamingArray(ProjekteArray)}>
-                  <AlleHover Img={GamingImg} HoverText="Gaming" />
+                  <Kategorien_Filter Img={GamingImg} HoverText="Gaming" />
                 </div>
               </div>
             </div>
@@ -577,7 +586,7 @@ function AlleProjekte() {
                 {shownProjects.map((Projekt) => (
                   <li id="alle_projekte_li">
                     <Link to={Projekt.InternerLink}>
-                      <ProjektComponentBox
+                      <AlleProjekte_Projekt
                         title={Projekt.name}
                         KategorieBildLink={Projekt.KategorieBildLink}
                         Finanzierungsvolumen={Projekt.Finanzierungsvolumen}

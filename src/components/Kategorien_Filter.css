@@ -1,0 +1,25 @@
+#Kategorien_Filter_Wrapper {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 12px;
+  align-items: center;
+  height: 5vh;
+}
+#Kategorie_Wrapper_imgx {
+  width: 1.5vw;
+  height: 2vh;
+  margin-right: 1vw;
+}
+#Kategorien_Filter_h3 {
+  font-family: Montserrat;
+  font-style: normal;
+
+  font-weight: normal;
+  font-size: 1vw;
+}

@@ -9,8 +9,8 @@
   display: flex;
   flex-direction: row;
   background-color: rgba(205, 240, 234, 0.44);
-  padding-top: 10vh;
-  padding-bottom: 5vh;
+  padding-top: 7vh;
+  padding-bottom: 3vh;
   justify-content: space-between;
 }
 #Footer_11_Top_Left {
@@ -40,12 +40,16 @@
 #Footer_11_Top_Right {
   display: flex;
   flex-direction: row;
-  padding-right: 10vw;
+  justify-content: space-between;
+}
+#Footer_11_Top_Right_Spalte1 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6vw;
 }
 #Footer_11_Top_Right_Spalte {
   display: flex;
   flex-direction: column;
-  margin-right: 4vw;
 }
 #Footer_11_Top_Right_Spalte_h3 {
   font-family: Montserrat;
@@ -92,6 +96,7 @@
   display: flex;
   flex-direction: row;
   background-color: #cdf0ea;
+  justify-content: space-between;
   padding-top: 2vh;
   padding-bottom: 2vh;
 }
@@ -107,10 +112,20 @@
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  margin-right: 5vw;
 }
 #Footer_11_Bottom_Right {
   display: flex;
   flex-direction: row;
-  margin-left: 36vw;
+  justify-content: flex-end;
+}
+#Footer_11_Bottom_Right_Imp {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  margin-right: 3vw;
+}
+
+#Footer_11_Bottom_Right_Datenschutzerklärung {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  margin-right: 0.5vw;
 }

@@ -9,7 +9,7 @@
   padding-bottom: 4vh;
 }
 #alle_projekte_filter_wrapper {
-  width: 18vw;
+  width: 16vw;
   background: #f3f6fa;
   border-radius: 12px;
   display: flex;
@@ -32,7 +32,16 @@
 }
 
 #FilterButtonAlle {
-  width: 2.6vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 12px;
+  align-items: center;
+  height: 5vh;
 }
 
 #FilterButtonAlle_h2 {
@@ -48,20 +57,20 @@
   display: flex;
   flex-direction: column;
   border-radius: 12px;
-  width: 12vw;
+  width: 10vw;
   align-items: flex-start;
   padding-top: 1vh;
   justify-content: center;
   padding-bottom: 2vh;
   margin-top: 2vh;
-  padding-left: 2vw;
+  padding-left: 1vw;
   padding-right: 1vw;
   padding-top: 2vh;
 }
 #alle_projekte_wrapper_heading {
   display: flex;
-
-  width: 12vw;
+  background-color: red;
+  width: 8vw;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 2vh;
@@ -69,7 +78,7 @@
 }
 #alle_projekte_Filter1_wrapper_heading {
   display: flex;
-  width: 12vw;
+  width: 10vw;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 2vh;
@@ -81,7 +90,7 @@
 #Finanzierungsvolumen_Filter_Wrapper {
   display: flex;
   flex-direction: column;
-  width: 12vw;
+  width: 10vw;
 }
 #filter1active {
   height: 32vh;
@@ -114,7 +123,7 @@
 
 #alle_projekte_wrapper_h3 {
   font-family: Montserrat;
-  font-size: 0.9vw;
+  font-size: 0.7vw;
   margin: 0;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.6);
@@ -132,59 +141,58 @@
 
 #AlleProjekte_e_H3 {
   font-family: Montserrat;
-  font-size: 0.9vw;
+  font-size: 0.7vw;
   font-weight: 600;
-  color: rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 0.6);
 }
 #Filter_row_wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 12vw;
+  width: 10vw;
   align-items: center;
 }
 #clicked {
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 1vw;
+  height: 1vw;
   background-color: #cdf0ea;
-  border-radius: 8px;
+  border-radius: 4px;
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.25);
   border-style: solid;
 }
 
 #unclicked {
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 1vw;
+  height: 1vw;
   background-color: rgba(0, 0, 0, 0);
-  border-radius: 8px;
+  border-radius: 4px;
   border-width: 1px;
   border-color: rgba(0, 0, 0, 0.25);
   border-style: solid;
 }
 
 #alle_projekte_projekte_wrapper {
-  width: 62vw;
+  width: 66vw;
   margin-left: 2vw;
   background: #f3f6fa;
   border-radius: 12px;
   padding-bottom: 4vh;
-  padding-top: 2vh;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding-top: 4vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
   display: flex;
   flex-direction: column;
 }
 
 #alle_projekte_projekte_wrapper_Kategorien {
-  width: 60vw;
+  width: 66vw;
   padding-left: 1vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 6vh;
   border-radius: 12px;
-  background-color: white;
   justify-content: space-between;
 }
 #alle_projekte_projekte_wrapper_projekte_kategorien {
@@ -198,8 +206,11 @@
   margin-left: 3vw;
   display: flex;
   flex-direction: row;
-  height: 80%;
   align-items: center;
+  display: grid;
+
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1vh;
 }
 
 #alle_projekte_kategorie_kachel {
@@ -231,8 +242,8 @@
   display: grid;
   width: 55vw;
   padding-left: 0;
-  grid-template-columns: repeat(3, 3fr);
-  gap: 4vw;
+  grid-template-columns: repeat(4, auto);
+  gap: 1vw;
   list-style: none;
 }
 #alle_projekte_li {

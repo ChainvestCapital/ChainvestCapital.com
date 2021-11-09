@@ -77,8 +77,9 @@ function Home() {
 
         <div id="Div_Home_Projekt_Section">
           <div id="Div_Home_Projekt_Section_Padding">
-            <h2 id="CV_h2_dark_ma">Projekte</h2>
-
+            {" "}
+            <h5 id="Div_Home_CV_Section_LEFT_h5">Digitale Wertpapiere</h5>
+            <h2 id="Div_Home_CV_Section_LEFT_h2">Projekte</h2>
             <ul id="home_projekte_ul_id">
               {ProjekteArray.map((Projekt) => (
                 <li id="home_projekte_li_11">
@@ -96,64 +97,50 @@ function Home() {
                 </li>
               ))}
             </ul>
-
-            <div id="Div_Home_Projekt_Section_ALLE_BUTTON">
-              <h2 id="Div_Home_Projekt_Section_alle_h2">Alle Projekte</h2>
-            </div>
-          </div>
-
-          <div id="Div_Home_Projekte_Section_Layer_Form"></div>
-
-          <div id="Div_Home_Projekte_Section_Layer"></div>
-        </div>
-        <div id="Div_Home_CV_Section">
-          <div id="Div_Home_CV_Section_iNNER">
-            <div id="Div_Home_CV_Section_LEFT">
-              <h5 id="Div_Home_CV_Section_LEFT_h5">About</h5>
-              <h2 id="Div_Home_CV_Section_LEFT_h2">
-                Was ist <br />
-                Chainvest
-                <br /> Capital
-              </h2>
-
-              <div id="Div_Home_CV_Section_LEFT_Button_Wrapper">
-                <div id="Div_Home_CV_Section_LEFT_BUTTON">
-                  <h3 id="Div_Home_CV_Section_LEFT_BUTTON_h3">
-                    Über Chainvest{" "}
-                  </h3>
-                </div>
-                <div id="Div_Home_CV_Section_LEFT_BUTTON">
-                  <h3 id="Div_Home_CV_Section_LEFT_BUTTON_h3">
-                    {" "}
-                    Über digitale Wertpapiere
-                  </h3>
-                </div>
+            <Link to="./alleProjekte">
+              <div id="Div_Home_Projekt_Section_ALLE_BUTTON">
+                <h2 id="Div_Home_Projekt_Section_alle_h2">Alle Projekte</h2>
               </div>
-            </div>
-            <div id="Div_Home_CV_Section_RIGHT">
-              <h4 id="Div_Home_CV_Section_RIGHT_h4">
-                Das disruptive Potenzial der Blockchain-Technologie verändert
-                die bestehende Infrastruktur der Kapitalmärkte. GründerInnen und
-                AnlegerInnen werden neue Möglichkeiten der Kapitalaufnahme
-                eröffnet, losgelöst von zentralen Instanzen. <br />
-                <br />
-                Veränderungsprozesse sind aber auch gleichzeitig mit
-                Unsicherheiten und das Lösen von zentralen Instanzen mit
-                Ungewissheiten verbunden. Mit Chainvest Capital schaffen wir
-                transparentere Rahmenbedingungen auf dem Markt für digitale
-                Wertpapiere und so mehr Vertrauen in die Tokenisierung von
-                Finanzinstrumenten.
-                <br />
-                <br /> Als Informationsplattform für digitalisierte Wertpapiere
-                informiert Chainvest Capital rund um die Fragestellungen der
-                Blockchain-Technologie im Finanzdienstleistungssektor. Mit
-                Chainvest Capital  erhalten AnlegerInnen Zugang zu vielfältigen
-                Investitionsprojekten aus unterschiedlichen Branchen.
-              </h4>
-            </div>{" "}
+            </Link>
           </div>
+          <div id="Div_Home_Projekte_Section_Layer"></div>
+          <div id="Div_Home_Projekte_Section_Layer_Form"></div>
+          <div id="Div_Home_CV_Section">
+            <div id="Div_Home_CV_Section_iNNER">
+              <div id="Div_Home_CV_Section_LEFT">
+                <h5 id="Div_Home_CV_Section_LEFT_h5">Über uns</h5>
+                <h2 id="Div_Home_CV_Section_LEFT_h2">
+                  Was ist <br />
+                  Chainvest
+                  <br /> Capital
+                </h2>
+              </div>
+              <div id="Div_Home_CV_Section_RIGHT">
+                <h4 id="Div_Home_CV_Section_RIGHT_h4">
+                  Das disruptive Potenzial der Blockchain-Technologie verändert
+                  die bestehende Infrastruktur der Kapitalmärkte. GründerInnen
+                  und AnlegerInnen werden neue Möglichkeiten der Kapitalaufnahme
+                  eröffnet, losgelöst von zentralen Instanzen. <br />
+                  <br />
+                  Veränderungsprozesse sind aber auch gleichzeitig mit
+                  Unsicherheiten und das Lösen von zentralen Instanzen mit
+                  Ungewissheiten verbunden. Mit Chainvest Capital schaffen wir
+                  transparentere Rahmenbedingungen auf dem Markt für digitale
+                  Wertpapiere und so mehr Vertrauen in die Tokenisierung von
+                  Finanzinstrumenten.
+                  <br />
+                  <br /> Als Informationsplattform für digitalisierte
+                  Wertpapiere informiert Chainvest Capital rund um die
+                  Fragestellungen der Blockchain-Technologie im
+                  Finanzdienstleistungssektor. Mit Chainvest Capital  erhalten
+                  AnlegerInnen Zugang zu vielfältigen Investitionsprojekten aus
+                  unterschiedlichen Branchen.
+                </h4>
+              </div>{" "}
+            </div>
 
-          <div id="Div_Home_CV_Section_Layer"></div>
+            <div id="Div_Home_CV_Section_Layer"></div>
+          </div>{" "}
         </div>
         <Footer_11 />
       </div>

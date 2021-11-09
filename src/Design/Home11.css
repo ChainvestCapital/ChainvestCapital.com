@@ -5,12 +5,13 @@
 }
 
 #Div_Home_Top_Section {
-  background-color: rgba(229, 229, 299, 1);
+  background: #e0e0e0;
   width: 100vw;
   position: relative;
   display: flex;
   flex-direction: row;
   height: 100vh;
+  justify-content: space-between;
 }
 
 #Div_Home_Top_Section_Layer {
@@ -35,8 +36,7 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 77px;
-  line-height: 94px;
+  font-size: 4.5vw;
   margin: 0;
   color: #434343;
 }
@@ -45,8 +45,8 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 77px;
-  line-height: 94px;
+  font-size: 4.5vw;
+
   margin: 0;
   color: #ffb000;
 }
@@ -54,8 +54,9 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 1.4vw;
+  margin-top: 3vh;
+  width: 38vw;
 
   color: rgba(0, 0, 0, 0.83);
 }
@@ -66,6 +67,7 @@
   flex-direction: row;
   padding-top: 15vh;
   padding-left: 10vw;
+  padding-right: 6vw;
 }
 
 #Div_Home_Top_Section_Right_Spalte_left {
@@ -89,7 +91,7 @@
   border-radius: 12px;
   margin-top: 3vh;
   width: 15vw;
-  height: 25vh;
+  height: 35vh;
 }
 #Div_Home_Top_Section_Right_TR_Wrapper {
   background: rgba(255, 255, 255, 0.75);
@@ -146,13 +148,12 @@
 }
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  */
 #Div_Home_Projekt_Section {
-  background-color: rgba(229, 229, 299, 1);
+  background: #e0e0e0;
   width: 100vw;
-  height: 100vh;
+  height: 180vh;
   position: relative;
   display: flex;
   flex-direction: column;
-  overflow-y: hidden;
 }
 #Div_Home_Projekte_Section_Layer {
   width: 100%;
@@ -166,12 +167,18 @@
 
 #home_projekte_li_11 {
   list-style: none;
+  padding: 0;
+  width: 25vw;
+  margin: 0;
 }
 #home_projekte_ul_id {
   display: grid;
+  padding: 0;
 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   justify-content: space-between;
+  justify-items: stretch;
+
   width: 88vw;
   padding-left: 0vw;
   padding-right: 0vw;
@@ -193,7 +200,13 @@
 #Div_Home_Projekt_Section_Padding {
   padding-left: 6vw;
   padding-right: 6vw;
-  z-index: 5;
+  width: 88vw;
+  padding-top: 2vh;
+  z-index: 25;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
 }
 #Div_Home_Projekt_Section_ALLE_BUTTON {
   margin-top: 3vh;
@@ -202,18 +215,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 8vh;
+  height: 6vh;
   width: 88vw;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #Div_Home_Projekt_Section_alle_h2 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 35px;
-  line-height: 30px;
-  position: relative;
-  z-index: 2;
-  color: rgba(0, 0, 0, 0.9);
+  font-size: 26px;
+  line-height: 20px;
+  margin: 0;
+  color: #434343;
 }
 
 #Div_Home_Projekte_Section_Layer_Form {
@@ -222,20 +235,21 @@
   height: 757px;
   left: -500px;
   top: 45vh;
-  z-index: 2;
+  z-index: 15;
   background: rgba(220, 241, 238, 0.6);
   filter: blur(150px);
 }
 /* ////////////////////////////////// */
 #Div_Home_CV_Section {
-  background-color: rgba(229, 229, 299, 1);
+  background: #e0e0e0;
   width: 100vw;
-  height: 80vh;
+  height: 60vh;
   position: relative;
   display: flex;
   flex-direction: row;
   overflow-y: hidden;
-  padding-top: 10vh;
+  padding-top: 20vh;
+  z-index: 20;
 }
 #Div_Home_CV_Section_LEFT {
   display: flex;
@@ -254,62 +268,38 @@
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 2px;
   margin: 0;
   color: #434343;
-  margin-bottom: 2vh;
 }
 #Div_Home_CV_Section_LEFT_h2 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 60px;
-  line-height: 80px;
+  font-size: 4vw;
   position: relative;
   z-index: 2;
   color: rgba(0, 0, 0, 0.83);
   margin: 0;
-  margin-bottom: 2vh;
-  margin-top: 1vh;
 }
-#Div_Home_CV_Section_LEFT_Button_Wrapper {
-  display: flex;
-  flex-direction: column;
-}
+
 #Div_Home_CV_Section_LEFT_BUTTON_h3 {
   font-family: Montserrat;
-  font-style: bold;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 2px;
-  margin: 0;
-  color: #434343;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4vw;
+  margin-top: 3vh;
 }
-#Div_Home_CV_Section_LEFT_BUTTON {
-  width: 20vw;
-  display: flex;
-  align-items: center;
-  padding-left: 2vw;
-  background-color: white;
-  border-radius: 12px;
-  height: 8vh;
-  margin-top: 2vh;
-}
+
 #Div_Home_CV_Section_RIGHT {
-  width: 45vw;
-  padding-right: 6vw;
-  padding-left: 6vw;
+  width: 49vw;
   display: flex;
-  padding-top: 10vh;
 }
 #Div_Home_CV_Section_RIGHT_h4 {
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: normal;
+  font-size: 1.4vw;
   margin: 0;
-  width: 40vw;
-  color: #434343;
 }
 #Div_Home_CV_Section_Layer {
   width: 100vw;

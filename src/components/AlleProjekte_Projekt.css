@@ -1,6 +1,6 @@
-#Home11_Proj_Comp_Wrapper {
-  width: 25vw;
-  height: 64vh;
+#AlleProj_Proj_Comp_Wrapper {
+  width: 16vw;
+  height: 50vh;
   border-radius: 12px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.75);
@@ -16,14 +16,14 @@
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-#Home11_Proj_Comp_Wrapper:hover {
+#AlleProj_Proj_Comp_Wrapper:hover {
   -webkit-transform: scale(1.03);
   -moz-transform: scale(1.03);
   -ms-transform: scale(1.03);
   -o-transform: scale(1.03);
   transform: scale(1.03);
 }
-#Home11_Proj_Comp_top {
+#AlleProj_Proj_Comp_top {
   width: 23.6vw;
   border-radius: 12px;
   height: 30vh;
@@ -35,16 +35,16 @@
   padding-right: 0.7vw;
   padding-left: 0.7vw;
 }
-#Home11_Proj_Comp_BG_Img {
+#AlleProj_Proj_Comp_BG_Img {
   width: 100%;
   height: 100%;
   border-radius: 12px;
 }
-#Home11_Proj_Comp_Logo_Img {
+#AlleProj_Proj_Comp_Logo_Img {
   position: absolute;
   width: 18vw;
 }
-#Home11_Proj_Comp_Mid {
+#AlleProj_Proj_Comp_Mid {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -54,13 +54,13 @@
   width: 22vw;
   padding-top: 2vh;
 }
-#Home11_Proj_Comp_Mid_Left {
+#AlleProj_Proj_Comp_Mid_Left {
   display: flex;
   flex-direction: column;
   height: 4vw;
   align-content: space-between;
 }
-#Home11_Proj_Comp_Mid_title_h2 {
+#AlleProj_Proj_Comp_Mid_title_h2 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -69,7 +69,7 @@
   color: #434343;
   margin-bottom: 0.8vh;
 }
-#Home11_Proj_Comp_Mid_Kategorie {
+#AlleProj_Proj_Comp_Mid_Kategorie {
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -78,21 +78,21 @@
   width: 3.5vw;
   height: 3.5vw;
 }
-#Home11_Proj_Comp_Mid_Kat_img {
+#AlleProj_Proj_Comp_Mid_Kat_img {
   width: 1.6vw;
 }
-#Home11_Proj_Comp_Bottom {
+#AlleProj_Proj_Comp_Bottom {
   display: flex;
   flex-direction: column;
   padding-left: 2vw;
   margin-top: 4vh;
 }
-#Home11_Proj_Comp_Bottom_Button_Wrapper {
+#AlleProj_Proj_Comp_Bottom_Button_Wrapper {
   display: flex;
   flex-direction: column;
   margin-bottom: 3vh;
 }
-#Home11_Proj_Comp_Bottom_Button_h2 {
+#AlleProj1_Proj_Comp_Bottom_Button_h2 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -102,7 +102,7 @@
   color: #434343;
   margin-bottom: 2vh;
 }
-#Home11_Proj_Comp_Bottom_Button_h4 {
+#AlleProj_Proj_Comp_Bottom_Button_h4 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
@@ -111,7 +111,7 @@
   margin: 0;
   color: #434343;
 }
-#Home11_Proj_Comp_Go_To {
+#AlleProj_Proj_Comp_Go_To {
   padding-right: 1vw;
   display: flex;
   flex-direction: row;

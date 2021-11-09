@@ -7,6 +7,8 @@ import { listProjekts } from "./graphql/queries";
 import Amplify from "aws-amplify";
 import { useState, useEffect } from "react";
 import Schiffahrt from "./components/Kategorien/Schiffahrt";
+import logo from "./assets/images/Logo_Trans.png";
+import arrow from "./assets/images/Arrow_white.png";
 
 function Test(props) {
   const [filterausklappenx, setfilterausklappenx] = useState(true);
@@ -112,6 +114,31 @@ function Test(props) {
 
   return (
     <div>
+      <div id="Top_Navigation_Bar">
+        <img src={logo} id="Top_Menue_Bar_logo_img" />
+
+        <div id="Top_Navigation_Bar_RightWrapper">
+          <div id="Top_Navigation_Bar_Spalte1">
+            {" "}
+            <h3 id="Top_Menue_Bar_h3">Digitale Wertpapiere</h3>
+          </div>
+          <div id="Top_Navigation_Bar_Spalte2">
+            {" "}
+            <h3 id="Top_Menue_Bar_h3">Für unternehmen</h3>
+          </div>
+          <div id="Top_Navigation_Bar_Spalte3">
+            {" "}
+            <h3 id="Top_Menue_Bar_h3">Über Uns</h3>
+          </div>
+          <Link to="/alleProjekte">
+            {" "}
+            <div id="Top_Menue_Bar_Button_yellow">
+              <h3 id="Top_Menue_Bar_h3_white">Alle Projekte</h3>
+              <img src={arrow} id="Top_Menue_Bar_Button_yellow_IMG" />
+            </div>
+          </Link>
+        </div>
+      </div>
       <div id="Text_Wrapper">
         <div className="title">
           <h1>

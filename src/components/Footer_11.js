@@ -19,16 +19,13 @@ function Footer_11(props) {
             </h3>
           </div>
           <div id="Footer_11_Top_Right">
-            <div id="Footer_11_Top_Right_Spalte">
+            <div id="Footer_11_Top_Right_Spalte1">
               <h3 id="Footer_11_Top_Right_Spalte_h3">Social Media</h3>
               <div id="Footer_11_Top_Right_Spalte_Div">
-                <h4 id="Footer_11_Top_Right_Spalte_h4">Facebook</h4>
+                <h4 id="Footer_11_Top_Right_Spalte_h4">LinkedIn</h4>
               </div>
               <div id="Footer_11_Top_Right_Spalte_Div">
-                <h4 id="Footer_11_Top_Right_Spalte_h4">Facebook</h4>
-              </div>
-              <div id="Footer_11_Top_Right_Spalte_Div">
-                <h4 id="Footer_11_Top_Right_Spalte_h4">Facebook</h4>
+                <h4 id="Footer_11_Top_Right_Spalte_h4">Medium</h4>
               </div>
             </div>
 
@@ -38,10 +35,7 @@ function Footer_11(props) {
                 <h4 id="Footer_11_Top_Right_Spalte_h4">Über uns</h4>
               </div>
               <div id="Footer_11_Top_Right_Spalte_Div">
-                <h4 id="Footer_11_Top_Right_Spalte_h4">Partner</h4>
-              </div>
-              <div id="Footer_11_Top_Right_Spalte_Div">
-                <h4 id="Footer_11_Top_Right_Spalte_h4">Presse</h4>
+                <h4 id="Footer_11_Top_Right_Spalte_h4">Alle Projekte</h4>
               </div>
             </div>
           </div>
@@ -49,8 +43,12 @@ function Footer_11(props) {
         <div id="Footer_11_Bottom">
           <h3 id="Footer_11_Bottom_h3">Copyright Chainvest Capital 2021</h3>
           <div id="Footer_11_Bottom_Right">
-            <h3 id="Footer_11_Bottom_h3">Impressum</h3>
-            <h3 id="Footer_11_Bottom_h3">Datenschutzerklärung</h3>
+            <div id="Footer_11_Bottom_Right_Imp">
+              <h3 id="Footer_11_Bottom_h3">Impressum</h3>
+            </div>
+            <div id="Footer_11_Bottom_Right_Datenschutzerklärung">
+              <h3 id="Footer_11_Bottom_h3">Datenschutzerklärung</h3>
+            </div>
           </div>
         </div>
       </div>
