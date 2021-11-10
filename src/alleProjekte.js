@@ -430,181 +430,193 @@ function AlleProjekte() {
   return (
     <div>
       <div id="Desktop_Wrapper">
-        <Top_nav_Bar />
-
-        <div id="alle_projekte_wrapper">
-          <div id="alle_projekte_filter_wrapper">
-            <div id="alle_projekte_filter_wrapper_inner">
-              <div id={isfilter1active}>
-                {" "}
-                <div
-                  id="alle_projekte_Filter1_wrapper_heading"
-                  onClick={() => FIlter1ausklappem()}
-                >
-                  <h3 id="alle_projekte_wrapper_h3">Finanzierungsvolumen</h3>
-                  <div id={alle_projekte_wrapper_icon}>
-                    <img
-                      src={Filtertrigger}
-                      id="alle_projekte_wrapper_close_img"
-                    />
-                  </div>
-                </div>
-                <div id="Filter_row_wrapper">
-                  <h3 id="AlleProjekte_e_H3">50.000</h3>
-                  <div id={AP_FV_E1_K} onClick={() => AP_FV_E1_K_c()}></div>
-                </div>
-                <div id="Filter_row_wrapper">
-                  <h3 id="AlleProjekte_e_H3">250.000</h3>
-                  <div id={AP_FV_E2_K} onClick={() => AP_FV_E2_K_c()}></div>
-                </div>
-                <div id="Filter_row_wrapper">
-                  <h3 id="AlleProjekte_e_H3">1.000.000</h3>
-                  <div id={AP_FV_E3_K} onClick={() => AP_FV_E3_K_c()}></div>
-                </div>
-                <div id="Filter_row_wrapper">
-                  <h3 id="AlleProjekte_e_H3">10.000.000</h3>
-                  <div id={AP_FV_E4_K} onClick={() => AP_FV_E4_K_c()}></div>
-                </div>
-                <div id="Filter_row_wrapper">
-                  <h3 id="AlleProjekte_e_H3">100.000.000</h3>
-                  <div id={AP_FV_E5_K} onClick={() => AP_FV_E5_K_c()}></div>
-                </div>
-              </div>
-            </div>
-
-            <div id="alle_projekte_filter_wrapper_inner">
-              <div id={isfilter2active}>
-                {" "}
-                <div
-                  id="alle_projekte_Filter1_wrapper_heading"
-                  onClick={() => FIlter2ausklappem()}
-                >
-                  <h3 id="alle_projekte_wrapper_h3">Erw. Rendite</h3>
-                  <div id={alle_projekte_wrapper_icon2}>
-                    <img
-                      src={Filtertrigger}
-                      id="alle_projekte_wrapper_close_img"
-                    />
-                  </div>
-                </div>
-                <div id="Filter_row_wrapper">
-                  <h3 id="AlleProjekte_e_H3">50.000</h3>
-                  <div id={AP_ER_E1_K} onClick={() => AP_ER_E1_K_c()}></div>
-                </div>
-                <div id="Filter_row_wrapper">
-                  <h3 id="AlleProjekte_e_H3">250.000</h3>
-                  <div id={AP_ER_E2_K} onClick={() => AP_ER_E2_K_c()}></div>
-                </div>
-                <div id="Filter_row_wrapper">
-                  <h3 id="AlleProjekte_e_H3">1.000.000</h3>
-                  <div id={AP_ER_E3_K} onClick={() => AP_ER_E3_K_c()}></div>
-                </div>
-                <div id="Filter_row_wrapper">
-                  <h3 id="AlleProjekte_e_H3">10.000.000</h3>
-                  <div id={AP_ER_E4_K} onClick={() => AP_ER_E4_K_c()}></div>
-                </div>
-                <div id="Filter_row_wrapper">
-                  <h3 id="AlleProjekte_e_H3">100.000.000</h3>
-                  <div id={AP_ER_E5_K} onClick={() => AP_ER_E5_K_c()}></div>
-                </div>
-              </div>
-            </div>
-
-            <div id="alle_projekte_filter_wrapper_inner">
-              <div id={isfilter3active}>
-                {" "}
-                <div
-                  id="alle_projekte_Filter1_wrapper_heading"
-                  onClick={() => FIlter3ausklappem()}
-                >
-                  <h3 id="alle_projekte_wrapper_h3">Typ</h3>
-                  <div id={alle_projekte_wrapper_icon3}>
-                    <img
-                      src={Filtertrigger}
-                      id="alle_projekte_wrapper_close_img"
-                    />
-                  </div>
-                </div>
-                <div id="Filter_row_wrapper">
-                  <h3 id="AlleProjekte_e_H3">Eigenkapital</h3>
-                  <div id={AP_TY_E1_K} onClick={() => AP_TY_E1_K_c()}></div>
-                </div>
-                <div id="Filter_row_wrapper">
-                  <h3 id="AlleProjekte_e_H3">Fremdkapital</h3>
-                  <div id={AP_TY_E2_K} onClick={() => AP_TY_E2_K_c()}></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="alle_projekte_projekte_wrapper">
-            <div id="alle_projekte_projekte_wrapper_Kategorien">
-              <h2 id="alle_projekte_projekte_wrapper_projekte_kategorien">
-                Kategorie wählen:
-              </h2>
-
-              <div id="alle_projekte_kategorien_menue">
-                <div
-                  id="FilterButtonAlle"
-                  onClick={() => BuildAllArray(ProjekteArray)}
-                >
-                  <h2 id="FilterButtonAlle_h2">Alle</h2>
-                </div>
-                <div onClick={() => BuildLogistikArray(ProjekteArray)}>
-                  <Kategorien_Filter Img={Schiffahrtimg} HoverText="Logistik" />
-                </div>
-                <div onClick={() => BuildTechnologieArray(ProjekteArray)}>
-                  <Kategorien_Filter
-                    Img={TechnologieImg}
-                    HoverText="Technologie"
-                  />
-                </div>
-                <div onClick={() => BuildFinanzenArray(ProjekteArray)}>
-                  <Kategorien_Filter Img={FinanceImg} HoverText="Finanzen" />
-                </div>
-                <div onClick={() => BuildEnergieArray(ProjekteArray)}>
-                  <Kategorien_Filter Img={EnergieImg} HoverText="Energie" />
-                </div>
-                <div onClick={() => BuildImmobilienArray(ProjekteArray)}>
-                  <Kategorien_Filter
-                    Img={ImmobilienImg}
-                    HoverText="Immobilien"
-                  />
-                </div>
-
-                <div onClick={() => BuildUmweltArray(ProjekteArray)} v>
-                  <Kategorien_Filter Img={UmweltImg} HoverText="Umwelt" />
-                </div>
-                <div onClick={() => BuildGamingArray(ProjekteArray)}>
-                  <Kategorien_Filter Img={GamingImg} HoverText="Gaming" />
-                </div>
-              </div>
-            </div>
-
-            <div id="alle_projekte_projekte_wrapper_projekte">
-              <ul id="alle_projekte_ul">
-                {shownProjects.map((Projekt) => (
-                  <li id="alle_projekte_li">
-                    <Link to={Projekt.InternerLink}>
-                      <AlleProjekte_Projekt
-                        title={Projekt.name}
-                        KategorieBildLink={Projekt.KategorieBildLink}
-                        Finanzierungsvolumen={Projekt.Finanzierungsvolumen}
-                        ErwarteteRendite={Projekt.ErwRendite}
-                        Typ={Projekt.Typ}
-                        Logo={Projekt.LogoLink}
-                        titleImg={Projekt.TitleLink}
+        <div id="alle_projekte_ALL_wrapper">
+          <div id="alle_projekte_Layer"></div>
+          <Top_nav_Bar />
+          <div id="alle_projekte_wrapper">
+            <div id="alle_projekte_filter_wrapper">
+              <div id="alle_projekte_filter_wrapper_inner">
+                <div id={isfilter1active}>
+                  {" "}
+                  <div
+                    id="alle_projekte_Filter1_wrapper_heading"
+                    onClick={() => FIlter1ausklappem()}
+                  >
+                    <h3 id="alle_projekte_wrapper_h3">Mindestinvestition</h3>
+                    <div id={alle_projekte_wrapper_icon}>
+                      <img
+                        src={Filtertrigger}
+                        id="alle_projekte_wrapper_close_img"
                       />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              {Keinegefunden()}
+                    </div>
+                  </div>
+                  <div id="Filter_row_wrapper">
+                    <h3 id="AlleProjekte_e_H3">1-50 €</h3>
+                    <div id={AP_FV_E1_K} onClick={() => AP_FV_E1_K_c()}></div>
+                  </div>
+                  <div id="Filter_row_wrapper">
+                    <h3 id="AlleProjekte_e_H3">50-100 €</h3>
+                    <div id={AP_FV_E2_K} onClick={() => AP_FV_E2_K_c()}></div>
+                  </div>
+                  <div id="Filter_row_wrapper">
+                    <h3 id="AlleProjekte_e_H3">100-500 €</h3>
+                    <div id={AP_FV_E3_K} onClick={() => AP_FV_E3_K_c()}></div>
+                  </div>
+                  <div id="Filter_row_wrapper">
+                    <h3 id="AlleProjekte_e_H3">500-1000 €</h3>
+                    <div id={AP_FV_E4_K} onClick={() => AP_FV_E4_K_c()}></div>
+                  </div>
+                  <div id="Filter_row_wrapper">
+                    <h3 id="AlleProjekte_e_H3">1000 € +</h3>
+                    <div id={AP_FV_E5_K} onClick={() => AP_FV_E5_K_c()}></div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="alle_projekte_filter_wrapper_inner">
+                <div id={isfilter2active}>
+                  {" "}
+                  <div
+                    id="alle_projekte_Filter1_wrapper_heading"
+                    onClick={() => FIlter2ausklappem()}
+                  >
+                    <h3 id="alle_projekte_wrapper_h3">Erw. Rendite</h3>
+                    <div id={alle_projekte_wrapper_icon2}>
+                      <img
+                        src={Filtertrigger}
+                        id="alle_projekte_wrapper_close_img"
+                      />
+                    </div>
+                  </div>
+                  <div id="Filter_row_wrapper">
+                    <h3 id="AlleProjekte_e_H3">1-4 %</h3>
+                    <div id={AP_ER_E1_K} onClick={() => AP_ER_E1_K_c()}></div>
+                  </div>
+                  <div id="Filter_row_wrapper">
+                    <h3 id="AlleProjekte_e_H3">4-8 %</h3>
+                    <div id={AP_ER_E2_K} onClick={() => AP_ER_E2_K_c()}></div>
+                  </div>
+                  <div id="Filter_row_wrapper">
+                    <h3 id="AlleProjekte_e_H3">8-12 %</h3>
+                    <div id={AP_ER_E3_K} onClick={() => AP_ER_E3_K_c()}></div>
+                  </div>
+                  <div id="Filter_row_wrapper">
+                    <h3 id="AlleProjekte_e_H3">12 % +</h3>
+                    <div id={AP_ER_E4_K} onClick={() => AP_ER_E4_K_c()}></div>
+                  </div>
+                  <div id="Filter_row_wrapper">
+                    <h3 id="AlleProjekte_e_H3">Variabel</h3>
+                    <div id={AP_ER_E5_K} onClick={() => AP_ER_E5_K_c()}></div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="alle_projekte_filter_wrapper_inner">
+                <div id={isfilter3active}>
+                  {" "}
+                  <div
+                    id="alle_projekte_Filter1_wrapper_heading"
+                    onClick={() => FIlter3ausklappem()}
+                  >
+                    <h3 id="alle_projekte_wrapper_h3">Blockchain</h3>
+                    <div id={alle_projekte_wrapper_icon3}>
+                      <img
+                        src={Filtertrigger}
+                        id="alle_projekte_wrapper_close_img"
+                      />
+                    </div>
+                  </div>
+                  <div id="Filter_row_wrapper">
+                    <h3 id="AlleProjekte_e_H3">Ethereum</h3>
+                    <div id={AP_TY_E1_K} onClick={() => AP_TY_E1_K_c()}></div>
+                  </div>
+                  <div id="Filter_row_wrapper">
+                    <h3 id="AlleProjekte_e_H3">Stellar</h3>
+                    <div id={AP_TY_E2_K} onClick={() => AP_TY_E2_K_c()}></div>
+                  </div>
+                  <div id="Filter_row_wrapper">
+                    <h3 id="AlleProjekte_e_H3">Private</h3>
+                    <div id={AP_TY_E2_K} onClick={() => AP_TY_E2_K_c()}></div>
+                  </div>
+                  <div id="Filter_row_wrapper">
+                    <h3 id="AlleProjekte_e_H3">Sonstige</h3>
+                    <div id={AP_TY_E2_K} onClick={() => AP_TY_E2_K_c()}></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="alle_projekte_projekte_wrapper">
+              <div id="alle_projekte_projekte_wrapper_Kategorien">
+                <h2 id="alle_projekte_projekte_wrapper_projekte_kategorien">
+                  Kategorie wählen:
+                </h2>
+
+                <div id="alle_projekte_kategorien_menue">
+                  <div
+                    id="FilterButtonAlle"
+                    onClick={() => BuildAllArray(ProjekteArray)}
+                  >
+                    <h2 id="FilterButtonAlle_h2">Alle</h2>
+                  </div>
+                  <div onClick={() => BuildLogistikArray(ProjekteArray)}>
+                    <Kategorien_Filter
+                      Img={Schiffahrtimg}
+                      HoverText="Logistik"
+                    />
+                  </div>
+                  <div onClick={() => BuildTechnologieArray(ProjekteArray)}>
+                    <Kategorien_Filter
+                      Img={TechnologieImg}
+                      HoverText="Technologie"
+                    />
+                  </div>
+                  <div onClick={() => BuildFinanzenArray(ProjekteArray)}>
+                    <Kategorien_Filter Img={FinanceImg} HoverText="Finanzen" />
+                  </div>
+                  <div onClick={() => BuildEnergieArray(ProjekteArray)}>
+                    <Kategorien_Filter Img={EnergieImg} HoverText="Energie" />
+                  </div>
+                  <div onClick={() => BuildImmobilienArray(ProjekteArray)}>
+                    <Kategorien_Filter
+                      Img={ImmobilienImg}
+                      HoverText="Immobilien"
+                    />
+                  </div>
+
+                  <div onClick={() => BuildUmweltArray(ProjekteArray)} v>
+                    <Kategorien_Filter Img={UmweltImg} HoverText="Umwelt" />
+                  </div>
+                  <div onClick={() => BuildGamingArray(ProjekteArray)}>
+                    <Kategorien_Filter Img={GamingImg} HoverText="Gaming" />
+                  </div>
+                </div>
+              </div>
+
+              <div id="alle_projekte_projekte_wrapper_projekte">
+                <ul id="alle_projekte_ul">
+                  {shownProjects.map((Projekt) => (
+                    <li id="alle_projekte_li">
+                      <Link to={Projekt.InternerLink}>
+                        <AlleProjekte_Projekt
+                          title={Projekt.name}
+                          KategorieBildLink={Projekt.KategorieBildLink}
+                          Finanzierungsvolumen={Projekt.Finanzierungsvolumen}
+                          ErwarteteRendite={Projekt.ErwRendite}
+                          Typ={Projekt.Typ}
+                          Logo={Projekt.LogoLink}
+                          titleImg={Projekt.TitleLink}
+                        />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                {Keinegefunden()}
+              </div>
             </div>
           </div>
+          <Footer />{" "}
         </div>
-
-        <Footer />
       </div>
 
       <div id="Mobile_Wrapper">

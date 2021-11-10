@@ -14,6 +14,7 @@ function AlleProjekte_Projekt(props) {
             <h2 id="AlleProj_Proj_Comp_Mid_title_h2">{props.title} </h2>
             <h4 id="AlleProj_Proj_Comp_Bottom_Button_h4">Finexity</h4>
           </div>
+
           <div id="AlleProj_Proj_Comp_Mid_Kategorie">
             <img
               src={props.KategorieBildLink}
@@ -39,7 +40,7 @@ function AlleProjekte_Projekt(props) {
         </div>
         <div id="AlleProj_Proj_Comp_Go_To">
           <div id="Top_Menue_Bar_Button_yellow">
-            <h3 id="Top_Menue_Bar_h3_white">Zum Projekt</h3>
+            <h3 id="AlleProj_Proj_Comp_Go_To_h3">Zum Projekt</h3>
             <img src={arrow} id="Top_Menue_Bar_Button_yellow_IMG" />
           </div>
         </div>
