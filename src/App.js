@@ -22,7 +22,7 @@ import Tomorrow from "./STOs/Tomorrow/Tomorrow.js";
 import allData from "./allData.js";
 import Home11 from "./Home11.js";
 import Sekundärmärkte from "./Sekundärmärkte.js";
-import Muster from "./Digitale Wertpapiere/Muster.js";
+import Muster from "./Digitale Wertpapiere/Muster/Muster.js";
 
 function App() {
   return (
