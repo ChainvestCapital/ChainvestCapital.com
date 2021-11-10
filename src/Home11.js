@@ -18,6 +18,8 @@ function Home() {
   }, []);
 
   const [ProjekteArray, setProjekteArray] = useState([]);
+  const [DreierProjekteArray, setDreierProjekteArray] = useState([]);
+
   const fetchProjekte = async () => {
     try {
       const ProjekteData = await API.graphql(graphqlOperation(listProjekts));
@@ -25,10 +27,20 @@ function Home() {
       const ProjekteList = ProjekteData.data.listProjekts.items;
       setProjekteArray(ProjekteList);
       console.log(ProjekteList);
+      builddreierArray(ProjekteList);
     } catch (error) {
       console.log(error);
     }
   };
+  const [helping1, sethelping1] = useState([]);
+  function builddreierArray(GanzesArray) {
+    for (var i = 0; i < 3; i++) {
+      console.log(i);
+      helping1.push(GanzesArray[i]);
+      console.log(helping1);
+    }
+    setDreierProjekteArray(helping1);
+  }
 
   useEffect(() => {
     fetchProjekte();
@@ -77,11 +89,10 @@ function Home() {
 
         <div id="Div_Home_Projekt_Section">
           <div id="Div_Home_Projekt_Section_Padding">
-            {" "}
             <h5 id="Div_Home_CV_Section_LEFT_h5">Digitale Wertpapiere</h5>
             <h2 id="Div_Home_CV_Section_LEFT_h2">Projekte</h2>
             <ul id="home_projekte_ul_id">
-              {ProjekteArray.map((Projekt) => (
+              {DreierProjekteArray.map((Projekt) => (
                 <li id="home_projekte_li_11">
                   <Link to={Projekt.InternerLink}>
                     <Home11_Proj_Comp

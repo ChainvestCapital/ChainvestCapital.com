@@ -22,6 +22,8 @@ import Tomorrow from "./STOs/Tomorrow/Tomorrow.js";
 import allData from "./allData.js";
 import Home11 from "./Home11.js";
 import Sekundärmärkte from "./Sekundärmärkte.js";
+import Muster from "./Digitale Wertpapiere/Muster.js";
+
 function App() {
   return (
     <div>
@@ -35,6 +37,8 @@ function App() {
       <Route exact path="/Test" component={Test} />
       <Route exact path="/Partner" component={Partner} />
       <Route exact path="/Presse" component={Presse} />
+
+      <Route exact path="/Digitale_Wertpapiere/Muster" component={Muster} />
 
       <Route
         exact

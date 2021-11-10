@@ -176,13 +176,18 @@
   padding: 0;
 
   grid-template-columns: repeat(3, auto);
+
   justify-content: space-between;
   justify-items: stretch;
 
   width: 88vw;
   padding-left: 0vw;
   padding-right: 0vw;
+  height: 66vh;
+  row-gap: 2vh;
+  --columns: 1;
 }
+
 #CV_h2_dark_ma {
   font-family: Montserrat;
   font-style: normal;
