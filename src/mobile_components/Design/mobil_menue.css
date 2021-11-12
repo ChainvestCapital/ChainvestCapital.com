@@ -8,6 +8,8 @@
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 5vh;
+  position: relative;
+  z-index: 10;
 }
 
 #mobile_menue_wrapper_hamburger {
@@ -15,7 +17,8 @@
 }
 
 #mobile_menue_wrapper_logo {
-  width: 30vw;
+  width: 20vw;
+  height: 5vh;
 }
 #mobile_menue_wrapper_hamburger_img {
   width: 10vw;

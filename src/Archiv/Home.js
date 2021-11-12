@@ -1,50 +1,29 @@
-import "./Design/Home.css";
+import "../Design/Home.css";
 import { Route, Link } from "react-router-dom";
 
-import alleProjekte from "./alleProjekte.js";
-import about from "./about.js";
-import Bitbond from "./STOs/Bitbond.js";
+import Top_menue from "../components/navigation/top_menue";
+import Blue_round_fixpadding from "../components/navigation/buttons/blue_round_fixpadding";
+import Home_Projekt_Banner from "../components/projekte/home_projekt_banner";
 
-import Top_menue from "./components/navigation/top_menue";
-import Blue_round_fixpadding from "./components/navigation/buttons/blue_round_fixpadding";
-import Home_Projekt_Banner from "./components/projekte/home_projekt_banner";
+import logo from "../assets/images/logo.png";
 
-import VogemannLogo from "./assets/images/VogemannLogo.png";
-import VogemannTitle from "./assets/images/VogemannImg.png";
+import Footer from "../components/Footer";
 
-import TomorrowLogo from "./assets/images/TomorrowLogo.png";
-import TomorrowTitle from "./assets/images/TomorrowImg.png";
+import HomeForm from "../assets/images/HomeForm.png";
+import HomeBig from "../assets/images/Home_Big.png";
 
-import BitbondLogo from "./assets/images/BitbondLogo.png";
-import BitbondTitle from "./assets/images/BitbondImg.png";
+import STOImg from "../assets/images/STOImg.png";
+import VergleichenImg from "../assets/images/VergleichenImg.png";
+import ProjekteImg from "../assets/images/ProjektImg.png";
 
-import Schiffahrtimg from "./assets/images/Schiffahrt.png";
+import Mobile_home_projekt from "../mobile_components/mobile_home_projekt";
+import Mobile_footer from "../mobile_components/Mobile_Footer";
 
-import Schiffahrt from "./components/Kategorien/Schiffahrt";
-import Technologie from "./components/Kategorien/Technologie";
-import Finance from "./components/Kategorien/Finance";
+import Mobile_menue from "../mobile_components/moble_menue";
 
-import F from "./components/navigation/FooterComp";
-import logo from "./assets/images/logo.png";
-
-import Footer from "./components/Footer";
-
-import HomeForm from "./assets/images/HomeForm.png";
-import HomeBig from "./assets/images/Home_Big.png";
-
-import STOImg from "./assets/images/STOImg.png";
-import VergleichenImg from "./assets/images/VergleichenImg.png";
-import ProjekteImg from "./assets/images/ProjektImg.png";
-
-import Mobile_home_projekt from "./mobile_components/mobile_home_projekt";
-import moble_menue from "./mobile_components/moble_menue";
-import Mobile_footer from "./mobile_components/Mobile_Footer";
-
-import Mobile_menue from "./mobile_components/moble_menue";
-
-import awsExports from "./aws-exports";
+import awsExports from "../aws-exports";
 import { API, graphqlOperation } from "aws-amplify";
-import { listProjekts } from "./graphql/queries";
+import { listProjekts } from "../graphql/queries";
 import Amplify from "aws-amplify";
 
 import { useState, useEffect } from "react";

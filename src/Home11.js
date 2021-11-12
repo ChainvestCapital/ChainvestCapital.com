@@ -10,6 +10,14 @@ import { useState, useEffect } from "react";
 import Home11_Proj_Comp from "./components/Home11_Proj_Comp";
 import Top_nav_Bar from "./components/navigation/Top_Nav_Bar";
 import Footer_11 from "./components/Footer_11";
+
+import TL_Img from "./assets/images/TL_Img.png";
+import UR_Img from "./assets/images/UR_Img.png";
+
+import Mobile_menue from "./mobile_components/moble_menue.js";
+
+import OR_Img from "./assets/images/OR_Img.png";
+import Mobile_Home_Projekt_Box from "./MobileComponents/Mobile_Home_Projekt_Box";
 Amplify.configure(awsExports);
 
 function Home() {
@@ -19,6 +27,7 @@ function Home() {
 
   const [ProjekteArray, setProjekteArray] = useState([]);
   const [DreierProjekteArray, setDreierProjekteArray] = useState([]);
+  const [ViererProjekteArray, setViererProjekteArray] = useState([]);
 
   const fetchProjekte = async () => {
     try {
@@ -28,6 +37,7 @@ function Home() {
       setProjekteArray(ProjekteList);
       console.log(ProjekteList);
       builddreierArray(ProjekteList);
+      buildViererProjekteArray(ProjekteList);
     } catch (error) {
       console.log(error);
     }
@@ -40,6 +50,15 @@ function Home() {
       console.log(helping1);
     }
     setDreierProjekteArray(helping1);
+  }
+  const [helping2, sethelping2] = useState([]);
+  function buildViererProjekteArray(GanzesArray) {
+    for (var i = 0; i < 4; i++) {
+      console.log(i);
+      helping2.push(GanzesArray[i]);
+      console.log(helping2);
+    }
+    setViererProjekteArray(helping2);
   }
 
   useEffect(() => {
@@ -63,13 +82,10 @@ function Home() {
           </div>
           <div id="Div_Home_Top_Section_Right">
             <div id="Div_Home_Top_Section_Right_Spalte_left">
-              <div id="Div_Home_Top_Section_Right_TL_Wrapper">TL</div>
-              <div id="Div_Home_Top_Section_Right_BL_Wrapper">BL</div>
-            </div>
-
-            <div id="Div_Home_Top_Section_Right_Spalte_right">
-              <div id="Div_Home_Top_Section_Right_TR_Wrapper">TR</div>
-              <div id="Div_Home_Top_Section_Right_BR_Wrapper">
+              <div id="Div_Home_Top_Section_Right_TL_Wrapper">
+                <img src={TL_Img} id="Div_Home_Top_Section_Right_TL_Img" />
+              </div>
+              <div id="Div_Home_Top_Section_Right_BL_Wrapper">
                 <h3 id="Div_Home_Top_Section_Right_BR_Wrapper_h3">
                   Was sind digitale Wertpapiere ?
                 </h3>
@@ -80,6 +96,15 @@ function Home() {
                   vielfältigen Security Token Offerings aus unterschiedlichen
                   Branchen.
                 </h5>
+              </div>
+            </div>
+
+            <div id="Div_Home_Top_Section_Right_Spalte_right">
+              <div id="Div_Home_Top_Section_Right_TR_Wrapper">
+                <img src={OR_Img} id="Div_Home_Top_Section_Right_OR_Img" />
+              </div>
+              <div id="Div_Home_Top_Section_Right_BR_Wrapper">
+                <img src={UR_Img} id="Div_Home_Top_Section_Right_UR_Img" />
               </div>
             </div>
           </div>{" "}
@@ -155,7 +180,83 @@ function Home() {
         </div>
         <Footer_11 />
       </div>
-      <div id="Mobile_Wrapper">Mobile</div>
+      <div id="Mobile_Wrapper">
+        <div id="Mobile_Home_Wrapper">
+          <Mobile_menue />
+
+          <div id="Mobile_Home_Layer"></div>
+          <div id="Mobile_Home_Wrapper_Content">
+            <div id="Mobile_Home_Top_Sec">
+              <h2 id="Mobile_Home_Top_Sec_H2">Digitale Wertpapiere</h2>
+              <h5 id="Mobile_Home_Top_Sec_H5">
+                Chianvest Capital stellt die Schnittstelle zwischen spannenden
+                Investitionsprojekten und einer breiten Investorencommunity dar.
+                Über diese Plattform erhalten AnlegerInnen Zugang zu
+                vielfältigen Security Token Offerings aus unterschiedlichen
+                Branchen.
+              </h5>
+              <div id="Mobile_Home_Top_Wertpapiere">
+                <div id="Mobile_Home_Top_Kachel">
+                  <h3 id="Mobile_Home_Top_Kachel_h3">
+                    Was sind digitale Wertpapiere
+                  </h3>
+                  <h5 id="Mobile_Home_Top_Kachel_h5">
+                    Chianvest Capital stellt die Schnittstelle zwischen
+                    spannenden Investitionsprojekten und einer breiten
+                    Investorencommunity dar. Über diese Plattform erhalten
+                    AnlegerInnen Zugang zu vielfältigen Security Token Offerings
+                    aus unterschiedlichen Branchen.
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div id="Mobile_Home_Projekt_Sec">
+              <h2 id="Mobile_Home_Projekt_h2">Projekte</h2>
+              <ul id="Mobile_Home_Projekt_Sec_Grid">
+                {ViererProjekteArray.map((Projekt) => (
+                  <li id="home_mobil_projekte_li_11">
+                    <Link to={Projekt.InternerLink}>
+                      <Mobile_Home_Projekt_Box
+                        title={Projekt.name}
+                        KategorieBildLink={Projekt.KategorieBildLink}
+                        Finanzierungsvolumen={Projekt.Finanzierungsvolumen}
+                        ErwarteteRendite={Projekt.ErwRendite}
+                        Typ={Projekt.Typ}
+                        Logo={Projekt.LogoLink}
+                        titleImg={Projekt.TitleLink}
+                      />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+
+              <div id="Mobile_Home_Projekt_Alle">
+                <h3 id="Mobile_Home_Projekt_Alle_H3">Alle Projekte ansehen</h3>
+              </div>
+            </div>
+            <div id="Mobile_Home_CV_Sec">
+              <h2 id="Mobile_Home_CV_Sec_h2">Was ist Chainvest ?</h2>
+              <h5 id="Mobile_Home_CV_Sec_H5">
+                Das disruptive Potenzial der Blockchain-Technologie verändert
+                die bestehende Infrastruktur der Kapitalmärkte. GründerInnen und
+                AnlegerInnen werden neue Möglichkeiten der Kapitalaufnahme
+                eröffnet, losgelöst von zentralen Instanzen.
+                Veränderungsprozesse sind aber auch gleichzeitig mit
+                Unsicherheiten und das Lösen von zentralen Instanzen mit
+                Ungewissheiten verbunden. Mit Chainvest Capital schaffen wir
+                transparentere Rahmenbedingungen auf dem Markt für digitale
+                Wertpapiere und so mehr Vertrauen in die Tokenisierung von
+                Finanzinstrumenten. Als Informationsplattform für digitalisierte
+                Wertpapiere informiert Chainvest Capital rund um die
+                Fragestellungen der Blockchain-Technologie im
+                Finanzdienstleistungssektor. Mit Chainvest Capital  erhalten
+                AnlegerInnen Zugang zu vielfältigen Investitionsprojekten aus
+                unterschiedlichen Branchen.
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

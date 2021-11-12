@@ -1,0 +1,31 @@
+#Rechtlich_Kachel {
+  width: 68vw;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2vh;
+}
+#Rechtlich_Kachel_h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3vw;
+
+  margin: 0;
+  color: #434343;
+  margin-bottom: 2vh;
+}
+#Rechtlich_Kachel_h5 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8vw;
+  margin: 0;
+  color: #434343;
+}

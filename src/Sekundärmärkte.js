@@ -1,23 +1,16 @@
 import "./Design/Sekundärmärkte.css";
 import { Route, Link } from "react-router-dom";
-import Top_menue from "./components/navigation/top_menue";
+
 import Footer from "./components/Footer";
-import Mobile_menue from "./mobile_components/moble_menue";
-import Mobile_Footer from "./mobile_components/Mobile_Footer";
+
 import { useState, useEffect } from "react";
 import Coming_Soon_SM from "./assets/images/Coming_Soon_SM.png";
-import Wachstum from "./assets/images/Wachstum.png";
-import Performane from "./assets/images/Performance.png";
-import Marketing from "./assets/images/Marketing.png";
-
-import arrow from "./assets/images/arrow.png";
-import Mail from "./assets/images/Mail.png";
-import Download from "./assets/images/DownloadImg.png";
 
 import Coming_Soon_SM_mobile from "./assets/images/Coming_Soon_SM_mobile.png";
 
 import Greem_Chart_img from "./assets/images/Green_chart_img.png";
 import Blue_round_fixpadding from "./components/navigation/buttons/blue_round_fixpadding";
+import Top_Menue_Bar from "./components/navigation/Top_Nav_Bar";
 function Sekundärmärkte() {
   useEffect(() => {
     document.title = "Sekundärmärkte";
@@ -25,7 +18,7 @@ function Sekundärmärkte() {
   return (
     <div>
       <div id="Desktop_Wrapper">
-        <Top_menue />
+        <Top_Menue_Bar />
         <div id="Sekundärmärkte_Wrapper">
           <div id="Sekundärmärkte_top">
             <div id="Sekundärmärkte_top_left">

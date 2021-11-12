@@ -1,0 +1,41 @@
+#Token_Sale_Wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1vw;
+  width: 72vw;
+}
+#Token_Sale_Wrapper_Top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 72vw;
+}
+#Token_Sale_Wrapper_Grid {
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  row-gap: 2vh;
+  column-gap: 2vw;
+  width: 35vw;
+}
+#Token_Sale_Wrapper_Bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 72vw;
+  margin-top: 2vh;
+}
+#Ind_W50_2h {
+  width: 33vw;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  height: 18vh;
+  justify-content: center;
+}

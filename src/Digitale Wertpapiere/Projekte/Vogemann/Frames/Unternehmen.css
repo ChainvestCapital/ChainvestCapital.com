@@ -1,0 +1,26 @@
+#Bitbond_Unternehmen_Wrapper {
+  padding-left: 1vw;
+  width: 72vw;
+  display: flex;
+  flex-direction: column;
+}
+#Bitbond_Unternehmen_Grid {
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  row-gap: 2vh;
+  column-gap: 2vw;
+  width: 35vw;
+}
+#Bitbond_Unternehmen_Bottom {
+  width: 72vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#Bitbond_Unternehmen_Top {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2vh;
+  justify-content: space-between;
+}

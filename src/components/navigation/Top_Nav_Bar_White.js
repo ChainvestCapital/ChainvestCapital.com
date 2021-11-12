@@ -1,5 +1,5 @@
 import "./Top_Nav_Bar_White.css";
-import logo from "../../assets/images/Logo_Trans.png";
+import Logo_White from "../../assets/images/Logo_White.png";
 import arrow from "../../assets/images/Arrow_white.png";
 import { Route, Link } from "react-router-dom";
 
@@ -8,22 +8,22 @@ function Top_Menue_Bar_White(props) {
     <div>
       <div id="Top_Navigation_Bar_no">
         <Link to="../home">
-          <img src={logo} id="Top_Menue_Bar_logo_img" />
+          <img src={Logo_White} id="Top_Menue_Bar_logo_img_x" />
         </Link>
         <div id="Top_Navigation_Bar_RightWrapper_INNer">
           <div id="Top_Navigation_Bar_Spalte1_no">
             {" "}
             <h3 id="Top_Menue_Bar_h3_white">Digitale Wertpapiere</h3>
             <div id="Top_Navigation_Bar_Spalte1_Item1">
-              <h3 id="Top_Menue_Bar_h3">Was ist das?</h3>
+              <h3 id="Top_Menue_Bar_h3_black">Was ist das?</h3>
             </div>{" "}
             <Link to="../alleProjekte">
               <div id="Top_Navigation_Bar_Spalte1_Item1">
-                <h3 id="Top_Menue_Bar_h3">Alle Projekte</h3>
+                <h3 id="Top_Menue_Bar_h3_black">Alle Projekte</h3>
               </div>
             </Link>
             <div id="Top_Navigation_Bar_Spalte1_Item1">
-              <h3 id="Top_Menue_Bar_h3">Sekundärmärkte</h3>
+              <h3 id="Top_Menue_Bar_h3_black">Sekundärmärkte</h3>
             </div>
           </div>{" "}
           <div id="Top_Navigation_Bar_RightWrapper_INNerx">

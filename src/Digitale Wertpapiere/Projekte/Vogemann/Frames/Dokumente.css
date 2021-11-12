@@ -1,0 +1,6 @@
+#Dokumente_Wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 72vw;
+  justify-content: center;
+}

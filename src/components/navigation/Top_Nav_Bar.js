@@ -8,7 +8,7 @@ function Top_Menue_Bar(props) {
     <div>
       <div id="Top_Navigation_Bar">
         <Link to="../home">
-          <img src={logo} id="Top_Menue_Bar_logo_img" />
+          <img src={logo} id="Top_Menue_Bar_logo_imgx" />
         </Link>
         <div id="Top_Navigation_Bar_RightWrapper_INNer">
           <div id="Top_Navigation_Bar_Spalte1">
@@ -22,9 +22,11 @@ function Top_Menue_Bar(props) {
                 <h3 id="Top_Menue_Bar_h3">Alle Projekte</h3>
               </div>
             </Link>
-            <div id="Top_Navigation_Bar_Spalte1_Item1">
-              <h3 id="Top_Menue_Bar_h3">Sekundärmärkte</h3>
-            </div>
+            <Link to="../Sekundärmärkte">
+              <div id="Top_Navigation_Bar_Spalte1_Item1">
+                <h3 id="Top_Menue_Bar_h3">Sekundärmärkte</h3>
+              </div>
+            </Link>
           </div>{" "}
           <div id="Top_Navigation_Bar_RightWrapper_INNerx">
             <Link to="../Für_Unternehmen">
@@ -33,7 +35,7 @@ function Top_Menue_Bar(props) {
                 <h3 id="Top_Menue_Bar_h3">Für unternehmen</h3>
               </div>{" "}
             </Link>
-            <Link to="../About">
+            <Link to="../Über-Uns">
               {" "}
               <div id="Top_Navigation_Bar_Spalte3">
                 {" "}

@@ -14,7 +14,6 @@ export const createProjekt = /* GraphQL */ `
       ErwRendite
       Mindestinvestition
       Typ
-      Behoerde
       TitleLink
       LogoLink
       KurzBeschreibung
@@ -22,6 +21,23 @@ export const createProjekt = /* GraphQL */ `
       InternerLink
       ExternerLink
       Help
+      Blockchain
+      Anbieter
+      Behoerde
+      Gruendung
+      Emissionszeitraum
+      WpPG
+      Rechtsform
+      Geschaeftstaetigkeit
+      Ort
+      Firmenname
+      Emittent
+      Rechtliche_Bezeichnung
+      Zahlungsmoeglichkeiten
+      Token_Ticker
+      Max_Token_Anzahl
+      ISIN
+      ITIN
       createdAt
       updatedAt
     }
@@ -40,7 +56,6 @@ export const updateProjekt = /* GraphQL */ `
       ErwRendite
       Mindestinvestition
       Typ
-      Behoerde
       TitleLink
       LogoLink
       KurzBeschreibung
@@ -48,6 +63,23 @@ export const updateProjekt = /* GraphQL */ `
       InternerLink
       ExternerLink
       Help
+      Blockchain
+      Anbieter
+      Behoerde
+      Gruendung
+      Emissionszeitraum
+      WpPG
+      Rechtsform
+      Geschaeftstaetigkeit
+      Ort
+      Firmenname
+      Emittent
+      Rechtliche_Bezeichnung
+      Zahlungsmoeglichkeiten
+      Token_Ticker
+      Max_Token_Anzahl
+      ISIN
+      ITIN
       createdAt
       updatedAt
     }
@@ -66,7 +98,6 @@ export const deleteProjekt = /* GraphQL */ `
       ErwRendite
       Mindestinvestition
       Typ
-      Behoerde
       TitleLink
       LogoLink
       KurzBeschreibung
@@ -74,6 +105,23 @@ export const deleteProjekt = /* GraphQL */ `
       InternerLink
       ExternerLink
       Help
+      Blockchain
+      Anbieter
+      Behoerde
+      Gruendung
+      Emissionszeitraum
+      WpPG
+      Rechtsform
+      Geschaeftstaetigkeit
+      Ort
+      Firmenname
+      Emittent
+      Rechtliche_Bezeichnung
+      Zahlungsmoeglichkeiten
+      Token_Ticker
+      Max_Token_Anzahl
+      ISIN
+      ITIN
       createdAt
       updatedAt
     }

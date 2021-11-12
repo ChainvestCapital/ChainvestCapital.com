@@ -23,6 +23,8 @@ import BitbondLogo from "../../assets/images/BitbondLogo.png";
 import VogemannImg from "../../assets/images/VogemannImg.png";
 import Footer_11 from "../../components/Footer_11";
 
+import Top_Section from "../Components/Top_Section";
+
 function Kategorien_Filter() {
   function openFrame_Unternehmen() {
     setUnternehmen_isShown(true);
@@ -119,76 +121,7 @@ function Kategorien_Filter() {
     <div>
       <div id="Desktop_Wrapper">
         <Top_Menue_Bar_White />
-        <div id="Projekt_Top_Fix_Section">
-          <div id="Projekt_Top_Fix_Section_BG">
-            <img src={VogemannImg} id="Projekt_Top_Fix_Section_BG_IMG" />
-          </div>
-          <div id="Projekt_Top_Fix_Section_Content">
-            <div id="Projekt_Top_Fix_Section_Content_left">
-              <div id="Projekt_Top_Fix_Section_Content_left_Logo_Wrapper">
-                <img
-                  src={BitbondLogo}
-                  id="Projekt_Top_Fix_Section_Content_left_Img"
-                />
-              </div>
-            </div>
-            <div id="Projekt_Top_Fix_Section_Content_mid">
-              <h3 id="Projekt_Top_Fix_Section_Content_mid_h3">
-                Bei Fragen oder weiteren Anliegen stehen wir Ihnen gerne per
-                E-Mail zur Verfügung. Häufig gestellte Fragen zum
-                Listingprozess. Bei Fragen oder weiteren Anliegen stehen wir
-                Ihnen gerne per E-Mail zur Verfügung. Häufig gestellte Fragen
-                zum Listingprozess.
-              </h3>
-            </div>
-            <div id="Projekt_Top_Fix_Section_Content_right">
-              <div id="Projekt_Top_Fix_Section_Content_right_left">
-                <div id="Projekt_Top_Fix_Section_Content_right_left_Column_1">
-                  <div id="Projekt_Top_Fix_Section_Content_right_left_Wrapper">
-                    <h2 id="Projekt_Top_Fix_Section_Content_right_left_h2">
-                      4%
-                    </h2>
-                    <h4 id="Projekt_Top_Fix_Section_Content_right_left_h4">
-                      Erw. Rendite
-                    </h4>
-                  </div>
-                  <div id="Projekt_Top_Fix_Section_Content_right_left_Wrapper">
-                    <h2 id="Projekt_Top_Fix_Section_Content_right_left_h2">
-                      1 €
-                    </h2>
-                    <h4 id="Projekt_Top_Fix_Section_Content_right_left_h4">
-                      Mindestinvestition
-                    </h4>
-                  </div>
-                </div>
-                <div id="Projekt_Top_Fix_Section_Content_right_left_Column_2">
-                  <div id="Projekt_Top_Fix_Section_Content_right_left_Wrapper">
-                    <h2 id="Projekt_Top_Fix_Section_Content_right_left_h2">
-                      100.000.000 €
-                    </h2>
-                    <h4 id="Projekt_Top_Fix_Section_Content_right_left_h4">
-                      Finanzierungsvolumen
-                    </h4>
-                  </div>
-                  <div id="Projekt_Top_Fix_Section_Content_right_left_Wrapper">
-                    <h2 id="Projekt_Top_Fix_Section_Content_right_left_h2">
-                      Schuldverschreibung
-                    </h2>
-                    <h4 id="Projekt_Top_Fix_Section_Content_right_left_h4">
-                      Typ
-                    </h4>
-                  </div>
-                </div>
-              </div>
-              <div id="Projekt_Top_Fix_Section_Content_right_RIGHT">
-                <div id="Projekt_Top_Zum_Projekt_Button">
-                  <h4 id="Projekt_Top_Zum_Projekt_Button_h4">Zum Projekt</h4>
-                  <img src={arrow} id="Projekt_Top_Zum_Projekt_Button_Img" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Top_Section />
 
         <div id="Projekt_Projekt_Section_Wrapper">
           <div id="Projekt_Top_Fix_Section_Content_Layer"></div>

@@ -1,25 +1,22 @@
-import "./about.css";
+import "../about.css";
 
-import Top_menue from "./components/navigation/top_menue";
+import Top_menue from "../components/navigation/top_menue";
 
-import aboutus from "./assets/images/AboutUsfilter.png";
+import aboutus from "../assets/images/AboutUsfilter.png";
 
-import LI from "./assets/images/LinkedIn.png";
-import Mail from "./assets/images/Mail.png";
+import LI from "../assets/images/LinkedIn.png";
+import Mail from "../assets/images/Mail.png";
 
-import Lu_Img from "./assets/images/AboutEllen.png";
-import Zoel_Img from "./assets/images/AboutZoelitz.png";
-import abouteclipse from "./assets/images/AboutForm.png";
-import logo from "./assets/images/logo.png";
+import Lu_Img from "../assets/images/AboutEllen.png";
+import Zoel_Img from "../assets/images/AboutZoelitz.png";
+import abouteclipse from "../assets/images/AboutForm.png";
+import logo from "../assets/images/logo.png";
 
-import Footer from "./components/Footer";
+import Footer from "../components/Footer";
 
-import Mobile_menue from "./mobile_components/moble_menue";
-import Mobile_Footer from "./mobile_components/Mobile_Footer";
-
-import mobile_about from "./assets/images/Mobile_About_Top.png";
+import Mobile_menue from "../mobile_components/moble_menue";
+import Mobile_Footer from "../mobile_components/Mobile_Footer";
 import { useState, useEffect } from "react";
-import { Route, Link } from "react-router-dom";
 
 function About() {
   useEffect(() => {

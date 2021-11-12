@@ -1,0 +1,31 @@
+#w100_h2 {
+  width: 14vw;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  height: 9vh;
+}
+#w100_h2_h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2vw;
+
+  margin: 0;
+  color: #434343;
+}
+#w100_h2_h5 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9vw;
+
+  margin: 0;
+  color: #434343;
+}
