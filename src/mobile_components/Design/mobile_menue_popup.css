@@ -3,10 +3,10 @@
   width: 100vw;
   position: fixed;
   width: 100vw;
-  height: 95vh;
+  height: 96vh;
   display: flex;
   z-index: 100;
-  padding-top: 5vh;
+  padding-top: 4vh;
 }
 #mobile_menue_pop_up_White {
   width: 100vw;
@@ -30,35 +30,57 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
-  font-size: 12vw;
+  font-size: 11svw;
 
   margin: 0;
   color: #434343;
 }
+#mobile_menue_pop_up_Content_Full_Wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mobile_menue_pop_up_Content_Blue {
+  position: absolute;
+  z-index: 5;
+  width: 40vw;
+  height: 40vh;
+  left: 20vw;
+
+  background: #bae8e8;
+  filter: blur(150px);
+  z-index: 5;
+}
+
 #mobile_menue_pop_up_Content_Wrapper {
   display: grid;
   margin-top: 3vh;
 
   grid-template-columns: repeat(2, auto);
-  row-gap: 2vh;
+  row-gap: 3vh;
   column-gap: 2vw;
+  justify-content: space-between;
   padding: 0;
+  position: relative;
+  z-index: 15;
+  width: 88vw;
 }
 #mobile_menue_pop_up_Content_Menue_Box {
-  width: 38vw;
+  width: 36vw;
   background-color: white;
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   padding-top: 2vh;
-  padding-bottom: 2vh;
+  padding-bottom: 4vh;
   padding-left: 2vw;
   padding-right: 2vw;
-  height: 22vh;
+  height: 18vh;
 }
 #mobile_menue_pop_up_Content_Box_img {
   width: 8vw;
@@ -68,7 +90,7 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
-  font-size: 4vw;
+  font-size: 3.5vw;
 
   margin: 0;
   color: #434343;
@@ -77,7 +99,7 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
-  font-size: 4vw;
+  font-size: 3.5vw;
 
   margin: 0;
   color: #ffb000;
@@ -87,7 +109,7 @@
   height: 6vh;
   margin-top: 2vh;
   background-color: white;
-  background: #ffffff;
+  background: #ffb000;
   border-radius: 12px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -98,10 +120,9 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
-  font-size: 4vw;
-
+  font-size: 4.5vw;
+  color: white;
   margin: 0;
-  background: white;
 }
 
 #Closing_Wrapper {
@@ -109,15 +130,18 @@
   align-items: center;
   justify-content: center;
   width: 88vw;
-  height: 25vh;
+  height: 20vh;
 }
 #Closing_Wrapper_Circel {
   background: #bae8e8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 100%;
-  width: 15vw;
-  height: 15vw;
+  width: 18vw;
+  height: 18vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #Closing_Wrapper_Circle_Img {
-  width: 10vw;
+  width: 8vw;
 }

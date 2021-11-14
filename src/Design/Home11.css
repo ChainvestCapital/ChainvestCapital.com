@@ -350,7 +350,7 @@
   position: relative;
   display: flex;
   z-index: 1;
-  height: 500vh;
+  height: 370vh;
 }
 
 #Mobile_Home_Layer {
@@ -397,6 +397,17 @@
   margin-top: 2vh;
   color: #434343;
 }
+#Mobile_Home_Top_Sec_H2_yellow {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12vw;
+
+  margin: 0;
+  color: #ffb000;
+
+  margin-top: 0vh;
+}
 #Mobile_Home_Projekt_Sec {
   display: flex;
   flex-direction: column;
@@ -411,23 +422,25 @@
   flex-direction: row;
 }
 #Mobile_Home_Top_Kachel {
-  padding-left: 3vw;
-  padding-right: 3vw;
+  padding-left: 6vw;
+  padding-right: 6vw;
   padding-top: 2vh;
   padding-bottom: 2vh;
   display: flex;
   flex-direction: column;
   background-color: white;
   border-radius: 12px;
-  width: 62vw;
-  height: 36vh;
+  width: 56vw;
+  height: 38vh;
+  position: relative;
+  z-index: 5;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 #Mobile_Home_Top_Kachel_h3 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
-  font-size: 6.5vw;
+  font-size: 6vw;
 
   margin: 0;
   color: #434343;
@@ -436,13 +449,31 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
-  font-size: 3.5vw;
+  font-size: 3.3vw;
 
   margin: 0;
   margin-top: 2vh;
   color: #434343;
 }
-
+#Mobile_Home_Top_Wertpapiere_Right {
+  position: relative;
+  width: 20vw;
+  height: 25vh;
+}
+#Mobil_KV {
+  width: 28vw;
+  top: 22vh;
+  position: absolute;
+  left: 4vw;
+}
+#Mobil_IT {
+  width: 35vw;
+  top: 4vh;
+  left: -8vw;
+  position: absolute;
+  z-index: 4;
+}
+/*********************************************************/
 #Mobile_Home_Projekt_Sec {
   display: flex;
   flex-direction: column;

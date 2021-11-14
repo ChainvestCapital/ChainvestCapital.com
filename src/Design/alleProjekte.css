@@ -282,24 +282,234 @@
 }
 #alle_projekte_li {
 }
-#Mobile_alle_Projekte_Wrapper {
-  padding-left: 6vw;
+
+/**********************************************************/
+/**********************************************************/
+/**********************************************************/
+/**********************************************************/
+
+#Mobile_AlleP_Wrapper {
+  background: #e0e0e0;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  z-index: 1;
+  height: 160vh;
+}
+#Mobile_AlleP_Layer {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.65);
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+#Mobile_AlleP_Wrapper_Content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
   padding-right: 6vw;
+  padding-left: 6vw;
   width: 88vw;
+  z-index: 3;
 }
 
-#Mobile_alle_Projekte_Projekte_wrapper {
-  width: 88vw;
-  padding-left: 0vw;
-  padding-right: 0vw;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
-
+#Mobile_AlleP_Top_Sec {
+  padding-top: 15vh;
   display: flex;
-  background-color: #f3f6fa;
-  border-radius: 12px;
-  margin-top: 3vh;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   flex-direction: column;
+}
+#Mobile_AlleP_Top_Sec_H2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12vw;
+
+  margin: 0;
+  color: #434343;
+}
+#Mobile_AlleP_Top_Sec_H2_yellow {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12vw;
+
+  margin: 0;
+  color: #ffb000;
+
+  margin-top: 0vh;
+}
+#Mobile_AlleP_Filter_Wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 82vw;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-left: 4vw;
+  padding-right: 4vw;
   align-items: center;
+  position: relative;
+  height: 8vh;
+  margin-top: 6vh;
+}
+#Mobile_AlleP_Filter_Wrapper_h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 6vw;
+
+  margin: 0;
+  color: #434343;
+}
+
+#FilerImg {
+  width: 8vw;
+}
+#FilerImgTurn {
+  width: 8vw;
+  rotate: 90;
+}
+
+#Mobile_AlleP_Filter_Wrapper_AUSGEKLAPPT_Wrapper {
+  position: absolute;
+  width: 82vw;
+  z-index: 50;
+  top: 0;
+  height: 68vh;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  left: 0vw;
+}
+#Mobile_AlleP_Filter_Wrapper_AUSGEKLAPPT_Wrapper_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 4vh;
+}
+#Mobile_AlleP_Filter_Wrapper_AUSGEKLAPPT_Wrapper_buttom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#Mobile_AlleP_Filter_Wrapper_AUSGEKLAPPT_Wrapper_buttom_Left {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+#Mobile_AlleP_Filter_Wrapper_AUSGEKLAPPT_Wrapper_buttom_Left_top {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4vh;
+}
+#Mobile_AlleP_Filter_Wrapper_AUSGEKLAPPT_Wrapper_buttom_Left_bott {
+  display: flex;
+  flex-direction: column;
+}
+#Mobile_AlleP_Filter_Wrapper_AUSGEKLAPPT_Wrapper_buttom_Right {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+#Menue_Filter_row {
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+  width: 92%;
+  align-items: center;
+
+  justify-content: space-between;
+}
+#Menue_Filter_h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4vw;
+  margin: 0;
+  color: #434343;
+}
+#Menue_Filter_Box_unclicked {
+  width: 4vw;
+  height: 4vw;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.25);
+  border-style: solid;
+}
+#Menue_Filter_Box_clicked {
+  width: 4vw;
+  height: 4vw;
+  background-color: #cdf0ea;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.25);
+  border-style: solid;
+}
+
+#unclicked {
+}
+
+#Mobil_Filter_Pop_Up_h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4vw;
+
+  margin: 0;
+  color: #434343;
+  margin-bottom: 2vh;
+}
+
+#Mobile_Filter_Kategorien_Filter_Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 54vh;
+}
+#Mobile_Filter_Kategorien_Filter_Box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(205, 240, 234, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+#Mobile_Filter_Kategorien_Filter_Box_Img {
+  width: 3.5vw;
+}
+#Mobile_Filter_Kategorien_Filter_Box_h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4vw;
+  margin: 0;
+  color: #434343;
+}
+
+/*****************************************************/
+
+#Mobile_AlleP_Projekte_Wrapper {
+  margin-top: 5vh;
+}
+#Mobile_AlleP_Projekte_Box_Wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  row-gap: 2vh;
+  column-gap: 2vw;
+  padding: 0;
 }

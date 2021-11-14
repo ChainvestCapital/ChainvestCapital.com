@@ -32,10 +32,10 @@ function Mobile_Home_Projekt_Box(props) {
           </div>
           <div id="Mobile_Home_Projekt_Box_BOTTOM_Item">
             <h3 id="Mobile_Home_Projekt_Box_BOTTOM_Item_H3">
-              {props.Finanzierungsvolumen}
+              {props.Mindestinvestition}
             </h3>
             <h5 id="Mobile_Home_Projekt_Box_BOTTOM_Item_H5">
-              Finanzierungsvolumen
+              Mindestinvestition
             </h5>
           </div>
         </div>

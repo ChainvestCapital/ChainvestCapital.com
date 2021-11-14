@@ -15,7 +15,9 @@ import TL_Img from "./assets/images/TL_Img.png";
 import UR_Img from "./assets/images/UR_Img.png";
 
 import Mobile_menue from "./mobile_components/moble_menue.js";
-
+import Mobil_IT from "./assets/images/Mobil_IT.png";
+import Mobil_KV from "./assets/images/Mobil_KV.png";
+import Mobile_Footer from "./MobileComponents/Mobile_Footer";
 import OR_Img from "./assets/images/OR_Img.png";
 import Mobile_Home_Projekt_Box from "./MobileComponents/Mobile_Home_Projekt_Box";
 Amplify.configure(awsExports);
@@ -187,7 +189,8 @@ function Home() {
           <div id="Mobile_Home_Layer"></div>
           <div id="Mobile_Home_Wrapper_Content">
             <div id="Mobile_Home_Top_Sec">
-              <h2 id="Mobile_Home_Top_Sec_H2">Digitale Wertpapiere</h2>
+              <h2 id="Mobile_Home_Top_Sec_H2">Digitale</h2>
+              <h2 id="Mobile_Home_Top_Sec_H2_yellow">Wertpapiere</h2>
               <h5 id="Mobile_Home_Top_Sec_H5">
                 Chianvest Capital stellt die Schnittstelle zwischen spannenden
                 Investitionsprojekten und einer breiten Investorencommunity dar.
@@ -198,7 +201,7 @@ function Home() {
               <div id="Mobile_Home_Top_Wertpapiere">
                 <div id="Mobile_Home_Top_Kachel">
                   <h3 id="Mobile_Home_Top_Kachel_h3">
-                    Was sind digitale Wertpapiere
+                    Was sind digitale Wertpapiere?
                   </h3>
                   <h5 id="Mobile_Home_Top_Kachel_h5">
                     Chianvest Capital stellt die Schnittstelle zwischen
@@ -207,6 +210,10 @@ function Home() {
                     AnlegerInnen Zugang zu vielfältigen Security Token Offerings
                     aus unterschiedlichen Branchen.
                   </h5>
+                </div>
+                <div id="Mobile_Home_Top_Wertpapiere_Right">
+                  <img src={Mobil_KV} id="Mobil_KV" />
+                  <img src={Mobil_IT} id="Mobil_IT" />
                 </div>
               </div>
             </div>
@@ -224,15 +231,19 @@ function Home() {
                         Typ={Projekt.Typ}
                         Logo={Projekt.LogoLink}
                         titleImg={Projekt.TitleLink}
+                        Mindestinvestition={Projekt.Mindestinvestition}
                       />
                     </Link>
                   </li>
                 ))}
               </ul>
-
-              <div id="Mobile_Home_Projekt_Alle">
-                <h3 id="Mobile_Home_Projekt_Alle_H3">Alle Projekte ansehen</h3>
-              </div>
+              <Link to="../Alle_Projekte">
+                <div id="Mobile_Home_Projekt_Alle">
+                  <h3 id="Mobile_Home_Projekt_Alle_H3">
+                    Alle Projekte ansehen
+                  </h3>
+                </div>
+              </Link>
             </div>
             <div id="Mobile_Home_CV_Sec">
               <h2 id="Mobile_Home_CV_Sec_h2">Was ist Chainvest ?</h2>
@@ -256,6 +267,7 @@ function Home() {
             </div>
           </div>
         </div>
+        <Mobile_Footer />
       </div>
     </div>
   );

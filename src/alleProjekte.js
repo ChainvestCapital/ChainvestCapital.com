@@ -1,12 +1,6 @@
 import "./Design/alleProjekte.css";
 import { Route, Link } from "react-router-dom";
 
-import Top_menue from "./components/navigation/top_menue";
-import F from "./components/navigation/FooterComp";
-
-import VogemannLogo from "./assets/images/VogemannLogo.png";
-import VogemannTitle from "./assets/images/VogemannImg.png";
-
 import Schiffahrtimg from "./assets/images/Schiffahrt.png";
 import TechnologieImg from "./assets/images/Technologie.png";
 import FinanceImg from "./assets/images/Finance.png";
@@ -18,9 +12,6 @@ import GamingImg from "./assets/images/Gaming.png";
 
 import ProjektComponentBox from "./components/projekte/ProjektComponentBox";
 import Footer from "./components/Footer";
-
-import Mobile_menue from "./mobile_components/moble_menue";
-import Mobile_Footer from "./mobile_components/Mobile_Footer";
 
 import Mobile_alle_Projekte_projekt from "./mobile_components/Mobile_alle_Projekte_projekt";
 
@@ -40,6 +31,11 @@ import AlleProjekte_Projekt from "./components/AlleProjekte_Projekt";
 import Top_nav_Bar from "./components/navigation/Top_Nav_Bar";
 import Footer_11 from "./components/Footer_11";
 import Kategorien_Filter from "./components/Kategorien_Filter";
+
+import Mobile_menue from "./mobile_components/moble_menue.js";
+import Mobile_Footer from "./MobileComponents/Mobile_Footer";
+import Mobile_Home_Projekt_Box from "./MobileComponents/Mobile_Home_Projekt_Box";
+
 Amplify.configure(awsExports);
 
 function AlleProjekte() {
@@ -427,6 +423,21 @@ function AlleProjekte() {
     }
   }
 
+  const [mobileFilterStatus, setmobileFilterStatus] = useState(false);
+  const [mobile_Filter_Box_Status, setmobile_Filter_Box_Status] = useState(
+    "Menue_Filter_Box_unclicked"
+  );
+
+  const [MobMiF1H1, setMobMiF1H1] = useState(1);
+  function MobMIR1() {
+    setMobMiF1H1(MobMiF1H1 + 1);
+    if (MobMiF1H1 % 2 == 0) {
+      setmobile_Filter_Box_Status("Menue_Filter_Box_unclicked");
+    } else {
+      setmobile_Filter_Box_Status("Menue_Filter_Box_clicked");
+    }
+  }
+
   return (
     <div>
       <div id="Desktop_Wrapper">
@@ -620,54 +631,192 @@ function AlleProjekte() {
       </div>
 
       <div id="Mobile_Wrapper">
-        <Mobile_menue />
+        <div id="Mobile_AlleP_Wrapper">
+          {" "}
+          <Mobile_menue />
+          <div id="Mobile_AlleP_Layer"></div>
+          <div id="Mobile_AlleP_Wrapper_Content">
+            <div id="Mobile_AlleP_Top_Sec">
+              <h2 id="Mobile_AlleP_Top_Sec_H2">Alle</h2>
+              <h2 id="Mobile_AlleP_Top_Sec_H2_yellow">Projekte</h2>
+            </div>
+            <div id="Mobile_AlleP_Filter_Wrapper">
+              <h2
+                id="Mobile_AlleP_Filter_Wrapper_h3"
+                onClick={() => setmobileFilterStatus(true)}
+              >
+                Filter öffnen
+              </h2>
+              <img
+                src={Filtertrigger}
+                onClick={() => setmobileFilterStatus(true)}
+                id="FilerImg"
+              />
 
-        <div id="Mobile_alle_Projekte_Wrapper">
-          <div onClick={() => filtereinklappen()}>
-            <FilterMenue
-              trigger={FilterMenueshow}
-              setTrigger={setFilterMenueshow}
-            />
+              {mobileFilterStatus && (
+                <div id="Mobile_AlleP_Filter_Wrapper_AUSGEKLAPPT_Wrapper">
+                  <div id="Mobile_AlleP_Filter_Wrapper_AUSGEKLAPPT_Wrapper_top">
+                    <h3 id="Mobile_AlleP_Filter_Wrapper_h3">
+                      Filter schließen
+                    </h3>{" "}
+                    <div
+                      id="Mobile_Filter_Closing"
+                      onClick={() => setmobileFilterStatus(false)}
+                    >
+                      <img src={Filtertrigger} id="FilerImgTurn" />
+                    </div>
+                  </div>
+                  <div id="Mobile_AlleP_Filter_Wrapper_AUSGEKLAPPT_Wrapper_buttom">
+                    <div id="Mobile_AlleP_Filter_Wrapper_AUSGEKLAPPT_Wrapper_buttom_Left">
+                      <div id="Mobile_AlleP_Filter_Wrapper_AUSGEKLAPPT_Wrapper_buttom_Left_top">
+                        <h4 id="Mobil_Filter_Pop_Up_h4">Mindestinvestition</h4>
+                        <div id="Menue_Filter_row" onClick={() => MobMIR1()}>
+                          <h4 id="Menue_Filter_h4">>50 €</h4>
+                          <div id={mobile_Filter_Box_Status}></div>
+                        </div>
+                        <div id="Menue_Filter_row" onClick={() => MobMIR1()}>
+                          <h4 id="Menue_Filter_h4">50 €</h4>
+                          <div id={mobile_Filter_Box_Status}></div>
+                        </div>
+                        <div id="Menue_Filter_row" onClick={() => MobMIR1()}>
+                          <h4 id="Menue_Filter_h4">100 €</h4>
+                          <div id={mobile_Filter_Box_Status}></div>
+                        </div>
+                        <div id="Menue_Filter_row" onClick={() => MobMIR1()}>
+                          <h4 id="Menue_Filter_h4">500 €</h4>
+                          <div id={mobile_Filter_Box_Status}></div>
+                        </div>
+                        <div id="Menue_Filter_row" onClick={() => MobMIR1()}>
+                          <h4 id="Menue_Filter_h4">1000 €</h4>
+                          <div id={mobile_Filter_Box_Status}></div>
+                        </div>
+                      </div>
+                      <div id="Mobile_AlleP_Filter_Wrapper_AUSGEKLAPPT_Wrapper_buttom_Left_bott">
+                        <h4 id="Mobil_Filter_Pop_Up_h4">Blockchain</h4>
+                        <div id="Menue_Filter_row" onClick={() => MobMIR1()}>
+                          <h4 id="Menue_Filter_h4">Ethereum</h4>
+                          <div id={mobile_Filter_Box_Status}></div>
+                        </div>
+                        <div id="Menue_Filter_row" onClick={() => MobMIR1()}>
+                          <h4 id="Menue_Filter_h4">Stellar</h4>
+                          <div id={mobile_Filter_Box_Status}></div>
+                        </div>
+                        <div id="Menue_Filter_row" onClick={() => MobMIR1()}>
+                          <h4 id="Menue_Filter_h4">Privat</h4>
+                          <div id={mobile_Filter_Box_Status}></div>
+                        </div>
+                        <div id="Menue_Filter_row" onClick={() => MobMIR1()}>
+                          <h4 id="Menue_Filter_h4">Sonstige</h4>
+                          <div id={mobile_Filter_Box_Status}></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="Mobile_AlleP_Filter_Wrapper_AUSGEKLAPPT_Wrapper_buttom_Right">
+                      <h4 id="Mobil_Filter_Pop_Up_h4">Kategorien</h4>
+                      <div id="Mobile_Filter_Kategorien_Filter_Wrapper">
+                        <div id="Mobile_Filter_Kategorien_Filter_Box">
+                          <img
+                            src={Schiffahrtimg}
+                            id="Mobile_Filter_Kategorien_Filter_Box_Img"
+                          />
+                          <h4 id="Mobile_Filter_Kategorien_Filter_Box_h4">
+                            Schiffahrt
+                          </h4>
+                        </div>
+                        <div id="Mobile_Filter_Kategorien_Filter_Box">
+                          <img
+                            src={Schiffahrtimg}
+                            id="Mobile_Filter_Kategorien_Filter_Box_Img"
+                          />
+                          <h4 id="Mobile_Filter_Kategorien_Filter_Box_h4">
+                            Schiffahrt
+                          </h4>
+                        </div>
+                        <div id="Mobile_Filter_Kategorien_Filter_Box">
+                          <img
+                            src={Schiffahrtimg}
+                            id="Mobile_Filter_Kategorien_Filter_Box_Img"
+                          />
+                          <h4 id="Mobile_Filter_Kategorien_Filter_Box_h4">
+                            Schiffahrt
+                          </h4>
+                        </div>
+                        <div id="Mobile_Filter_Kategorien_Filter_Box">
+                          <img
+                            src={Schiffahrtimg}
+                            id="Mobile_Filter_Kategorien_Filter_Box_Img"
+                          />
+                          <h4 id="Mobile_Filter_Kategorien_Filter_Box_h4">
+                            Schiffahrt
+                          </h4>
+                        </div>
+                        <div id="Mobile_Filter_Kategorien_Filter_Box">
+                          <img
+                            src={Schiffahrtimg}
+                            id="Mobile_Filter_Kategorien_Filter_Box_Img"
+                          />
+                          <h4 id="Mobile_Filter_Kategorien_Filter_Box_h4">
+                            Schiffahrt
+                          </h4>
+                        </div>
+                        <div id="Mobile_Filter_Kategorien_Filter_Box">
+                          <img
+                            src={Schiffahrtimg}
+                            id="Mobile_Filter_Kategorien_Filter_Box_Img"
+                          />
+                          <h4 id="Mobile_Filter_Kategorien_Filter_Box_h4">
+                            Schiffahrt
+                          </h4>
+                        </div>
+                        <div id="Mobile_Filter_Kategorien_Filter_Box">
+                          <img
+                            src={Schiffahrtimg}
+                            id="Mobile_Filter_Kategorien_Filter_Box_Img"
+                          />
+                          <h4 id="Mobile_Filter_Kategorien_Filter_Box_h4">
+                            Schiffahrt
+                          </h4>
+                        </div>
+                        <div id="Mobile_Filter_Kategorien_Filter_Box">
+                          <img
+                            src={Schiffahrtimg}
+                            id="Mobile_Filter_Kategorien_Filter_Box_Img"
+                          />
+                          <h4 id="Mobile_Filter_Kategorien_Filter_Box_h4">
+                            Schiffahrt
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <div id="Mobile_AlleP_Projekte_Wrapper">
+              <div id="Mobile_AlleP_Projekte_Box_Wrapper">
+                <ul id="Mobile_Home_Projekt_Sec_Grid">
+                  {ProjekteArray.map((Projekt) => (
+                    <li id="home_mobil_projekte_li_11">
+                      <Link to={Projekt.InternerLink}>
+                        <Mobile_Home_Projekt_Box
+                          title={Projekt.name}
+                          KategorieBildLink={Projekt.KategorieBildLink}
+                          Finanzierungsvolumen={Projekt.Finanzierungsvolumen}
+                          ErwarteteRendite={Projekt.ErwRendite}
+                          Typ={Projekt.Typ}
+                          Logo={Projekt.LogoLink}
+                          titleImg={Projekt.TitleLink}
+                          Mindestinvestition={Projekt.Mindestinvestition}
+                        />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
-
-          <div onClick={() => filterausklappen()}>
-            <Filterausklappen
-              trigger={Filtereinklappenshow}
-              setTrigger={setFiltereinklappenshow}
-            />
-          </div>
-
-          <div id="Mobile_alle_Projekte_Projekte_wrapper">
-            <Mobile_alle_Projekte_projekt
-              logo={VogemannLogo}
-              titleimg={VogemannTitle}
-              title="Vogemann"
-              Kategorie={Schiffahrtimg}
-              Typ="Fremdkapital"
-              Volumen="100.000.000$"
-              Rendite="5%"
-            />
-            <Mobile_alle_Projekte_projekt
-              logo={VogemannLogo}
-              titleimg={VogemannTitle}
-              title="Vogemann"
-              Kategorie={Schiffahrtimg}
-              Typ="Fremdkapital"
-              Volumen="100.000.000$"
-              Rendite="5%"
-            />
-            <Mobile_alle_Projekte_projekt
-              logo={VogemannLogo}
-              titleimg={VogemannTitle}
-              title="Vogemann"
-              Kategorie={Schiffahrtimg}
-              Typ="Fremdkapital"
-              Volumen="100.000.000$"
-              Rendite="5%"
-            />
-          </div>
-        </div>
-
+        </div>{" "}
         <Mobile_Footer />
       </div>
     </div>
