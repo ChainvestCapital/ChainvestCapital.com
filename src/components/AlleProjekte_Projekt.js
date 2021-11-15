@@ -12,7 +12,7 @@ function AlleProjekte_Projekt(props) {
         <div id="AlleProj_Proj_Comp_Mid">
           <div id="AlleProj_Proj_Comp_Mid_Left">
             <h2 id="AlleProj_Proj_Comp_Mid_title_h2">{props.title} </h2>
-            <h4 id="AlleProj_Proj_Comp_Bottom_Button_h4">Finexity</h4>
+            <h4 id="AlleProj_Proj_Comp_Bottom_Button_h4">{props.Emittent}</h4>
           </div>
 
           <div id="AlleProj_Proj_Comp_Mid_Kategorie">

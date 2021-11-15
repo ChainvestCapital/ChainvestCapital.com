@@ -130,6 +130,7 @@ function Home() {
                       Typ={Projekt.Typ}
                       Logo={Projekt.LogoLink}
                       titleImg={Projekt.TitleLink}
+                      Emittent={Projekt.Emittent}
                     />
                   </Link>
                 </li>
@@ -232,6 +233,7 @@ function Home() {
                         Logo={Projekt.LogoLink}
                         titleImg={Projekt.TitleLink}
                         Mindestinvestition={Projekt.Mindestinvestition}
+                        Emittent={Projekt.Emittent}
                       />
                     </Link>
                   </li>

@@ -86,14 +86,13 @@
   flex-direction: column;
 }
 #Projekt_Top_Fix_Section_Content_mid {
-  width: 21vw;
+  width: 22.5vw;
   height: 15vh;
 
-  padding-left: 7.5vw;
+  padding-left: 6vw;
 }
 #Projekt_Top_Fix_Section_Content_mid_Wrapper {
   padding-left: 1vw;
-  padding-right: 1vw;
   padding-top: 1vh;
   padding-bottom: 1vh;
   background-color: white;

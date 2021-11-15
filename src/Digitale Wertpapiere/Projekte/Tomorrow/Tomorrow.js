@@ -152,7 +152,7 @@ function Tomorrow() {
   const [BeschreibungTop, setBeschreibungTop] = useState("Nicht verfügbar");
   const [Logo, setLogo] = useState();
   const [TitleImg, setTitleImg] = useState();
-  const [FirmenName, setFirmenName] = useState("Nicht verfügbar");
+  const [Firmenname, setFirmenName] = useState("Nicht verfügbar");
   const [Emittent, setEmittent] = useState("Nicht verfügbar");
   const [Rechtsform, setRechtsform] = useState("Nicht verfügbar");
   const [Emissionszeitraum, setEmissionszeitraum] = useState("Nicht verfügbar");
@@ -185,7 +185,7 @@ function Tomorrow() {
         setBeschreibungTop(Projekt.Beschreibung);
         setLogo(Projekt.LogoLink);
         setTitleImg(Projekt.TitleLink);
-        setFirmenName(Projekt.FirmenName);
+        setFirmenName(Projekt.Firmenname);
         setEmittent(Projekt.Emittent);
         setRechtsform(Projekt.Rechtsform);
         setEmissionszeitraum(Projekt.Emissionszeitraum);
@@ -325,7 +325,7 @@ function Tomorrow() {
                 setTrigger={setUnternehmen_isShown}
                 Gruendung={Gruendung}
                 Rechtsform={Rechtsform}
-                FirmenName={FirmenName}
+                Firmenname={Firmenname}
                 Ort={Ort}
                 Geschaeftstaetigkeit={Geschaeftstaetigkeit}
               />

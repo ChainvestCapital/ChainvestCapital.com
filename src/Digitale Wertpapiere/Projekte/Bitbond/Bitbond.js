@@ -186,7 +186,7 @@ function Kategorien_Filter() {
         setBeschreibungTop(Projekt.Beschreibung);
         setLogo(Projekt.LogoLink);
         setTitleImg(Projekt.TitleLink);
-        setFirmenName(Projekt.FirmenName);
+        setFirmenName(Projekt.Firmenname);
         setEmittent(Projekt.Emittent);
         setRechtsform(Projekt.Rechtsform);
         setEmissionszeitraum(Projekt.Emissionszeitraum);
@@ -207,7 +207,6 @@ function Kategorien_Filter() {
       }
     });
   }
-
   return (
     <div>
       <div id="Desktop_Wrapper">

@@ -19,7 +19,7 @@ function Token_Sale(props) {
               title="Zahlungsmöglichkeiten"
               Text={props.Zahlungsmoeglichkeiten}
             />
-            <W25_h1 title="Emissionszeitraum" Text={props.Emssionszeitraum} />
+            <W25_h1 title="Emissionszeitraum" Text={props.Emissionszeitraum} />
             <W25_h1 title="Token Ticker" Text={props.Token_Ticker} />
           </div>{" "}
           <div id="Ind_W50_2h"></div>

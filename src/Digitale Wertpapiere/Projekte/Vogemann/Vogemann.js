@@ -186,7 +186,7 @@ function Vogemann() {
         setBeschreibungTop(Projekt.Beschreibung);
         setLogo(Projekt.LogoLink);
         setTitleImg(Projekt.TitleLink);
-        setFirmenName(Projekt.FirmenName);
+        setFirmenName(Projekt.Firmenname);
         setEmittent(Projekt.Emittent);
         setRechtsform(Projekt.Rechtsform);
         setEmissionszeitraum(Projekt.Emissionszeitraum);
@@ -326,7 +326,7 @@ function Vogemann() {
                 setTrigger={setUnternehmen_isShown}
                 Gruendung={Gruendung}
                 Rechtsform={Rechtsform}
-                FirmenName={FirmenName}
+                Firmenname={FirmenName}
                 Ort={Ort}
                 Geschaeftstaetigkeit={Geschaeftstaetigkeit}
               />

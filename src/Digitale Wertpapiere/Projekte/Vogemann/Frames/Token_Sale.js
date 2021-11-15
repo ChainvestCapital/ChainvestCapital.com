@@ -19,13 +19,13 @@ function Token_Sale(props) {
               title="Zahlungsmöglichkeiten"
               Text={props.Zahlungsmoeglichkeiten}
             />
-            <W25_h1 title="Emissionszeitraum" Text={props.Emssionszeitraum} />
+            <W25_h1 title="Emissionszeitraum" Text={props.Emissionszeitraum} />
             <W25_h1 title="Token Ticker" Text={props.Token_Ticker} />
           </div>{" "}
           <div id="Ind_W50_2h"></div>
         </div>
         <div id="Token_Sale_Wrapper_Bottom">
-          <W25_h1 Text={props.ITIN} title="ITIN" />
+          <W25_h1 Text={props.ISIN} title="ISIN" />
           <W25_h1 Text={props.Blockchain} title="Blockchain" />
           <W50_h1
             Text="StellarExpert | BB1 by [Bitbond]GD5J6HLF5666X4AZLTFTXLY4 6J5SW7EXRKBLEYPJP33S33MXZGV6CWFN"

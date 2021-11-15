@@ -23,7 +23,7 @@ function Unternehmen(props) {
 
           <div id="Bitbond_Unternehmen_Bottom">
             <div id="Bitbond_Unternehmen_Grid">
-              <W25_h1 title="Firmenname" Text={props.FirmenName} />
+              <W25_h1 title="Firmenname" Text={props.Firmenname} />
               <W25_h1 title="Ort" Text={props.Ort} />
               <W25_h1 title="Gründung" Text={props.Gruendung} />
               <W25_h1 title="Rechtsform" Text={props.Rechtsform} />

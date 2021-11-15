@@ -1,0 +1,22 @@
+#Desktop_Rechtlich_Wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2vh;
+  overflow-y: scroll;
+  height: 75vh;
+  overflow-x: hidden;
+}
+
+#Desktop_Rechtlich_Wrapper::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+
+#Desktop_Rechtlich_Wrapper::-webkit-scrollbar-track {
+  background: rgba(205, 240, 234, 1); /* color of the tracking area */
+}
+
+#Desktop_Rechtlich_Wrapper::-webkit-scrollbar-thumb {
+  background-color: white; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 1px solid rgba(164, 99, 99, 0); /* creates padding around scroll thumb */
+}
