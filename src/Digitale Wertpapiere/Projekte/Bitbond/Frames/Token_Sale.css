@@ -25,7 +25,7 @@
   width: 72vw;
   margin-top: 2vh;
 }
-#Ind_W50_2h {
+#Ind_W50_2h_BBTS {
   width: 33vw;
   background: #ffffff;
   border-radius: 12px;
@@ -37,5 +37,69 @@
   display: flex;
   flex-direction: column;
   height: 18vh;
+
   justify-content: center;
+}
+#Ind_W50_2h_h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9vw;
+
+  margin: 0;
+  color: #434343;
+}
+#Ind_W50_2h_BBTS_TOP {
+  display: flex;
+  flex-direction: row;
+}
+#Ind_W50_2h_BBTS_TOP_Left {
+  width: 45%;
+  position: relative;
+  height: 14vh;
+  display: flex;
+  align-items: flex-start;
+  margin-right: 5%;
+}
+#Ind_W50_2h_BBTS_Right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+#Ind_W50_2h_BBTS_Bottom {
+}
+#Ind_W50_2h_BBTS_Right_Row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#Ind_W50_2h_BBTS_Right_h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.7vw;
+
+  margin: 0;
+  color: #434343;
+}
+
+#Ind_W50_2h_BBTS_Right_h4_fett {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8vw;
+
+  margin: 0;
+  color: #434343;
+}
+#Ind_W50_2h_BBTS_Right_h4_m {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.7vw;
+
+  margin: 0;
+  color: #434343;
+  margin-top: 2vh;
 }

@@ -39,3 +39,28 @@
   height: 18vh;
   justify-content: center;
 }
+#Token_Sale_Wrapper_Top_Vog_right {
+  display: flex;
+  flex-direction: column;
+}
+#Token_Sale_Wrapper_Top_Vog_right_TOP {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+}
+#Token_Sale_Wrapper_Top_Vog_right_unt {
+  display: flex;
+  flex-direction: row;
+}
+#Token_Sale_Wrapper_Top_Right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 22vh;
+}
+#Token_Sale_Wrapper_Top_Right_Bott {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
